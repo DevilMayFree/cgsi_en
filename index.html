@@ -371,7 +371,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: "GetHomePageHeader.json",
+            url: "/locales/en/GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
