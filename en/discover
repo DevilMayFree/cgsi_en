@@ -1615,7 +1615,7 @@ function getInsightsCategoryList() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetInsightsCategory.json",
+        url: "/locales/en/GetInsightsCategory.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, categoryid: "", platform: "web" },
         success: function (response) {
