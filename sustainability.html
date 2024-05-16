@@ -101,7 +101,7 @@ $(document).ready(function () {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetHomePageHeader.json",
+        url: "GetHomePageHeader.json",
         headers: { "authorization": "webkey" }, 
         data: {lang: lang, pagename: pagename},
         success: function (response) {

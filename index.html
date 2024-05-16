@@ -371,7 +371,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader.json",
+            url: "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1196,7 +1196,7 @@ gtag('config', 'UA-120227926-1');
             $.ajax({
                 type: "GET",
                 dataType: 'json',
-                url: webservice + "GetMemberLoginb",
+                url: "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
                 data: {memberloginaid: memberloginaid, memberloginbid: "", lang: lang, platform: "web"},
                 success: function (response) {
@@ -1310,7 +1310,7 @@ function getCarouselByPageName(page_name, modified_datetime, lang) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetPage.json",
+        url: "GetPage.json",
         headers: { "authorization": "webkey" }, 
         data: { modified_by: modified_by, modified_datetime: modified_datetime, page_code: page_name, lang: lang },
         success: function (response) {
@@ -1335,7 +1335,7 @@ function getCarouselHtml(carousel_id, lang) {
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "WSCarousel.json",
+            url: "WSCarousel.json",
             headers: { "authorization": "webkey" }, 
             data: { action: "getitem", carousel_id: carousel_id, lang: lang, content: "", image: "", hyperlink: "", rank: "", headlinestatus: "", backgroundstatus: "", modified_by: "", modified_datetime: "" },
             success: function (response) {
@@ -1505,7 +1505,7 @@ function getProductRecommended(){
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductRecommended.json",
+        url: "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, productrecommendedid: "", platform:"web"},
         success: function (response) {
@@ -1610,7 +1610,7 @@ function getFindtherightinvestmentQuestionChoice() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductRecommendedChoice.json",
+        url: "GetProductRecommendedChoice.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, platform: "web" },
         success: function (response) {
@@ -1706,7 +1706,7 @@ function getInsightsCategoryList() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetInsightsCategory.json",
+        url: "GetInsightsCategory.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, categoryid: "", platform: "web" },
         success: function (response) {
@@ -1770,7 +1770,7 @@ function getAllInsight() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetInsights.json",
+        url: "GetInsights.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, itemid: "", type: "", platform: "web", searchdate: searchdate, searchkeyword: searchkeyword, page: "" },
         success: function (response) {
@@ -1847,7 +1847,7 @@ function getInsight(type) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetInsights.json",
+        url: "GetInsights.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, itemid: "", type: type, searchkeyword: searchkeyword, searchdate: searchdate, platform: "web", page: "" },
         success: function (response) {
@@ -2049,7 +2049,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAnnouncements.json",
+        url: "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {
@@ -2119,7 +2119,7 @@ function popupAnnouncements(itemid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAnnouncements.json",
+        url: "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: itemid, platform: "web" },
         success: function (response) {
@@ -2279,7 +2279,7 @@ $("#latestannouncements,#insights").hide();
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetFooter.json",
+            url: "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {

@@ -368,7 +368,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader.json",
+            url: "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1193,7 +1193,7 @@ gtag('config', 'UA-120227926-1');
             $.ajax({
                 type: "GET",
                 dataType: 'json',
-                url: webservice + "GetMemberLoginb",
+                url: "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
                 data: {memberloginaid: memberloginaid, memberloginbid: "", lang: lang, platform: "web"},
                 success: function (response) {
@@ -1312,7 +1312,7 @@ function getProductRecommended(){
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductRecommended.json",
+        url: "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, productrecommendedid: "", platform:"web"},
         success: function (response) {
@@ -1417,7 +1417,7 @@ function getFindtherightinvestmentQuestionChoice() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductRecommendedChoice.json",
+        url: "GetProductRecommendedChoice.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, platform: "web" },
         success: function (response) {
@@ -1582,7 +1582,7 @@ function redirectToProductRecommended() {
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetFooter.json",
+            url: "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {
@@ -1716,7 +1716,7 @@ function GetProductCategory() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductCategory",
+        url: "GetProductCategory",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, categoryid: "", platform: "web" },
         success: function (response) {
@@ -1784,7 +1784,7 @@ function GetProductList(categoryid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProduct",
+        url: "GetProduct",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, categoryid: categoryid, productid: "", platform: "web" },
         success: function (response) {

@@ -117,7 +117,7 @@ function languageInit() {
     var lang = $("html").attr("lang");
 
     i18n.init({
-        resGetPath: webservice + ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
+        resGetPath: ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
     }, function (t) {
         $("body").i18n();
         $('*').trigger("updatelayout");
@@ -128,7 +128,7 @@ function getLanguage() {
     var lang = $("html").attr("lang");
 
     i18n.init({
-        resGetPath: webservice + ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
+        resGetPath: ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
     }, function (t) {
         $("body").i18n();
         $('*').trigger("updatelayout");
@@ -459,7 +459,7 @@ function selector() {
     var lang = $("html").attr("lang");
 
     i18n.init({
-        resGetPath: webservice + ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
+        resGetPath: ((location.pathname.indexOf('itradeweb') == -1) ? '' : 'itradeweb/') + 'locales/' + lang + '/translation.json?v=20240203'
     }, function (t) {
         $("body").i18n();
         $('*').trigger("updatelayout");
@@ -750,10 +750,10 @@ function carouselReplaceHTML() {
         var carousel_id = $(".carouselcomponent").eq(i).attr("carousel_id");
         var carouselindex = i;
 
-        var ajaxUrl = webservice + "WSCarousel.json";
+        var ajaxUrl = "WSCarousel.json";
         var currentUrl = window.location.href;
         if(currentUrl.indexOf("career") != -1 ){
-            ajaxUrl = webservice + "WSCarousel_career.json";
+            ajaxUrl = "WSCarousel_career.json";
         }
         // console.log('local:',window.location.href)
 
@@ -1016,7 +1016,7 @@ function getPopupCkeditorWebModal(popupid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetPopup",
+        url: "GetPopup",
         headers: {"authorization": getCookie("token")},
         data: {lang: lang, popupid: popupid, platform: "web"},
         success: function (response) {

@@ -368,7 +368,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader.json",
+            url: "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1193,7 +1193,7 @@ gtag('config', 'UA-120227926-1');
             $.ajax({
                 type: "GET",
                 dataType: 'json',
-                url: webservice + "GetMemberLoginb",
+                url: "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
                 data: {memberloginaid: memberloginaid, memberloginbid: "", lang: lang, platform: "web"},
                 success: function (response) {
@@ -1406,7 +1406,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetFooter.json",
+            url: "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {
@@ -1543,7 +1543,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAnnouncements.json",
+        url: "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {

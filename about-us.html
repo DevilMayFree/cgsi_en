@@ -371,7 +371,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader.json",
+            url: "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1196,7 +1196,7 @@ gtag('config', 'UA-120227926-1');
             $.ajax({
                 type: "GET",
                 dataType: 'json',
-                url: webservice + "GetMemberLoginb",
+                url: "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
                 data: {memberloginaid: memberloginaid, memberloginbid: "", lang: lang, platform: "web"},
                 success: function (response) {
@@ -1421,7 +1421,7 @@ function getAwardsListToRemoveYear() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAwards.json",
+        url: "GetAwards.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, awardid: "", platform: "web" },
         success: function (response) {
@@ -1472,7 +1472,7 @@ function getAwardsList(year) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAwards.json",
+        url: "GetAwards.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, awardid: "", platform: "web" },
         success: function (response) {
@@ -1564,7 +1564,7 @@ function getAwardsDetail(awardid, flag) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetAwards.json",
+        url: "GetAwards.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, awardid: awardid, flag: flag, platform: "web" },
         success: function (response) {
@@ -1788,7 +1788,7 @@ function getTeamMember(type) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetTeamMember.json",
+        url: "GetTeamMember.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, teammemberid: "", type: type, platform: "web" },
         success: function (response) {
@@ -1833,7 +1833,7 @@ function getTeamMemberDetail(teammemberid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetTeamMember.json",
+        url: "GetTeamMember.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, teammemberid: teammemberid, type: "", platform: "web" },
         success: function (response) {
@@ -2033,7 +2033,7 @@ function GetProductRecommended(){
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: webservice + "GetProductRecommended.json",
+        url: "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, productrecommendedid: "2", platform:"web"},
         success: function (response) {
@@ -2209,7 +2209,7 @@ function GetProductRecommended(){
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetFooter.json",
+            url: "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {

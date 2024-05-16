@@ -376,7 +376,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader.json",
+            url: "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1201,7 +1201,7 @@ gtag('config', 'UA-120227926-1');
             $.ajax({
                 type: "GET",
                 dataType: 'json',
-                url: webservice + "GetMemberLoginb",
+                url: "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
                 data: {memberloginaid: memberloginaid, memberloginbid: "", lang: lang, platform: "web"},
                 success: function (response) {
@@ -1483,7 +1483,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetFooter.json",
+            url: "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {
@@ -1614,7 +1614,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetCareerFeature.json",
+            url: "GetCareerFeature.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, careerfeatureid: "", platform: "web"},
             success: function (response) {
@@ -1666,7 +1666,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetCareerLife.json",
+            url: "GetCareerLife.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, careerlifeid: "", platform: "web"},
             success: function (response) {
@@ -1713,7 +1713,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetCareerContent.json",
+            url: "GetCareerContent.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, platform: "web"},
             success: function (response) {
@@ -1746,7 +1746,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: webservice + "GetCareerLife.json",
+            url: "GetCareerLife.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, careerlifeid: careerlifeid, platform: "web"},
             success: function (response) {
@@ -1783,7 +1783,7 @@ gtag('config', 'UA-120227926-1');
 //        $.ajax({
 //            type: "GET",
 //            dataType: 'json',
-//            url: webservice + "GetCareerFeature.json",
+//            url: "GetCareerFeature.json",
 //            headers: {"authorization": "webkey"},
 //            data: {lang: lang, careerfeatureid: careerfeatureid, platform: "web"},
 //            success: function (response) {
