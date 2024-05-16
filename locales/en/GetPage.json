@@ -1,0 +1,35 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "preview": "template2.png",
+            "carousel_id": "April-2021",
+            "page_desc": " ",
+            "isactive": "1",
+            "template_filename": "home",
+            "current_version": "1",
+            "template_name": "HomePage",
+            "page_name": "home",
+            "template_id": "2",
+            "lang": "en",
+            "ismenu": "1",
+            "source_code": "<script>\n$(\"#latestannouncements,#insights\").hide();\n<\/script>",
+            "source_codeb": "<div id=\"topproductsandservice\" style=\"background: linear-gradient(to top, #13318c 44%, #ffffff 0%); z-index: 2; overflow-x: hidden;\">\n    <div class=\"topproductsandservice-frame\">\n        <div class=\"row topproductsandservicetitle-frame\" style=\"margin-left:0px;margin-right:0px;\">\n            <div class=\"col-12 col-md-12\">\n                <div class=\"explore-more-about-o\">EXPLORE MORE ABOUT OUR<\/div>\n                <h2 class=\"top-products-servi\">Top products &amp; services<\/h2>\n                <div class=\"topproductsandservicebutton-frame\" style=\"text-align: right;\">\n                    <button class=\"topproductsandservice-previous swiper-button-disabled\" tabindex=\"0\" role=\"button\" aria-label=\"Previous slide\" aria-disabled=\"true\"><\/button>\n                    <button class=\"topproductsandservice-next\" style=\"margin-left: 10px;\" tabindex=\"0\" role=\"button\" aria-label=\"Next slide\" aria-disabled=\"false\"><\/button>\n                <\/div>\n            <\/div>\n        <\/div>\n        <div class=\"topproducts topproductsandservice-tableandservice-scroll\" style=\"overflow-x: hidden;\">\n            <div class=\"topproductsandservice-table\">\n                <div class=\"swiper-container swiper-container-initialized swiper-container-horizontal\">\n                    <div class=\"swiper-wrapper\" style=\"transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);\">\n                        \n                        \n                        \n                        \n                        \n                        \n                    <div class=\"swiper-slide swiper-slide-active\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=EQUITIES\">EQUITIES<\/a><\/div><\/div><div class=\"swiper-slide swiper-slide-next\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=LEVERAGED PRODUCTS\">LEVERAGED PRODUCTS<\/a><\/div><\/div><div class=\"swiper-slide\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=FUTURES\">FUTURES<\/a><\/div><\/div><div class=\"swiper-slide\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=WEALTH MANAGEMENT\">WEALTH MANAGEMENT<\/a><\/div><\/div><div class=\"swiper-slide\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=FINANCING SERVICE\">FINANCING SERVICE<\/a><\/div><\/div><div class=\"swiper-slide\" style=\"border-radius: 7px; width: 163.312px; margin-right: 50px;\"><div class=\"topproductsandservice-grid\" style=\"width: 100%;\"><a class=\"topproductsandservice-border topproductsandservice-text\" style=\"text-align: left;\" href=\"all-products-and-services?category=BONDS\">BONDS<\/a><\/div><\/div><\/div>\n                <span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span><span class=\"swiper-notification\" aria-live=\"assertive\" aria-atomic=\"true\"><\/span><\/div>\n            <\/div>\n        <\/div>\n    <\/div>\n<\/div>\n\n<script>\n$(document).ready(function () {\n    refreshTopProductsAndServicesItems();\n});\n\nfunction refreshTopProductsAndServicesItems() {\n    var swiper = new Swiper('.swiper-container', {\n        slidesPerView: (Math.floor((window.innerWidth * 0.85)\/200) < $(\".topproductsandservice-grid\").length) ? Math.floor((window.innerWidth * 0.85)\/200) : $(\".topproductsandservice-grid\").length,\n        width: window.innerWidth * 0.85,\n        centerInsufficientSlides: true,\n        spaceBetween: 50,\n        on: {\n            resize: function(){\n            this.params.slidesPerView = (Math.floor((window.innerWidth * 0.85)\/200) < $(\".topproductsandservice-grid\").length) ? Math.floor((window.innerWidth * 0.85)\/200) : $(\".topproductsandservice-grid\").length;\n            this.params.width = window.innerWidth * 0.85;\n            this.update();\n        }\n    },\n        navigation: {\n            nextEl: '.topproductsandservice-next',\n            prevEl: '.topproductsandservice-previous',\n        }\n    });\n}\n<\/script>"
+        }
+    ],
+    "carousel": [
+        {
+            "carousel_id": "April-2021",
+            "description": "ProsperUs"
+        },
+        {
+            "carousel_id": "CareerUse",
+            "description": "\tMain Career Page Use"
+        },
+        {
+            "carousel_id": "CareerUse2",
+            "description": "Sub Career Page Use"
+        }
+    ],
+    "status": "SUCCESS"
+}

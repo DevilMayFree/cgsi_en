@@ -1,0 +1,69 @@
+{
+    "replymsg": "",
+    "social": [],
+    "uppermenu": [
+        {
+            "footerid": "6",
+            "hyperlink": "about-us",
+            "background": "",
+            "content": "About CGS International"
+        },
+        {
+            "footerid": "9",
+            "hyperlink": "contact-us",
+            "content": "Contact Us"
+        },
+        {
+            "footerid": "12",
+            "hyperlink": "frequently-asked-questions",
+            "content": "FAQ"
+        },
+        {
+            "footerid": "7",
+            "hyperlink": "newsroom",
+            "background": "",
+            "content": "Newsroom"
+        },
+        {
+            "footerid": "13",
+            "hyperlink": "sitemap",
+            "content": "Sitemap"
+        },
+        {
+            "footerid": "8",
+            "hyperlink": "disclaimer",
+            "content": "Disclaimer"
+        },
+        {
+            "footerid": "11",
+            "hyperlink": "privacy-policy",
+            "background": "",
+            "content": "Privacy Policy"
+        },
+        {
+            "footerid": "14",
+            "hyperlink": "terms-of-use",
+            "content": "Terms of Use"
+        },
+        {
+            "footerid": "15",
+            "hyperlink": "important-notice",
+            "background": "",
+            "content": "Important Notice"
+        }
+    ],
+    "lowermenu": [
+        {
+            "footerid": "3",
+            "hyperlink": "http:\/\/www.chinastock.com.cn\/en\/",
+            "content": "China Galaxy Securities"
+        },
+        {
+            "footerid": "5",
+            "hyperlink": "https:\/\/en.chinastock.com.hk\/",
+            "background": "",
+            "content": "CGS International Holdings Limited"
+        }
+    ],
+    "status": "SUCCESS"
+}

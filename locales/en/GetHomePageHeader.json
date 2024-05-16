@@ -1,0 +1,455 @@
+{
+    "replymsg": "",
+    "isactive": "1",
+    "memberlogina": [
+        {
+            "memberloginaid": "1",
+            "choice": "Stocks & Shares"
+        },
+        {
+            "memberloginaid": "2",
+            "choice": "Contracts For Difference (CFD)"
+        },
+        {
+            "memberloginaid": "5",
+            "choice": "Bonds"
+        }
+    ],
+    "menu": [
+        {
+            "menu_name2": "CGS International Website",
+            "menu_name": "CGS International Website",
+            "page_name": "home",
+            "sorting": "1",
+            "menu_id": "1",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "为何选择中国银河国际证券私人有限公司",
+            "child_id": "1",
+            "menu_name": "Why CGS International",
+            "page_name": "why-cgs-international.html",
+            "sorting": "2",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "2",
+            "submenu_style": "1"
+        },
+        {
+                    "menu_name2": "关于",
+                    "child_id": "1",
+                    "menu_name": "About CGS International",
+                    "page_name": "about-us.html",
+                    "sorting": "3",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "33",
+                    "submenu_style": "1"
+        },
+        {
+                    "menu_name2": "联络",
+                    "child_id": "1",
+                    "menu_name": "Contact Us",
+                    "page_name": "contact-us.html",
+                    "sorting": "6",
+                    "menu_id": "66",
+                    "submenu_style": "2"
+        },
+
+        {
+            "menu_name2": "CGS Fullgoal Vietnam 30 Sector Cap ETF",
+            "child_id": "7",
+            "menu_name": "CGS Fullgoal Vietnam 30 Sector Cap ETF",
+            "page_name": "viet30etf",
+            "sorting": "4",
+            "menu_id": "37",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "iCash Account",
+            "child_id": "26",
+            "menu_name": "iCash Account",
+            "page_name": "islamicstockbroking",
+            "sorting": "5",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "30",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+
+        {
+            "menu_name2": "Sustainability ",
+            "child_id": "1",
+            "menu_name": "Sustainability ",
+            "page_name": "sustainability.html",
+            "sorting": "7",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "14",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "Career",
+            "child_id": "1",
+            "menu_name": "Career",
+            "page_name": "career.html",
+            "sorting": "8",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "32",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "平台",
+            "child_id": "6",
+            "menu_name": "Platform",
+            "page_name": "",
+            "sorting": "9",
+            "menu_id": "21",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "工具",
+            "child_id": "6",
+            "menu_name": "Tools",
+            "page_name": "",
+            "sorting": "10",
+            "menu_id": "22",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "iScreener ",
+            "child_id": "22",
+            "menu_name": "iScreener ",
+            "page_name": "itrade.jsp?tradingtools=0",
+            "sorting": "11",
+            "description": "",
+            "description2": "",
+            "menu_id": "15",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "iFilter ",
+            "child_id": "22",
+            "menu_name": "iFilter ",
+            "page_name": "itrade.jsp?tradingtools=2",
+            "sorting": "12",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "17",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "股票筛选器",
+            "child_id": "22",
+            "menu_name": "Stock Filter ",
+            "page_name": "itrade.jsp?tradingtools=3",
+            "sorting": "13",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "16",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "查看全部",
+            "child_id": "6",
+            "menu_name": "View All",
+            "page_name": "all-platforms-and-tools",
+            "sorting": "14",
+            "description": "",
+            "description2": "",
+            "menu_id": "53",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "上市证券",
+            "child_id": "3",
+            "menu_name": "SECURITIES",
+            "page_name": "",
+            "sorting": "15",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "4",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "债券融资",
+            "child_id": "3",
+            "menu_name": "BONDS",
+            "page_name": "",
+            "sorting": "16",
+            "description": "",
+            "description2": "",
+            "menu_id": "9",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "股票",
+            "child_id": "4",
+            "menu_name": "Stocks and Shares",
+            "page_name": "stocks-and-shares",
+            "sorting": "17",
+            "description": "Equities are one of the most widely traded investments and have historically outperformed most other investments over the long run.",
+            "description2": "全球股票市场为投资者提供了更多拥有公司股权的机会，并且投资者能从潜在的资本收益和派息收益中受益",
+            "description3": "",
+            "menu_id": "38",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "杠杆产品",
+            "child_id": "3",
+            "menu_name": "LEVERAGED PRODUCTS",
+            "page_name": "",
+            "sorting": "18",
+            "description": "",
+            "description2": "",
+            "menu_id": "5",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "外汇",
+            "child_id": "5",
+            "menu_name": "Forex",
+            "page_name": "forex",
+            "sorting": "19",
+            "description": "FX, also known as foreign exchange, is an over-the-counter (OTC) product that has no central exchange, unlike commodities or stocks.",
+            "description2": "外汇，同于大宗商品和股票，是一种场外交易产品，没有集中交易所。",
+            "description3": "",
+            "menu_id": "24",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "ETF",
+            "child_id": "3",
+            "menu_name": "ETF",
+            "page_name": "",
+            "sorting": "20",
+            "menu_id": "7",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "CGS Fullgoal CSI1000 ETF",
+            "child_id": "7",
+            "menu_name": "CGS Fullgoal CSI1000 ETF",
+            "page_name": "csi1000",
+            "sorting": "21",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "35",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "期货",
+            "child_id": "3",
+            "menu_name": "FUTURES",
+            "page_name": "",
+            "sorting": "22",
+            "description": "",
+            "description2": "",
+            "menu_id": "10",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "期货",
+            "child_id": "10",
+            "menu_name": "Futures",
+            "page_name": "futures",
+            "sorting": "23",
+            "description": "Futures is a standardised, exchange traded financial contract between two parties to buy or sell an asset (commodities, bonds, currencies or financial indices) at a future date and time.",
+            "description2": "期货是由双方制定，可在交易所上买卖的标准化金融合约。该合约规定在将来某个特定的时间双方交割一定数量和质量的资产如大宗商品、债券、货币或金融指数等。",
+            "menu_id": "18",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "财富管理",
+            "child_id": "3",
+            "menu_name": "WEALTH MANAGEMENT",
+            "page_name": "",
+            "sorting": "24",
+            "description": "",
+            "description2": "",
+            "menu_id": "8",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "Wealth Planning",
+            "child_id": "8",
+            "menu_name": "Wealth Planning",
+            "page_name": "wealth-management",
+            "sorting": "25",
+            "menu_id": "31",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "债券",
+            "child_id": "9",
+            "menu_name": "Bonds",
+            "page_name": "bonds",
+            "sorting": "26",
+            "description": "A bond is a debt investment, where the investors lend money to an entity,",
+            "description2": " 债券是一种债务投资。投资者向实体（通常是公司或政府）提供贷款",
+            "menu_id": "42",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "金融服务",
+            "child_id": "3",
+            "menu_name": "FINANCING SERVICES",
+            "page_name": "",
+            "sorting": "27",
+            "description": "",
+            "description2": "",
+            "menu_id": "11",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "SHARIAH-COMPLIANT PRODUCTS",
+            "child_id": "3",
+            "menu_name": "SHARIAH-COMPLIANT PRODUCTS",
+            "page_name": "",
+            "sorting": "28",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "26",
+            "submenu_style": "1",
+            "menu_name3": ""
+        },
+        {
+            "menu_name2": "寻找正确的投资",
+            "child_id": "3",
+            "menu_name": "Find the right investment",
+            "page_name": "products-for-you",
+            "sorting": "29",
+            "description": "",
+            "description2": "",
+            "menu_id": "12",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "查看全部",
+            "child_id": "3",
+            "menu_name": "View All",
+            "page_name": "all-products-and-services",
+            "sorting": "30",
+            "description": "",
+            "description2": "",
+            "menu_id": "52",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "证券保证金融资",
+            "child_id": "11",
+            "menu_name": "Margin Financing",
+            "page_name": "margin-financing",
+            "sorting": "31",
+            "description": "Margin Financing, a secured facility which provides leverage for the trading of shares on SGX, BURSA, HKEX and US.",
+            "description2": "证券保证金融资是一种可以为股票交易提供杠杆服务的担保机制",
+            "description3": "",
+            "menu_id": "13",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "证券借贷服务",
+            "child_id": "11",
+            "menu_name": "Securities Borrowing and Lending  ",
+            "page_name": "securities-borrowing-and-lending",
+            "sorting": "32",
+            "description": "CGS International Securities borrowing and lending facility offers clients the opportunity to engage in hedging or arbitrage activities while avoiding failed settlements. ",
+            "description2": "中国银河国际证券的证券借贷服务，为客户提供参与对冲或套利交易的机会",
+            "menu_id": "27",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "差价合约",
+            "child_id": "5",
+            "menu_name": "Contracts for Difference",
+            "page_name": "contracts-for-difference",
+            "sorting": "33",
+            "description": "Contracts for Difference (CFD) is a tradable instrument that mirrors the movements of the asset underlying it.",
+            "description2": "差价合约（CFD）是一种反映所挂钩资产价格变化的可买卖的金融工具。",
+            "menu_id": "19",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "高息票据",
+            "child_id": "5",
+            "menu_name": "Equity Linked Notes",
+            "page_name": "equity-linked-notes",
+            "sorting": "34",
+            "description": "Equity-linked notes (ELNs) are short term investments (typically lasting 1 to 4 months) that give you the opportunity to buy shares of a selected company at a discount to market price.",
+            "description2": "高息票据（ELN）是专为看好股市未来走势的客户而设计的投资产品",
+            "menu_id": "45",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "每日杠杆证书",
+            "child_id": "5",
+            "menu_name": "DLC",
+            "page_name": "daily-leverage-certificates",
+            "sorting": "35",
+            "description": "Daily Leveraged Certificates (DLCs) are a form of structured financial instrument issued by banks and traded on the securities market",
+            "description2": "每日杠杆证书（DLC）是一种由银行发行并在证券市场上交易的结构性金融工具",
+            "menu_id": "20",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "iTrade",
+            "child_id": "21",
+            "menu_name": "iTrade",
+            "page_name": "itrade",
+            "sorting": "36",
+            "description": "",
+            "description2": "",
+            "menu_id": "23",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "Viewpoint",
+            "child_id": "21",
+            "menu_name": "Viewpoint",
+            "page_name": "viewpoint",
+            "sorting": "37",
+            "description": "",
+            "description2": "",
+            "menu_id": "28",
+            "submenu_style": "1"
+        },
+        {
+            "menu_name2": "ProsperUs",
+            "child_id": "21",
+            "menu_name": "ProsperUs",
+            "page_name": "https:\/\/www.prosperus.asia\/",
+            "sorting": "38",
+            "description": "",
+            "description2": "",
+            "description3": "",
+            "menu_id": "29",
+            "submenu_style": "1",
+            "menu_name3": ""
+        }
+    ],
+    "alertbar": [
+        {
+            "hyperlink": "",
+            "message": "<p><strong>Important:<\/strong><br \/>\nAs cases of impersonation, phishing and other financial scams continue to be on the rise, you are advised to exercise extra vigilance in your online activities.<\/p>\n\n<p>Kindly note that CGS International does not offer any unsolicited financial advice through online platforms such as Telegram and WhatsApp. If you encounter any unplanned interaction with anyone claiming to be from CGS International, do take the necessary precautions and verify his\/her credentials; do not provide any sensitive information such as passwords, OTPs etc.<\/p>\n\n<p><strong>If you receive a suspicious email or call purporting to be from CGS International, please contact our customer service immediately.<\/strong> You can reach us at our Client Services Hotline at 1800 538 9889 or email <a href=\"mailto:clientservices.sg@cgsi.com\" style=\"color:#ffffff !important;\">clientservices.sg@cgsi.com<\/a>.<\/p>\n"
+        }
+    ],
+    "status": "SUCCESS"
+}

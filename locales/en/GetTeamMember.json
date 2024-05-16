@@ -1,0 +1,24 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "flag": "sg",
+            "background": "https:\/\/www.cgs-cimb.com\/cgscimbresources\/system\/team_carolfong.jpg",
+            "teammemberid": "1",
+            "name": "Carol Fong",
+            "description": "Ms. Carol Fong is the Group Chief Executive Officer of CGS International Securities. In her present role, Carol is responsible for the overall management and financial performance of the entire Group\u2019s equities business, a regional franchise covering Asia Pacific (ex-Japan) as well as offices in London and New York. She was also previously country IB CEO of CIMB Group, where she was responsible for building up the investment banking business, key client and regulator relationships in Singapore. <br><br>Carol\u2019s experience in financial markets spans over 33 years. She started her career at OCBC Bank and over the last 30 years, she has held a number of senior managerial positions in various stockbroking firms. She is also currently Chairman of the SGX Securities Advisory Committee. <br><br>Carol was conferred the IBF Distinguished Fellow award in 2016. The IBF Distinguished Fellow is a significant role model who serves as a beacon of excellence for the financial industry. <br><br>Carol holds a BA degree from the National University of Singapore and a Diploma in Personnel Management. ",
+            "position": "Group Chief Executive Officer",
+            "type": "key"
+        },
+        {
+            "flag": "sg",
+            "background": "https:\/\/www.cgs-cimb.com\/cgscimbresources\/system\/team_chanyuenmay.jpg",
+            "teammemberid": "2",
+            "name": "Chan Yuen May",
+            "description": "Ms. Chan Yuen May is the Deputy Group Chief Executive Officer & Co-Group Chief Financial Officer at CGS International Securities. She has been in the financial markets industry for over 13 years. In her present role, she is responsible for the Group\u2019s overall operations which include areas such as Finance, Operations, Technology, Settlements and Credit Control. <br><br>Prior to joining the present company, she was in practice with Ernst & Young for 13 years managing audits as well as advising on compliance of regulators\u2019 rules and regulations, procedures for listings in Exchanges and mergers and acquisitions. <br><br>She holds a Bachelor of Business Degree, majoring in Accounting and minoring in Business Law and Management. ",
+            "position": "Deputy Group Chief Executive Officer & Co-Group Chief Financial Officer",
+            "type": "key"
+        }
+    ],
+    "status": "SUCCESS"
+}

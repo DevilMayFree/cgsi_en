@@ -1,0 +1,28 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "titlered": "find the perfect investment!",
+            "productrecommendedid": "1",
+            "titleblack": "Let us help you ",
+            "background": "",
+            "subtitle": "Please fill out the following questions to find out what investment best suits you:",
+            "lastquestion": "How would you react if the value of your portfolio suddenly dropped by 20%?",
+            "buttonname": "SEE PRODUCT RECOMMENDATIONS",
+            "icon": "https:\/\/www.cgs-cimb.com.sg\/cgscimbresourcessg\/system\/man.png",
+            "firstquestion": "I am a:"
+        },
+        {
+            "titlered": "Let's connect.",
+            "productrecommendedid": "2",
+            "titleblack": " We'll be glad to help you.",
+            "background": "",
+            "subtitle": "READY TO GET STARTED?",
+            "lastquestion": "",
+            "buttonname": "CREATE AN ACCOUNT",
+            "icon": "https:\/\/www.cgs-cimb.com\/cgscimbresources\/system\/man.png",
+            "firstquestion": ""
+        }
+    ],
+    "status": "SUCCESS"
+}

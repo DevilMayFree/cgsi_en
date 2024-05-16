@@ -1,0 +1,1330 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "awardid": "185",
+            "flag": "sg",
+            "awarded_by": "With Intelligence HFM Awards",
+            "description": "",
+            "award_datetime": "2023-09-28 00:00:00",
+            "title": "Best Boutique Prime Broker (Innovation) in Singapore"
+        },
+        {
+            "awardid": "177",
+            "flag": "sg",
+            "awarded_by": "17th Annual Alpha Southeast Asia Best Financial Institution Awards 2023",
+            "description": "",
+            "award_datetime": "2023-08-08 00:00:00",
+            "title": "Best Broker in Southeast Asia"
+        },
+        {
+            "awardid": "178",
+            "flag": "sg",
+            "awarded_by": "17th Annual Alpha Southeast Asia Best Financial Institution Awards 2023",
+            "description": "",
+            "award_datetime": "2023-08-08 00:00:00",
+            "title": "Best Institutional Broker"
+        },
+        {
+            "awardid": "179",
+            "flag": "sg",
+            "awarded_by": "FinanceAsia's Country Awards for 2023",
+            "description": "",
+            "award_datetime": "2023-08-08 00:00:00",
+            "title": "Best Domestic Broker in Singapore"
+        },
+        {
+            "awardid": "180",
+            "flag": "my",
+            "awarded_by": "FinanceAsia's Country Awards for 2023",
+            "description": "",
+            "award_datetime": "2023-08-08 00:00:00",
+            "title": "Best Domestic Broker in Malaysia"
+        },
+        {
+            "awardid": "175",
+            "flag": "sg",
+            "awarded_by": "SIAS Investors\u2019 Choice Awards 2022",
+            "description": "",
+            "award_datetime": "2022-12-05 00:00:00",
+            "title": "Best Retail Broker"
+        },
+        {
+            "awardid": "176",
+            "flag": "sg",
+            "awarded_by": "With Intelligence HFM Awards",
+            "description": "",
+            "award_datetime": "2022-12-05 00:00:00",
+            "title": "Best Boutique Prime Broker (Innovation) in Singapore"
+        },
+        {
+            "awardid": "167",
+            "flag": "sg",
+            "awarded_by": "16th Annual Alpha Southeast Asia Best Financial Institution Awards 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Institutional Broker in Singapore"
+        },
+        {
+            "awardid": "168",
+            "flag": "my",
+            "awarded_by": "16th Annual Alpha Southeast Asia Best Financial Institution Awards 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Retail Broker in Malaysia"
+        },
+        {
+            "awardid": "169",
+            "flag": "id",
+            "awarded_by": "16th Annual Alpha Southeast Asia Best Financial Institution Awards 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Institutional Broker in Indonesia"
+        },
+        {
+            "awardid": "170",
+            "flag": "my",
+            "awarded_by": "16th Annual Alpha Southeast Asia Best Financial Institution Awards 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Institutional Broker in Malaysia"
+        },
+        {
+            "awardid": "171",
+            "flag": "my",
+            "awarded_by": "FinanceAsia's Country Awards for 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Broker in Malaysia"
+        },
+        {
+            "awardid": "172",
+            "flag": "sg",
+            "awarded_by": "FinanceAsia's Country Awards for 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": "Best Broker in Singapore"
+        },
+        {
+            "awardid": "174",
+            "flag": "sg,my,th,id",
+            "awarded_by": "FinanceAsia's Country Awards for 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 09:44:12",
+            "title": " Biggest Social Impact - International "
+        },
+        {
+            "awardid": "173",
+            "flag": "th",
+            "awarded_by": "FinanceAsia's Country Awards for 2022",
+            "description": "",
+            "award_datetime": "2022-01-01 00:00:00",
+            "title": "Most Innovative Use of Technology - Thailand"
+        },
+        {
+            "awardid": "122",
+            "flag": "sg",
+            "awarded_by": "15th Annual Alpha Southeast Asia Best Financial Institution Awards 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Institutional Broker in Singapore"
+        },
+        {
+            "awardid": "123",
+            "flag": "my",
+            "awarded_by": "15th Annual Alpha Southeast Asia Best Financial Institution Awards 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Retail Broker in Malaysia"
+        },
+        {
+            "awardid": "124",
+            "flag": "id",
+            "awarded_by": "15th Annual Alpha Southeast Asia Best Financial Institution Awards 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Institutional Broker in Indonesia"
+        },
+        {
+            "awardid": "125",
+            "flag": "my",
+            "awarded_by": "FinanceAsia's Country Awards for 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Broker in Malaysia"
+        },
+        {
+            "awardid": "126",
+            "flag": "sg",
+            "awarded_by": "FinanceAsia's Country Awards for 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Broker in Singapore"
+        },
+        {
+            "awardid": "127",
+            "flag": "sg",
+            "awarded_by": "SGX Commodities",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "#1 Electricity Futures Clearing Member for 2021"
+        },
+        {
+            "awardid": "128",
+            "flag": "sg",
+            "awarded_by": "SGX Commodities",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "#1 Top Commodities General Clearing Member 2021"
+        },
+        {
+            "awardid": "129",
+            "flag": "my",
+            "awarded_by": "The Asset Triple A Country Awards for 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage in Malaysia"
+        },
+        {
+            "awardid": "130",
+            "flag": "id",
+            "awarded_by": "The Asset Triple A Country Awards for 2021",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage in Indonesia"
+        },
+        {
+            "awardid": "131",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Execution in Singapore"
+        },
+        {
+            "awardid": "132",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Corporate \nAccess in Singapore\n"
+        },
+        {
+            "awardid": "133",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Research in Singapore"
+        },
+        {
+            "awardid": "134",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Sales in Singapore"
+        },
+        {
+            "awardid": "135",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Retail Brokerage in Singapore"
+        },
+        {
+            "awardid": "136",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best International Brokerage in Singapore"
+        },
+        {
+            "awardid": "137",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Domestic Brokerage in Malaysia"
+        },
+        {
+            "awardid": "138",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Research in Malaysia"
+        },
+        {
+            "awardid": "139",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Sales in Malaysia"
+        },
+        {
+            "awardid": "140",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Execution in Malaysia"
+        },
+        {
+            "awardid": "141",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Retail Brokerage in Malaysia"
+        },
+        {
+            "awardid": "142",
+            "flag": "my",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Corporate Access in Malaysia\n"
+        },
+        {
+            "awardid": "143",
+            "flag": "id",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "\nBest Brokerage for Sales in Indonesia"
+        },
+        {
+            "awardid": "144",
+            "flag": "id",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Corporate Access in Indonesia"
+        },
+        {
+            "awardid": "145",
+            "flag": "id",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Execution in Indonesia"
+        },
+        {
+            "awardid": "146",
+            "flag": "id",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best International Brokerage in Indonesia"
+        },
+        {
+            "awardid": "147",
+            "flag": "id",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Research in Indonesia"
+        },
+        {
+            "awardid": "148",
+            "flag": "th",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Corporate Access in Thailand"
+        },
+        {
+            "awardid": "149",
+            "flag": "th",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Execution in Thailand"
+        },
+        {
+            "awardid": "150",
+            "flag": "th",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best International Brokerage in Thailand"
+        },
+        {
+            "awardid": "151",
+            "flag": "th",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Research in Thailand"
+        },
+        {
+            "awardid": "152",
+            "flag": "th",
+            "awarded_by": "Asiamoney Broker",
+            "description": "",
+            "award_datetime": "2021-01-01 00:00:00",
+            "title": "Best Brokerage for Sales in Thailand"
+        },
+        {
+            "awardid": "109",
+            "flag": "sg",
+            "awarded_by": "14th Annual Alpha Southeast Asia Best Financial Institution Awards 2020",
+            "description": "",
+            "award_datetime": "2020-06-24 00:00:00",
+            "title": "Best Institutional Broker in Singapore"
+        },
+        {
+            "awardid": "110",
+            "flag": "th",
+            "awarded_by": "14th Annual Alpha Southeast Asia Best Financial Institution Awards 2020",
+            "description": "",
+            "award_datetime": "2020-06-24 00:00:00",
+            "title": "Best Institutional Broker in Thailand"
+        },
+        {
+            "awardid": "111",
+            "flag": "id",
+            "awarded_by": "14th Annual Alpha Southeast Asia Best Financial Institution Awards 2020",
+            "description": "",
+            "award_datetime": "2020-06-24 00:00:00",
+            "title": "Best Institutional Broker in Indonesia"
+        },
+        {
+            "awardid": "112",
+            "flag": "id",
+            "awarded_by": "14th Annual Alpha Southeast Asia Best Financial Institution Awards 2020",
+            "description": "",
+            "award_datetime": "2020-06-24 00:00:00",
+            "title": "Best Retail Broker in Indonesia"
+        },
+        {
+            "awardid": "108",
+            "flag": "my",
+            "awarded_by": "FinanceAsia's Country Awards for 2020",
+            "description": "",
+            "award_datetime": "2020-05-27 00:00:00",
+            "title": "Best Broker in Malaysia "
+        },
+        {
+            "awardid": "120",
+            "flag": "ph",
+            "awarded_by": "SET Awards 2019",
+            "description": " Institutional Investors ",
+            "award_datetime": "2019-12-31 00:00:00",
+            "title": "Outstanding Securities Company Awards "
+        },
+        {
+            "awardid": "121",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2019",
+            "description": "-Telecommunication Services  -Transportation & Logistics Consumer Staples  -Financials (Non Banking)  -Healthcare Industrials   -Software & Internet Services   -Utilities ",
+            "award_datetime": "2019-12-31 00:00:00",
+            "title": "Best Research Coverage "
+        },
+        {
+            "awardid": "119",
+            "flag": "id",
+            "awarded_by": "The Asset Triple A Country Awards 2019",
+            "description": "6 consecutive years",
+            "award_datetime": "2019-11-30 00:00:00",
+            "title": "Best Brokerage in Indonesia"
+        },
+        {
+            "awardid": "114",
+            "flag": "sg",
+            "awarded_by": "The Asset Triple A Client solution Award",
+            "description": "",
+            "award_datetime": "2019-11-08 00:00:00",
+            "title": "Best Payments and Collections Solutions "
+        },
+        {
+            "awardid": "116",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2019",
+            "description": "Bronze",
+            "award_datetime": "2019-09-02 00:00:00",
+            "title": "Most Preferred Trading Platform (Equities)"
+        },
+        {
+            "awardid": "117",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2019",
+            "description": "Gold",
+            "award_datetime": "2019-09-02 00:00:00",
+            "title": "Most Preferred CFD Provider"
+        },
+        {
+            "awardid": "118",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2019",
+            "description": "Gold",
+            "award_datetime": "2019-09-02 00:00:00",
+            "title": "Most Preferred Local Broker"
+        },
+        {
+            "awardid": "181",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2019",
+            "award_datetime": "2019-08-08 00:00:00",
+            "title": "Best Local Brokerage"
+        },
+        {
+            "awardid": "182",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2019",
+            "award_datetime": "2019-08-08 00:00:00",
+            "title": "Best Overall Sales Services"
+        },
+        {
+            "awardid": "183",
+            "flag": "sg",
+            "awarded_by": "Shareinvestor Award",
+            "award_datetime": "2019-08-08 00:00:00",
+            "title": "Most Preferred Investment Speaker"
+        },
+        {
+            "awardid": "184",
+            "flag": "sg",
+            "awarded_by": "SIAS",
+            "award_datetime": "2019-08-08 00:00:00",
+            "title": "Best Retail Broker"
+        },
+        {
+            "awardid": "115",
+            "flag": "my",
+            "awarded_by": "13th Annual Alpha Southeast Asia Best Financial Institution Awards 2020",
+            "description": "3 consecutive years",
+            "award_datetime": "2019-06-30 00:00:00",
+            "title": "Best Broker Institutional Broker Malaysia"
+        },
+        {
+            "awardid": "104",
+            "flag": "hk",
+            "awarded_by": "Starmine Analyst Awards 2019 ",
+            "description": "Peter Chan",
+            "award_datetime": "2019-05-30 00:00:00",
+            "title": "Semiconductors Top Stock Pickers - Ranked 3rd"
+        },
+        {
+            "awardid": "105",
+            "flag": "hk",
+            "awarded_by": "Starmine Analyst Awards 2019 ",
+            "description": "Foong Choong Chen",
+            "award_datetime": "2019-05-30 00:00:00",
+            "title": "Telecommunications Top Earnings Estimators - Ranked 3rd"
+        },
+        {
+            "awardid": "106",
+            "flag": "hk",
+            "awarded_by": "Starmine Analyst Awards 2019 ",
+            "description": "Michael Chang",
+            "award_datetime": "2019-05-30 00:00:00",
+            "title": "Financials Top Stock Picker - Ranked 1st"
+        },
+        {
+            "awardid": "107",
+            "flag": "hk",
+            "awarded_by": "Starmine Analyst Awards 2019 ",
+            "description": "Sandeep Shah",
+            "award_datetime": "2019-05-30 00:00:00",
+            "title": "Information Technology Top Earnings Estimator - Ranked 2nd"
+        },
+        {
+            "awardid": "113",
+            "flag": "sg",
+            "awarded_by": "SGX Annual Awards Night 2019",
+            "description": "",
+            "award_datetime": "2019-01-01 00:00:00",
+            "title": "Top Asean SGX-ST Member "
+        },
+        {
+            "awardid": "78",
+            "flag": "sg",
+            "awarded_by": "Investment Trends",
+            "description": "Winner",
+            "award_datetime": "2018-12-14 00:00:00",
+            "title": "Best Client Satisfaction with Trading Reps"
+        },
+        {
+            "awardid": "79",
+            "flag": "th",
+            "awarded_by": "IAA Awards 2018 (SET)",
+            "description": "Ranked 1st",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Research Team for Institution Investors"
+        },
+        {
+            "awardid": "80",
+            "flag": "th",
+            "awarded_by": "IAA Awards 2018 (SET)",
+            "description": "Amornrat Cheevavichawalkul ",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Energy Analyst"
+        },
+        {
+            "awardid": "81",
+            "flag": "th",
+            "awarded_by": "IAA Awards 2018 (SET)",
+            "description": "Kasem Prunratanamala ",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Outstanding Strategist Analyst"
+        },
+        {
+            "awardid": "82",
+            "flag": "th",
+            "awarded_by": "IAA Awards 2018 (SET)",
+            "description": "Uraiwan  Tantisuwannakul",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Outstanding Consumer Analyst"
+        },
+        {
+            "awardid": "83",
+            "flag": "th",
+            "awarded_by": "AsiaMoney Brokers Poll 2018 ",
+            "description": "Ranked 2nd",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Overall Sales Services"
+        },
+        {
+            "awardid": "84",
+            "flag": "th",
+            "awarded_by": "AsiaMoney Brokers Poll 2018 ",
+            "description": "Tanida Jirapornkasemsuk",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Small Cap Analyst"
+        },
+        {
+            "awardid": "85",
+            "flag": "th",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Suwat Sinsadok",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Energy Analyst"
+        },
+        {
+            "awardid": "86",
+            "flag": "th",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Suwat Sinsadok",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Utilities Analyst"
+        },
+        {
+            "awardid": "87",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Ranked 2nd",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Overall Country Research"
+        },
+        {
+            "awardid": "88",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018 ",
+            "description": "Ivy Ng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Strategist"
+        },
+        {
+            "awardid": "89",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Walter Aw",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Small Cap Analyst"
+        },
+        {
+            "awardid": "90",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Winson Ng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Banks Analyst"
+        },
+        {
+            "awardid": "91",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Raymond Yap",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Energy Analyst"
+        },
+        {
+            "awardid": "92",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Walter Aw",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Healthcare Analyst"
+        },
+        {
+            "awardid": "93",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Winson Ng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Insurance Analyst"
+        },
+        {
+            "awardid": "94",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Ivy Ng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Materials Analyst"
+        },
+        {
+            "awardid": "95",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Nigel Foo",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Software & Internet Services Analyst"
+        },
+        {
+            "awardid": "96",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Choong Chen Foong",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Telecommunications Analyst"
+        },
+        {
+            "awardid": "97",
+            "flag": "my",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Raymond Yap",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Transportation Analyst"
+        },
+        {
+            "awardid": "98",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Siew Khee Lim",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Industrials Analyst"
+        },
+        {
+            "awardid": "99",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Siew Khee Lim",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Energy Analyst"
+        },
+        {
+            "awardid": "100",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2018 ",
+            "description": "Yi Sin Ngoh",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Healthcare Analyst"
+        },
+        {
+            "awardid": "101",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "William Tng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Semiconductor & Semiconductor Equipment Analyst"
+        },
+        {
+            "awardid": "102",
+            "flag": "sg",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "William Tng",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Technology Hardware & Equipment Analyst"
+        },
+        {
+            "awardid": "103",
+            "flag": "th",
+            "awarded_by": "AsiaMoney Brokers Poll 2018",
+            "description": "Tanida Jirapornkasemsuk",
+            "award_datetime": "2018-12-01 00:00:00",
+            "title": "Best Small Cap Analyst"
+        },
+        {
+            "awardid": "27",
+            "flag": "id",
+            "awarded_by": "Alpha Southeast Asia 12th Annual Best Financial Institution Awards",
+            "description": "",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Best Institutional Broker"
+        },
+        {
+            "awardid": "28",
+            "flag": "id",
+            "awarded_by": "Alpha Southeast Asia 12th Annual Best Financial Institution Awards",
+            "description": "",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Best Retail Broker"
+        },
+        {
+            "awardid": "74",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2018",
+            "description": "Gold",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Most Preferred CFD Provider"
+        },
+        {
+            "awardid": "75",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2018",
+            "description": "Silver",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Most Preferred Local Broker"
+        },
+        {
+            "awardid": "76",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2018",
+            "description": "Silver",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Most Preferred Mobile Trading Platform (Equities)"
+        },
+        {
+            "awardid": "77",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2018",
+            "description": "Bronze",
+            "award_datetime": "2018-03-01 00:00:00",
+            "title": "Most Preferred Desktop Trading Platform (Equities)"
+        },
+        {
+            "awardid": "1",
+            "flag": "sg",
+            "awarded_by": "SGX Awards 2017 ",
+            "description": "",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Top SGX-ST Member"
+        },
+        {
+            "awardid": "2",
+            "flag": "sg,id",
+            "awarded_by": "11th Annual Alpha Southeast Asia Best Financial Institution Awards 2017",
+            "description": "",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Retail Broker"
+        },
+        {
+            "awardid": "3",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Energy"
+        },
+        {
+            "awardid": "4",
+            "flag": "sg",
+            "awarded_by": "SIAS 18th Investors Awards 2017",
+            "description": "Runner Up",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Retail Broker"
+        },
+        {
+            "awardid": "5",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2017",
+            "description": "Silver",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Most Preferred CFD Provider"
+        },
+        {
+            "awardid": "6",
+            "flag": "sg",
+            "awarded_by": "ShareInvestor Awards 2017",
+            "description": "Bronze",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Most Preferred ETF Issuer"
+        },
+        {
+            "awardid": "7",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Overall Country Research"
+        },
+        {
+            "awardid": "8",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Strategy"
+        },
+        {
+            "awardid": "9",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Execution"
+        },
+        {
+            "awardid": "10",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best in Sales Trading"
+        },
+        {
+            "awardid": "11",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best for Roadshows and Company Visits"
+        },
+        {
+            "awardid": "12",
+            "flag": "my",
+            "awarded_by": "Alpha Southeast Asia Financial Institution Awards 2017",
+            "description": "",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Institutional Broker"
+        },
+        {
+            "awardid": "13",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017",
+            "description": "Champion",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Online Retail Participating Organisation"
+        },
+        {
+            "awardid": "14",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017",
+            "description": "Champion",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Institutional Equities Participating Organisation"
+        },
+        {
+            "awardid": "15",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017",
+            "description": "1st Runner Up",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Institutional Derivatives Trading Participant"
+        },
+        {
+            "awardid": "16",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017",
+            "description": "2nd Runner Up",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Overall Equities Participating Organisation"
+        },
+        {
+            "awardid": "17",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017 ",
+            "description": "2nd Runner Up",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Retail Derivatives Trading Participant"
+        },
+        {
+            "awardid": "18",
+            "flag": "my",
+            "awarded_by": "Bursa Malaysia Excellence Awards 2017",
+            "description": "2nd Runner Up",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Overall Bursa Malaysia-Islamic Participating Organisation"
+        },
+        {
+            "awardid": "19",
+            "flag": "sg,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Local Brokerage"
+        },
+        {
+            "awardid": "23",
+            "flag": "id",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Local Brokerage"
+        },
+        {
+            "awardid": "24",
+            "flag": "id,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Strategy"
+        },
+        {
+            "awardid": "29",
+            "flag": "id,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Execution"
+        },
+        {
+            "awardid": "30",
+            "flag": "id",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best in Sales Trading"
+        },
+        {
+            "awardid": "31",
+            "flag": "my,id,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Automobiles & Components "
+        },
+        {
+            "awardid": "32",
+            "flag": "id,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Energy"
+        },
+        {
+            "awardid": "33",
+            "flag": "id",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Telecommunication Services"
+        },
+        {
+            "awardid": "34",
+            "flag": "sg,my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Overall Sales Services"
+        },
+        {
+            "awardid": "35",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Most Improved Brokerage over the last 12 Months"
+        },
+        {
+            "awardid": "36",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best for Events and\/or Conferences"
+        },
+        {
+            "awardid": "37",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Most Independent Research Brokerage"
+        },
+        {
+            "awardid": "38",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Small Cap"
+        },
+        {
+            "awardid": "39",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Banks"
+        },
+        {
+            "awardid": "40",
+            "flag": "sg,my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Consumer Discretionary"
+        },
+        {
+            "awardid": "41",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Consumer Staples"
+        },
+        {
+            "awardid": "42",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Industrials"
+        },
+        {
+            "awardid": "43",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Healthcare"
+        },
+        {
+            "awardid": "44",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Software & Internet Services"
+        },
+        {
+            "awardid": "45",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Telecommunication Services"
+        },
+        {
+            "awardid": "46",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Transportation"
+        },
+        {
+            "awardid": "47",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Transportation"
+        },
+        {
+            "awardid": "48",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Casinos & Gaming"
+        },
+        {
+            "awardid": "49",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Diversified Financials"
+        },
+        {
+            "awardid": "50",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Diversified Financials"
+        },
+        {
+            "awardid": "51",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Insurance"
+        },
+        {
+            "awardid": "52",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Insurance"
+        },
+        {
+            "awardid": "53",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Materials"
+        },
+        {
+            "awardid": "54",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Real Estate"
+        },
+        {
+            "awardid": "55",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Real Estate"
+        },
+        {
+            "awardid": "56",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Semiconductors & Semiconductor Equipment"
+        },
+        {
+            "awardid": "57",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Semiconductors & Semiconductor Equipment"
+        },
+        {
+            "awardid": "58",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Semiconductors & Semiconductor Equipment"
+        },
+        {
+            "awardid": "59",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Technology, Hardware & Equipment"
+        },
+        {
+            "awardid": "60",
+            "flag": "my,th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Technology, Hardware & Equipment"
+        },
+        {
+            "awardid": "61",
+            "flag": "my",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Utilities"
+        },
+        {
+            "awardid": "62",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Utilities"
+        },
+        {
+            "awardid": "63",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Utilities"
+        },
+        {
+            "awardid": "64",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Small Cap"
+        },
+        {
+            "awardid": "65",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Industrials"
+        },
+        {
+            "awardid": "66",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Industrials"
+        },
+        {
+            "awardid": "67",
+            "flag": "sg",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage - Software & Internet Services"
+        },
+        {
+            "awardid": "68",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best in Sales Trading"
+        },
+        {
+            "awardid": "69",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 1st",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Most Improved Brokerage over the last 12 Months"
+        },
+        {
+            "awardid": "70",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 3rd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best for Events and\/or Conferences"
+        },
+        {
+            "awardid": "71",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best for Roadshows and Company Visits"
+        },
+        {
+            "awardid": "72",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Consumer Discretionary"
+        },
+        {
+            "awardid": "73",
+            "flag": "th",
+            "awarded_by": "Asiamoney Brokers Poll 2017",
+            "description": "Rank 2nd",
+            "award_datetime": "2017-03-01 00:00:00",
+            "title": "Best Research Coverage \u2013 Consumer Staples"
+        }
+    ],
+    "status": "SUCCESS"
+}
