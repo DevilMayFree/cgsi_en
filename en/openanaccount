@@ -134,7 +134,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetAnnouncements.json",
+        url: "/locales/en/GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {
@@ -203,7 +203,7 @@ function popupAnnouncements(itemid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetAnnouncements.json",
+        url: "/locales/en/GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: itemid, platform: "web" },
         success: function (response) {

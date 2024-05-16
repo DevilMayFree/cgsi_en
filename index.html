@@ -1310,7 +1310,7 @@ function getCarouselByPageName(page_name, modified_datetime, lang) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetPage.json",
+        url: "/locales/en/GetPage.json",
         headers: { "authorization": "webkey" }, 
         data: { modified_by: modified_by, modified_datetime: modified_datetime, page_code: page_name, lang: lang },
         success: function (response) {
@@ -1335,7 +1335,7 @@ function getCarouselHtml(carousel_id, lang) {
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: "WSCarousel.json",
+            url: "/locales/en/WSCarousel.json",
             headers: { "authorization": "webkey" }, 
             data: { action: "getitem", carousel_id: carousel_id, lang: lang, content: "", image: "", hyperlink: "", rank: "", headlinestatus: "", backgroundstatus: "", modified_by: "", modified_datetime: "" },
             success: function (response) {
@@ -1505,7 +1505,7 @@ function getProductRecommended(){
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetProductRecommended.json",
+        url: "/locales/en/GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, productrecommendedid: "", platform:"web"},
         success: function (response) {
@@ -2049,7 +2049,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetAnnouncements.json",
+        url: "/locales/en/GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {
@@ -2119,7 +2119,7 @@ function popupAnnouncements(itemid) {
     $.ajax({
         type: "GET",
         dataType: 'json',
-        url: "GetAnnouncements.json",
+        url: "/locales/en/GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: itemid, platform: "web" },
         success: function (response) {
@@ -2279,7 +2279,7 @@ $("#latestannouncements,#insights").hide();
         $.ajax({
             type: "GET",
             dataType: 'json',
-            url: "GetFooter.json",
+            url: "/locales/en/GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {
