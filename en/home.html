@@ -371,7 +371,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "POST",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader",
+            url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1310,7 +1310,7 @@ function getCarouselByPageName(page_name, modified_datetime, lang) {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetPage",
+        url: webservice + "GetPage.json",
         headers: { "authorization": "webkey" }, 
         data: { modified_by: modified_by, modified_datetime: modified_datetime, page_code: page_name, lang: lang },
         success: function (response) {
@@ -1335,7 +1335,7 @@ function getCarouselHtml(carousel_id, lang) {
         $.ajax({
             type: "POST",
             dataType: 'json',
-            url: webservice + "WSCarousel",
+            url: webservice + "WSCarousel.json",
             headers: { "authorization": "webkey" }, 
             data: { action: "getitem", carousel_id: carousel_id, lang: lang, content: "", image: "", hyperlink: "", rank: "", headlinestatus: "", backgroundstatus: "", modified_by: "", modified_datetime: "" },
             success: function (response) {
@@ -1505,7 +1505,7 @@ function getProductRecommended(){
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetProductRecommended",
+        url: webservice + "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, productrecommendedid: "", platform:"web"},
         success: function (response) {
@@ -1610,7 +1610,7 @@ function getFindtherightinvestmentQuestionChoice() {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetProductRecommendedChoice",
+        url: webservice + "GetProductRecommendedChoice.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, platform: "web" },
         success: function (response) {
@@ -1706,7 +1706,7 @@ function getInsightsCategoryList() {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetInsightsCategory",
+        url: webservice + "GetInsightsCategory.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, categoryid: "", platform: "web" },
         success: function (response) {
@@ -1770,7 +1770,7 @@ function getAllInsight() {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetInsights",
+        url: webservice + "GetInsights.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, itemid: "", type: "", platform: "web", searchdate: searchdate, searchkeyword: searchkeyword, page: "" },
         success: function (response) {
@@ -1847,7 +1847,7 @@ function getInsight(type) {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetInsights",
+        url: webservice + "GetInsights.json",
         headers: { "authorization": "webkey" }, 
         data: { country: country, lang: lang, itemid: "", type: type, searchkeyword: searchkeyword, searchdate: searchdate, platform: "web", page: "" },
         success: function (response) {
@@ -2049,7 +2049,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetAnnouncements",
+        url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {
@@ -2119,7 +2119,7 @@ function popupAnnouncements(itemid) {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetAnnouncements",
+        url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: itemid, platform: "web" },
         success: function (response) {
@@ -2279,7 +2279,7 @@ $("#latestannouncements,#insights").hide();
         $.ajax({
             type: "POST",
             dataType: 'json',
-            url: webservice + "GetFooter",
+            url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {

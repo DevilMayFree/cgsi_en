@@ -368,7 +368,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "POST",
             dataType: 'json',
-            url: webservice + "GetHomePageHeader",
+            url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
             data: {lang: lang, pagename: pagename},
             success: function (response) {
@@ -1406,7 +1406,7 @@ gtag('config', 'UA-120227926-1');
         $.ajax({
             type: "POST",
             dataType: 'json',
-            url: webservice + "GetFooter",
+            url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 
             data: { lang: lang, footerid: "", type: "", platform: "web" },
             success: function (response) {
@@ -1543,7 +1543,7 @@ function getLatestannouncements() {
     $.ajax({
         type: "POST",
         dataType: 'json',
-        url: webservice + "GetAnnouncements",
+        url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
         data: { lang: lang, itemid: "", platform: "web" },
         success: function (response) {

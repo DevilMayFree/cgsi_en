@@ -750,10 +750,10 @@ function carouselReplaceHTML() {
         var carousel_id = $(".carouselcomponent").eq(i).attr("carousel_id");
         var carouselindex = i;
 
-        var ajaxUrl = webservice + "WSCarousel";
+        var ajaxUrl = webservice + "WSCarousel.json";
         var currentUrl = window.location.href;
         if(currentUrl.indexOf("career") != -1 ){
-            ajaxUrl = webservice + "WSCarousel_career";
+            ajaxUrl = webservice + "WSCarousel_career.json";
         }
         // console.log('local:',window.location.href)
 
