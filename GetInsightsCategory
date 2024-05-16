@@ -1,0 +1,36 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "template": "research",
+            "fullname": "Initial Offering Period",
+            "shortname": "Initial Offering Period",
+            "categoryid": "7"
+        },
+        {
+            "template": "research",
+            "fullname": "Fundamental Analysis",
+            "shortname": "Fundamental Analysis",
+            "categoryid": "1"
+        },
+        {
+            "template": "research",
+            "fullname": "Technical Analysis",
+            "shortname": "Technical Analysis",
+            "categoryid": "2"
+        },
+        {
+            "template": "basic",
+            "fullname": "Knowledge Centre",
+            "shortname": "Knowledge Centre",
+            "categoryid": "3"
+        },
+        {
+            "template": "basic",
+            "fullname": "News\/Market Commentary",
+            "shortname": "News\/Market Commentary",
+            "categoryid": "4"
+        }
+    ],
+    "status": "SUCCESS"
+}

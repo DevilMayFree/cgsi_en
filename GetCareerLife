@@ -1,0 +1,24 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "img": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/DSC00007.jpg",
+            "description": "We are champions for all things excellent, as attested by recognition garnered consistently from industry awards and client testimonials. Our culture is embodied in the term \u201CP.A.C.E.\u201D - People-oriented, Accountability, Collaboration and Excellence. These are our Company\u2019s Core Values, and our firm\u2019s foundation to build a unified and engaged workforce.",
+            "careerlifeid": "1",
+            "title": "Corporate Culture"
+        },
+        {
+            "img": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/DSC00522.jpg",
+            "description": "As a technology-driven and transformation-focused Company, we are looking for innovative and ambitious talents to join our thriving talent pool. Browse our openings for our Singapore office - where we are are located at the heart of the Central Business District, Marina Bay Financial Centre.",
+            "careerlifeid": "2",
+            "title": "Job Opportunities"
+        },
+        {
+            "img": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/DSC00580.jpg",
+            "description": "At CGS International, we adopt progressive human capital practices as part of our EVP, and our hybrid work arrangements support employees\u2019 work-life balance. Our flexible, collaborative office spaces drive inter-department staff engagement, ensuring collaboration and productivity remain strong, even when not all are present on-site.",
+            "careerlifeid": "3",
+            "title": "Life in CGS International"
+        }
+    ],
+    "status": "SUCCESS"
+}

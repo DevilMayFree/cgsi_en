@@ -1,0 +1,73 @@
+{
+    "replymsg": "",
+    "isactive": "1",
+    "text": [
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/01 - 2024 01 11 Website Banner_Asiamoney 2023.jpg",
+            "hyperlink": "cgs-cimb-securities-garners-68-awards-in-2023-asiamoney-brokers-poll",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "2",
+            "id": "82",
+            "lang": "en",
+            "content": ""
+        },
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/02 2024 01 11 Website Banner_HFM 2023.jpg",
+            "hyperlink": "contact-us",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "3",
+            "id": "83",
+            "lang": "en",
+            "content": ""
+        },
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/03 CGS23042 - 1909x740-1.png",
+            "hyperlink": "csi1000",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "4",
+            "id": "84",
+            "lang": "en",
+            "content": ""
+        },
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/04 CGS23031 - 1909px x 740px-1.png",
+            "hyperlink": "viet30etf",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "5",
+            "id": "85",
+            "lang": "en",
+            "content": ""
+        },
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/06 2024 01 11 Website Banner_Alpha.jpg",
+            "hyperlink": "contact-us",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "7",
+            "id": "87",
+            "lang": "en",
+            "content": ""
+        },
+        {
+            "image": "https:\/\/www.cgsi.com\/cgsiresources\/resources\/07 2024 01 11 Website Banner_FinanceAsia.jpg",
+            "hyperlink": "contact-us",
+            "backgroundstatus": "1",
+            "carousel_id": "April-2021",
+            "headlinestatus": "1",
+            "rank": "8",
+            "id": "88",
+            "lang": "en",
+            "content": ""
+        }
+    ],
+    "status": "SUCCESS"
+}

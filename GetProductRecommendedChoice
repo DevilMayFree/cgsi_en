@@ -1,0 +1,36 @@
+{
+    "replymsg": "",
+    "text": [
+        {
+            "productrecommendedquestionid": "1",
+            "position": "1",
+            "choice": "First time investor"
+        },
+        {
+            "productrecommendedquestionid": "2",
+            "position": "1",
+            "choice": "Relatively new investor"
+        },
+        {
+            "productrecommendedquestionid": "3",
+            "position": "1",
+            "choice": "Relatively experienced investor"
+        },
+        {
+            "productrecommendedquestionid": "4",
+            "position": "2",
+            "choice": "Switch to more conservative investments"
+        },
+        {
+            "productrecommendedquestionid": "5",
+            "position": "2",
+            "choice": "Wait for at least 3 months and then re-evaluate"
+        },
+        {
+            "productrecommendedquestionid": "6",
+            "position": "2",
+            "choice": "Make a significant additional investment"
+        }
+    ],
+    "status": "SUCCESS"
+}

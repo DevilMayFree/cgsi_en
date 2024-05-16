@@ -1,0 +1,347 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Open An Account | CGS International</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="keywords" content="CGS International, Singapore brokerage, eWealth, robo advisory, ETF, DLC, Share margin financing, CFD, ELN, Futures, Securities borrowing and lending, Mutual funds, bonds, Stocks, trading, online trading, cgs cimb, cgscimb.com, research reports, market insights, finance, financial institution, ASEAN trade, Investing, Investment, grow your wealth" />
+<meta name="description" content="Wide market access to over 30 global markets. The one-stop solution with comprehensive investment options including Bonds, CFDs, ETFs, Futures, FX, Global Equities, Robo-advisor and Equity Financing Services. Trade with the support of award-winning research now." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="facebook-domain-verification" content="eatcpqn39n99fieyukz373l4gj71ik" />
+        <script src="/js/jquery-3.5.1.min.js?v=20240203"></script>
+        <script src="/js/popper.js?v=20240203"></script>
+        <script src="/js/bootstrap.min.js?v=20240203"></script>
+        <script src="/js/bootstrap-select.min.js?v=20240203"></script>
+        <script src="/js/language/i18next-1.11.2.min.js?v=20240203"></script>
+        <script src="/js/cimb.js?v=20240203"></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap-select.min.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/header.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/footer.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/cimb.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/cimb-customer.css?v=20240203">
+        <link href='https://fonts.googleapis.com/css?family=Muli|Muli:bold|Poppins|Poppins:bold|Open Sans|Open Sans:boldLato|Lato:bold' rel='stylesheet'>
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-K92S82Z');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+
+<body page="openanaccount">
+    <body page="">
+        <div class="login-header">
+            <nav class="navbar navbar-expand-sm navbar-light navbar-padding nav-border-bottom-gray muli-font-family navbar-white-font">
+                <a class="navbar-brand destop-navbar-brand" href="home">
+                    <img class="cimb-logo" src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" alt="" width="80%">
+                </a>
+            </nav>
+        </div>
+
+<div id="main_editor"><meta http-equiv="refresh" content="0; URL='https://www.cgs-cimb.com.sg/en/openanaccount'"></div>
+
+        <!-- Announcements Modal -->
+        <div class="modal fade" id="announcementsModal" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button style="margin-right: 19px;" type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="announcements-modal-frame">
+                            <div class="announcements-modal-date" style="color: #9B9B9B; font-family: Muli; font-size: 14px; font-weight: bold;	letter-spacing: 2px; line-height: 18px;"></div>
+                            <div class="announcements-modal-title"></div>
+                            <div class="announcements-modal-desc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Announcements Modal -->
+
+        <div id="latestannouncements"></div>
+
+        <div class="modal fade" id="login-border" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="padding: 40px 43px;">
+
+                    <form class="" aria-labelledby="menu1">
+                        <div>
+                            <a style="font-weight: 900;" data-i18n="[html]header.label_memberlogin"></a>
+                        </div>
+                        <div class="form-group dropdown-OpenNewAc-menu-Width1 login-select" style="margin-top: 23px;">
+                            <select class="country-select">
+                                <option value="0" data-i18n="[html]header.option_selectcountry"></option>
+                                <option value="3" data-i18n="[html]global.option_international"></option>
+                                <option value="4" data-i18n="[html]global.option_singapore"></option>
+                            </select>
+                        </div>
+                        <div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">
+                            <select class="product-select">
+                                <option value="0" data-i18n="[html]header.option_selectproduct"></option>
+                                <option value="1" data-i18n="[html]header.option_ss"></option>
+                                <option value="2" data-i18n="[html]header.option_cfd"></option>
+                                <option value="3" data-i18n="[html]header.option_ewealth"></option>
+                                <option value="4" data-i18n="[html]header.option_futures"></option>
+                                <option value="1" data-i18n="[html]header.option_bonds"></option>
+                                <option value="1" data-i18n="[html]header.option_mf"></option>
+                                <option value="1" data-i18n="[html]header.option_etf"></option>
+                                <option value="1" data-i18n="[html]header.option_dlc"></option>
+                            </select>
+                        </div>
+                        <div class="form-group dropdown-OpenNewAc-menu-Width3 login-select" style="margin-top: 17px;">
+                            <select class="platform-select" id="test1">
+                                <option value="0" data-i18n="[html]header.option_selectplatform"></option>
+                                <option value="1" data-i18n="[html]header.option_cgscimbitrade"></option>
+                                <option value="2" data-i18n="[html]header.option_cfdviewpoint"></option>
+                                <option value="3" data-i18n="[html]header.option_dw"></option>
+                                <option value="4" data-i18n="[html]header.option_fp"></option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="" class="btn btn-danger btn-lg btn-block login-btn" data-i18n="[html]header.btn_proceed"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+getLanguage();
+
+$(document).ready(function() {
+    getLanguage();
+    getLatestannouncements();
+    productSelect();
+    resetSelector();
+});
+
+function getLatestannouncements() {
+    var lang = $("html").attr("lang");
+    
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        url: webservice + "GetAnnouncements",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, itemid: "", platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                var html = "";
+                var atleastoneannouncements = false;
+               
+                html += '<div id="latestannouncements" style="background: #0B318F">';
+                html += '<div class="latestannouncements-frame" style="max-width:1218px;margin:auto;">';
+                html += '<table width="100%" style="color: #ffffff;">';
+                html += '<tr>';
+                html += '<td><div class="latest-announcements-title" data-i18n="[html]lastannouncements.label_lastannouncementsuppercase"></div></td>';
+                html += '<td><a href="latest-announcement.jsp"><div class="latestannouncements-desktop-showall" data-i18n="[html]lastannouncements.label_showall"></div></a></td>';
+                html += '</tr>';
+                html += '</table>';
+                html += '<hr class="latestannouncements-title-hr">';
+                html += '<span class="row" style="margin: 0px 1px;">';
+
+                var announcementcount = 0;
+                
+                for(var i=0; i<response.text.length; i++) {
+                    if(announcementcount < 2) {
+                        html += '<div class="col-md-6" style="padding: 0px;">';
+                        html += '<div class="latestannouncements one">';
+                        html += '<p class="latestannouncements-date">' + datatimeFormatchangeToCalendar(response.text[i].announcements_datetime) + '</p>';
+                        html += '<div class="latestannouncements-desc">' + response.text[i].teaser + '</div>';
+                        html += '<div onclick="popupAnnouncements(' + response.text[i].itemid + ')" class="latestannouncements-learnmore"data-i18n="[html]global.learnmore"></div>';
+                        html += '<hr class="latestannouncements-hr">';
+                        html += '</div>';
+                        html += '</div>';
+                        atleastoneannouncements = true;
+                        
+                        announcementcount++;
+                    }
+                }
+
+                html += '<div class="col-md-3 latestannouncements-mobile-showall" style="padding: 0px;">';
+                html += '<button class="btn btn-block phone-insights-viewall-btn" onclick="javascript: window.location.href=\'latest-announcement.jsp\'">SHOW ALL</button>';
+                html += '</div>';
+                html += '</span>';
+                html += '</div>';
+                html += '</div>';
+
+                if(atleastoneannouncements == true) {
+                    $("#latestannouncements").append(html);
+                }
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            getLanguage();
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
+
+function popupAnnouncements(itemid) {
+    var lang = $("html").attr("lang");
+    
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        url: webservice + "GetAnnouncements",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, itemid: itemid, platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                $("#announcementsModal>div>div>div>div>.announcements-modal-date").html(datatimeFormatchangeToCalendar(response.text[0].announcements_datetime));
+                $("#announcementsModal>div>div>div>div>.announcements-modal-title").html(response.text[0].teaser);
+                $("#announcementsModal>div>div>div>div>.announcements-modal-desc").html(response.text[0].message);
+                $("#announcementsModal").modal();
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
+
+function productSelect(){
+    var productSelector = $('.product-select').val();
+    var countrySelector = $('.country-select').val();
+    
+    $('.country-select').on('change',function(){
+        countrySelector = $(this).val();
+        if(countrySelector != 0){
+            jumpToOtherPage();
+            $('.login-btn').removeClass('custom-disabled');
+        }
+    });
+    
+    $('.product-select').on('change', function() {
+        productSelector = $(this).val();
+        if(productSelector == 2){
+            $('.platform-select').val(2);       
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').text(i18n.t("header.option_cfdviewpoint"));
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').addClass('select-disable-filter');
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').addClass('select-disable');
+        }else if(productSelector == 3){
+            $('.platform-select').val(3);
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').text(i18n.t("header.option_dw"));
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').addClass('select-disable-filter');
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').addClass('select-disable');
+        }else if(productSelector == 4){
+            $('.platform-select').val(4);
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').text(i18n.t("header.option_fp"));
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').addClass('select-disable-filter');
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').addClass('select-disable');
+        }else if(productSelector == 0){
+
+        }else{
+            $('.platform-select').val(1);
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').text(i18n.t("header.option_cgscimbitrade"));
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').addClass('select-disable-filter');
+            $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').addClass('select-disable');
+        }
+    }); 
+ 
+}
+
+function resetSelector(){
+    $('.login-pop-up').on('click',function(){
+        $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').removeClass('select-disable');
+        $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').removeClass('select-disable-filter');
+        $('.form-group.dropdown-OpenNewAc-menu-Width1 .select-items').addClass('select-hide');
+        $('.form-group.dropdown-OpenNewAc-menu-Width2 .select-items').addClass('select-hide');
+        $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-items').addClass('select-hide');
+        $('.country-select').val(0);
+        $('.platform-select').val(0);
+        $('.product-select').val(0);
+        $('.form-group.dropdown-OpenNewAc-menu-Width1 .select-selected').text('Select country');
+        $('.form-group.dropdown-OpenNewAc-menu-Width2 .select-selected').text('Select product');
+        $('.form-group.dropdown-OpenNewAc-menu-Width3 .select-selected').text('Select platform');
+        $('.login-btn').addClass('custom-disabled');
+
+    });
+}
+
+function jumpToOtherPage(){
+    $('.login-btn').on('click',function(){
+        var platformSelector = $('.platform-select').val();
+        if($('.country-select').val() == 3){
+            if(platformSelector == 2){ 
+                window.open('https://cfd.cgs-cimb.com.sg/','_blank');
+            }else if(platformSelector == 3){
+                window.open('https://www.wealth.cgs-cimb.com.sg/','_blank');
+            }else if(platformSelector == 0){
+
+            }else{
+                window.open('https://www.itradecimb.com.sg','_blank');
+            }
+        }else if($('.country-select').val() == 4){
+            if(platformSelector == 2){ 
+                window.open('https://cfd.cgs-cimb.com.sg/','_blank');
+            }else if(platformSelector == 3){
+                window.open('https://www.wealth.cgs-cimb.com.sg/','_blank');
+            }else if(platformSelector == 0){
+
+            }else{
+                window.open('https://www.itradecimb.com.sg','_blank');
+            }
+        }else{
+            
+        }
+    });
+}
+
+function captchaHandler() {
+    grecaptcha.reset();
+    $("#captchaform").show();
+}
+   
+var checkCaptch = false;
+var verifyCallback = function(response) {
+    console.log("response" + response);
+    if (response == "") {
+         checkCaptch = false;
+     }
+     else {
+        checkCaptch = true;
+        location.href = $(".mailtoaddress").attr("mailto");
+     }
+};
+
+function onloadCallback(){
+    grecaptcha.render('captcha_element', {
+        'sitekey' : '6LdxtdwUAAAAAN2RZ0NnK4xvSeqk-aG6aGLLLFm-',
+        'callback':verifyCallback
+    }); 
+}
+
+function mailToAddress() {
+    grecaptcha.reset();
+   $("#captchaform").show();
+}
+</script>
+
