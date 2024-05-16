@@ -758,7 +758,7 @@ function carouselReplaceHTML() {
         // console.log('local:',window.location.href)
 
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: ajaxUrl,
             headers: {"authorization": "webkey"},
@@ -1014,7 +1014,7 @@ function getPopupCkeditorWebModal(popupid) {
     $("#popupCkeditorWebModal>div>div>div.modal-body>*").remove();
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetPopup",
         headers: {"authorization": getCookie("token")},

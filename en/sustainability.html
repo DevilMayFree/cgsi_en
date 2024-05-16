@@ -99,7 +99,7 @@ $(document).ready(function () {
     var pagename = $("body").attr("page") || "";
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetHomePageHeader.json",
         headers: { "authorization": "webkey" }, 

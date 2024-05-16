@@ -366,7 +366,7 @@ gtag('config', 'UA-120227926-1');
         var lang = $("html").attr("lang");
         var pagename = $("body").attr("page") || "";
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
@@ -1191,7 +1191,7 @@ gtag('config', 'UA-120227926-1');
             var lang = $("html").attr("lang");
             var opennewac3html = "";
             $.ajax({
-                type: "POST",
+                type: "GET",
                 dataType: 'json',
                 url: webservice + "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
@@ -1310,7 +1310,7 @@ $(document).ready(function () {
 function getProductRecommended(){
     var lang = $("html").attr("lang");
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
@@ -1415,7 +1415,7 @@ function getFindtherightinvestmentQuestionChoice() {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductRecommendedChoice.json",
         headers: { "authorization": "webkey" }, 
@@ -1580,7 +1580,7 @@ function redirectToProductRecommended() {
         var lang = $("html").attr("lang");
     
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 
@@ -1714,7 +1714,7 @@ function GetProductCategory() {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductCategory",
         headers: { "authorization": "webkey" }, 
@@ -1782,7 +1782,7 @@ function GetProductList(categoryid) {
     $(".all-exchange-traded[categoryid='" + categoryid + "']").addClass("active");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProduct",
         headers: { "authorization": "webkey" }, 

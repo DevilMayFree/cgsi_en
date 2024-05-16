@@ -369,7 +369,7 @@ gtag('config', 'UA-120227926-1');
         var lang = $("html").attr("lang");
         var pagename = $("body").attr("page") || "";
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
@@ -1194,7 +1194,7 @@ gtag('config', 'UA-120227926-1');
             var lang = $("html").attr("lang");
             var opennewac3html = "";
             $.ajax({
-                type: "POST",
+                type: "GET",
                 dataType: 'json',
                 url: webservice + "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
@@ -1308,7 +1308,7 @@ function getCarouselByPageName(page_name, modified_datetime, lang) {
     var modified_by = "";
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetPage.json",
         headers: { "authorization": "webkey" }, 
@@ -1333,7 +1333,7 @@ function getCarouselHtml(carousel_id, lang) {
         $("#carousel").hide();
     } else {
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "WSCarousel.json",
             headers: { "authorization": "webkey" }, 
@@ -1503,7 +1503,7 @@ $(document).ready(function () {
 function getProductRecommended(){
     var lang = $("html").attr("lang");
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
@@ -1608,7 +1608,7 @@ function getFindtherightinvestmentQuestionChoice() {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductRecommendedChoice.json",
         headers: { "authorization": "webkey" }, 
@@ -1704,7 +1704,7 @@ function getInsightsCategoryList() {
     var country = $('.insights-relation-selector:visible :selected').val();
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetInsightsCategory.json",
         headers: { "authorization": "webkey" }, 
@@ -1768,7 +1768,7 @@ function getAllInsight() {
     var country = $('.insights-relation-selector:visible :selected').val();
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetInsights.json",
         headers: { "authorization": "webkey" }, 
@@ -1845,7 +1845,7 @@ function getInsight(type) {
     var country = $('.insights-relation-selector:visible :selected').val();
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetInsights.json",
         headers: { "authorization": "webkey" }, 
@@ -2047,7 +2047,7 @@ function getLatestannouncements() {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
@@ -2117,7 +2117,7 @@ function popupAnnouncements(itemid) {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 
@@ -2277,7 +2277,7 @@ $("#latestannouncements,#insights").hide();
         var lang = $("html").attr("lang");
     
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 

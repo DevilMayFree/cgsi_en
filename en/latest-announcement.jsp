@@ -366,7 +366,7 @@ gtag('config', 'UA-120227926-1');
         var lang = $("html").attr("lang");
         var pagename = $("body").attr("page") || "";
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
@@ -1191,7 +1191,7 @@ gtag('config', 'UA-120227926-1');
             var lang = $("html").attr("lang");
             var opennewac3html = "";
             $.ajax({
-                type: "POST",
+                type: "GET",
                 dataType: 'json',
                 url: webservice + "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
@@ -1404,7 +1404,7 @@ gtag('config', 'UA-120227926-1');
         var lang = $("html").attr("lang");
     
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 
@@ -1541,7 +1541,7 @@ function getLatestannouncements() {
     window.history.pushState('latest-announcement', 'CGS International', location.origin + location.pathname);
 
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAnnouncements.json",
         headers: { "authorization": "webkey" }, 

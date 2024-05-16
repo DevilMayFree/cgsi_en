@@ -369,7 +369,7 @@ gtag('config', 'UA-120227926-1');
         var lang = $("html").attr("lang");
         var pagename = $("body").attr("page") || "";
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetHomePageHeader.json",
             headers: {"authorization": "webkey"},
@@ -1194,7 +1194,7 @@ gtag('config', 'UA-120227926-1');
             var lang = $("html").attr("lang");
             var opennewac3html = "";
             $.ajax({
-                type: "POST",
+                type: "GET",
                 dataType: 'json',
                 url: webservice + "GetMemberLoginb",
                 headers: {"authorization": "webkey"},
@@ -1419,7 +1419,7 @@ function getAwardsListToRemoveYear() {
     var country = $('.awards-relation-selector:visible :selected').val();
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAwards.json",
         headers: { "authorization": "webkey" }, 
@@ -1470,7 +1470,7 @@ function getAwardsList(year) {
     var country = $('.awards-relation-selector:visible :selected').val();
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAwards.json",
         headers: { "authorization": "webkey" }, 
@@ -1562,7 +1562,7 @@ function getAwardsDetail(awardid, flag) {
     var country = $('.awards-relation-selector:visible :selected').val();
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetAwards.json",
         headers: { "authorization": "webkey" }, 
@@ -1786,7 +1786,7 @@ function getTeamMember(type) {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetTeamMember.json",
         headers: { "authorization": "webkey" }, 
@@ -1831,7 +1831,7 @@ function getTeamMemberDetail(teammemberid) {
     var lang = $("html").attr("lang");
     
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetTeamMember.json",
         headers: { "authorization": "webkey" }, 
@@ -2031,7 +2031,7 @@ $(document).ready(function () {
 function GetProductRecommended(){
     var lang = $("html").attr("lang");
     $.ajax({
-        type: "POST",
+        type: "GET",
         dataType: 'json',
         url: webservice + "GetProductRecommended.json",
         headers: { "authorization": "webkey" }, 
@@ -2207,7 +2207,7 @@ function GetProductRecommended(){
         var lang = $("html").attr("lang");
     
         $.ajax({
-            type: "POST",
+            type: "GET",
             dataType: 'json',
             url: webservice + "GetFooter.json",
             headers: { "authorization": "webkey" }, 
