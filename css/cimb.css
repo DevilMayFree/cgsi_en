@@ -9201,3 +9201,7 @@ a:hover {
         min-width: 400px;
     }
 }
+
+#iframe-alertbar {
+    display: none;!important;
+}

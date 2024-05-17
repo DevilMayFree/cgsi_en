@@ -21,7 +21,7 @@
     font-family: Poppins;
 }
 .navbar.navbar-expand-sm.bluenav {
-    display: flex;
+    display: none;
     background: #ffffff;
     transition: 0.3s;
     top:0;
@@ -897,4 +897,8 @@ option input:focus{
     .phone-logo{
         padding-left: 30px;
     }
+}
+
+.navbar{
+    display: none;!important;
 }
