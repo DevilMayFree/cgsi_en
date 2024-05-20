@@ -78,17 +78,17 @@ if (webdomainintl == "https://103.253.10.206") {
 //var webservice = location.origin + "/" + definecountrycode + location.pathname.substring(0, location.pathname.indexOf('/', 1)) + "/";
 
 getPropitiesValue(definecountrycode);
-languageInit();
+// languageInit();
 
 
 $(document).ready(function () {
     appendRelationSelector();
-    selector();
+    // selector();
     productinfoFaqsCreateAnAccount();
     carouselReplaceHTML();
     $(document).on("scroll", onScroll);
     scrollFunction();
-    getLanguage();
+    // getLanguage();
 
     $('.searchModal-search-keyword-box').keypress(function (e) {
         if ($("#searchModal").is(":visible"))
@@ -542,7 +542,7 @@ function selector() {
          then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
 
-        getLanguage();
+        // getLanguage();
     });
 }
 

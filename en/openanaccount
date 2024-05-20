@@ -119,10 +119,10 @@
 </html>
 
 <script>
-getLanguage();
+// getLanguage();
 
 $(document).ready(function() {
-    getLanguage();
+    // getLanguage();
     getLatestannouncements();
     productSelect();
     resetSelector();
@@ -191,7 +191,7 @@ function getLatestannouncements() {
             
         },
         complete:function(){
-            getLanguage();
+            // getLanguage();
             $(".se-pre-con").fadeOut("fast");
         }
     });
