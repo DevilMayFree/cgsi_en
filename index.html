@@ -368,720 +368,1149 @@ gtag('config', 'UA-120227926-1');
     function GetHomePageHeader() {
         var lang = $("html").attr("lang");
         var pagename = $("body").attr("page") || "";
-        $.ajax({
-            type: "GET",
-            dataType: 'json',
-            url: "/locales/en/GetHomePageHeader.json",
-            headers: {"authorization": "webkey"},
-            data: {lang: lang, pagename: pagename},
-            success: function (response) {
-                if (response.status === "SUCCESS") {
-                    if (response.isactive == 0)
-                        location.href = "error.jsp";
-                    var html_desktop = "";
-                    var homepage_obj;
-                    //alertbar start
-                    var html = "";
-                    if (getCookie("alertbar|" + definecountrycode + "|" + $("html").attr("lang")) != getCurrentDateInTitle()) {
-                        for (var i = 0; i < response.alertbar.length; i++) {
-                            if (i == 0) {
-                                html += '<div class="cimb-notification" id="' + i + '">';
-                            } else {
-                                html += '<div class="cimb-notification" id="' + i + '" style="display: none;">';
-                            }
 
-                            html += '<span class="closebtn" onclick="alertBarClose(\'' + getCurrentDateInTitle() + '\')">&times;</span>';
-                            html += response.alertbar[i].message;
-                            html += '</div>';
-                        }
+        var response = {
+            "replymsg": "",
+            "isactive": "1",
+            "memberlogina": [
+                {
+                    "memberloginaid": "1",
+                    "choice": "Stocks & Shares"
+                },
+                {
+                    "memberloginaid": "2",
+                    "choice": "Contracts For Difference (CFD)"
+                },
+                {
+                    "memberloginaid": "5",
+                    "choice": "Bonds"
+                }
+            ],
+            "menu": [
+                {
+                    "menu_name2": "CGS International Website",
+                    "menu_name": "CGS International Website",
+                    "page_name": "home",
+                    "sorting": "1",
+                    "menu_id": "1",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "为何选择中国银河国际证券私人有限公司",
+                    "child_id": "1",
+                    "menu_name": "Why CGS International",
+                    "page_name": "why-cgs-international.html",
+                    "sorting": "2",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "2",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "关于",
+                    "child_id": "1",
+                    "menu_name": "About CGS International",
+                    "page_name": "about-us.html",
+                    "sorting": "3",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "33",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "联络",
+                    "child_id": "1",
+                    "menu_name": "Contact Us",
+                    "page_name": "contact-us.html",
+                    "sorting": "6",
+                    "menu_id": "66",
+                    "submenu_style": "2"
+                },
 
-                        $("#iframe-alertbar").append(html);
-                        alertbarSlider = setInterval(function () {
-                            var currentid = $(".cimb-notification:visible").attr("id");
-                            var nextid = parseInt(currentid) + 1;
-                            if ($(".cimb-notification[id=" + nextid + "]").length == 1) {
-                                $(".cimb-notification").hide();
-                                $(".cimb-notification[id=" + nextid + "]").show();
-                            } else if (currentid != 0) {
-                                $(".cimb-notification").hide();
-                                $(".cimb-notification[id=0]").show();
-                            }
+                {
+                    "menu_name2": "CGS Fullgoal Vietnam 30 Sector Cap ETF",
+                    "child_id": "7",
+                    "menu_name": "CGS Fullgoal Vietnam 30 Sector Cap ETF",
+                    "page_name": "viet30etf",
+                    "sorting": "4",
+                    "menu_id": "37",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "iCash Account",
+                    "child_id": "26",
+                    "menu_name": "iCash Account",
+                    "page_name": "islamicstockbroking",
+                    "sorting": "5",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "30",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
 
-                        }, 10000);
+                {
+                    "menu_name2": "Sustainability ",
+                    "child_id": "1",
+                    "menu_name": "Sustainability ",
+                    "page_name": "sustainability.html",
+                    "sorting": "7",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "14",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "平台",
+                    "child_id": "6",
+                    "menu_name": "Platform",
+                    "page_name": "",
+                    "sorting": "9",
+                    "menu_id": "21",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "工具",
+                    "child_id": "6",
+                    "menu_name": "Tools",
+                    "page_name": "",
+                    "sorting": "10",
+                    "menu_id": "22",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "iScreener ",
+                    "child_id": "22",
+                    "menu_name": "iScreener ",
+                    "page_name": "itrade.jsp?tradingtools=0",
+                    "sorting": "11",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "15",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "iFilter ",
+                    "child_id": "22",
+                    "menu_name": "iFilter ",
+                    "page_name": "itrade.jsp?tradingtools=2",
+                    "sorting": "12",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "17",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "股票筛选器",
+                    "child_id": "22",
+                    "menu_name": "Stock Filter ",
+                    "page_name": "itrade.jsp?tradingtools=3",
+                    "sorting": "13",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "16",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "查看全部",
+                    "child_id": "6",
+                    "menu_name": "View All",
+                    "page_name": "all-platforms-and-tools",
+                    "sorting": "14",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "53",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "上市证券",
+                    "child_id": "3",
+                    "menu_name": "SECURITIES",
+                    "page_name": "",
+                    "sorting": "15",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "4",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "债券融资",
+                    "child_id": "3",
+                    "menu_name": "BONDS",
+                    "page_name": "",
+                    "sorting": "16",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "9",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "股票",
+                    "child_id": "4",
+                    "menu_name": "Stocks and Shares",
+                    "page_name": "stocks-and-shares",
+                    "sorting": "17",
+                    "description": "Equities are one of the most widely traded investments and have historically outperformed most other investments over the long run.",
+                    "description2": "全球股票市场为投资者提供了更多拥有公司股权的机会，并且投资者能从潜在的资本收益和派息收益中受益",
+                    "description3": "",
+                    "menu_id": "38",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "杠杆产品",
+                    "child_id": "3",
+                    "menu_name": "LEVERAGED PRODUCTS",
+                    "page_name": "",
+                    "sorting": "18",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "5",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "外汇",
+                    "child_id": "5",
+                    "menu_name": "Forex",
+                    "page_name": "forex",
+                    "sorting": "19",
+                    "description": "FX, also known as foreign exchange, is an over-the-counter (OTC) product that has no central exchange, unlike commodities or stocks.",
+                    "description2": "外汇，同于大宗商品和股票，是一种场外交易产品，没有集中交易所。",
+                    "description3": "",
+                    "menu_id": "24",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "ETF",
+                    "child_id": "3",
+                    "menu_name": "ETF",
+                    "page_name": "",
+                    "sorting": "20",
+                    "menu_id": "7",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "CGS Fullgoal CSI1000 ETF",
+                    "child_id": "7",
+                    "menu_name": "CGS Fullgoal CSI1000 ETF",
+                    "page_name": "csi1000",
+                    "sorting": "21",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "35",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "期货",
+                    "child_id": "3",
+                    "menu_name": "FUTURES",
+                    "page_name": "",
+                    "sorting": "22",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "10",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "期货",
+                    "child_id": "10",
+                    "menu_name": "Futures",
+                    "page_name": "futures",
+                    "sorting": "23",
+                    "description": "Futures is a standardised, exchange traded financial contract between two parties to buy or sell an asset (commodities, bonds, currencies or financial indices) at a future date and time.",
+                    "description2": "期货是由双方制定，可在交易所上买卖的标准化金融合约。该合约规定在将来某个特定的时间双方交割一定数量和质量的资产如大宗商品、债券、货币或金融指数等。",
+                    "menu_id": "18",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "财富管理",
+                    "child_id": "3",
+                    "menu_name": "WEALTH MANAGEMENT",
+                    "page_name": "",
+                    "sorting": "24",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "8",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "Wealth Planning",
+                    "child_id": "8",
+                    "menu_name": "Wealth Planning",
+                    "page_name": "wealth-management",
+                    "sorting": "25",
+                    "menu_id": "31",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "债券",
+                    "child_id": "9",
+                    "menu_name": "Bonds",
+                    "page_name": "bonds",
+                    "sorting": "26",
+                    "description": "A bond is a debt investment, where the investors lend money to an entity,",
+                    "description2": " 债券是一种债务投资。投资者向实体（通常是公司或政府）提供贷款",
+                    "menu_id": "42",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "金融服务",
+                    "child_id": "3",
+                    "menu_name": "FINANCING SERVICES",
+                    "page_name": "",
+                    "sorting": "27",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "11",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "SHARIAH-COMPLIANT PRODUCTS",
+                    "child_id": "3",
+                    "menu_name": "SHARIAH-COMPLIANT PRODUCTS",
+                    "page_name": "",
+                    "sorting": "28",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "26",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                },
+                {
+                    "menu_name2": "寻找正确的投资",
+                    "child_id": "3",
+                    "menu_name": "Find the right investment",
+                    "page_name": "products-for-you",
+                    "sorting": "29",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "12",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "查看全部",
+                    "child_id": "3",
+                    "menu_name": "View All",
+                    "page_name": "all-products-and-services",
+                    "sorting": "30",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "52",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "证券保证金融资",
+                    "child_id": "11",
+                    "menu_name": "Margin Financing",
+                    "page_name": "margin-financing",
+                    "sorting": "31",
+                    "description": "Margin Financing, a secured facility which provides leverage for the trading of shares on SGX, BURSA, HKEX and US.",
+                    "description2": "证券保证金融资是一种可以为股票交易提供杠杆服务的担保机制",
+                    "description3": "",
+                    "menu_id": "13",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "证券借贷服务",
+                    "child_id": "11",
+                    "menu_name": "Securities Borrowing and Lending  ",
+                    "page_name": "securities-borrowing-and-lending",
+                    "sorting": "32",
+                    "description": "CGS International Securities borrowing and lending facility offers clients the opportunity to engage in hedging or arbitrage activities while avoiding failed settlements. ",
+                    "description2": "中国银河国际证券的证券借贷服务，为客户提供参与对冲或套利交易的机会",
+                    "menu_id": "27",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "差价合约",
+                    "child_id": "5",
+                    "menu_name": "Contracts for Difference",
+                    "page_name": "contracts-for-difference",
+                    "sorting": "33",
+                    "description": "Contracts for Difference (CFD) is a tradable instrument that mirrors the movements of the asset underlying it.",
+                    "description2": "差价合约（CFD）是一种反映所挂钩资产价格变化的可买卖的金融工具。",
+                    "menu_id": "19",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "高息票据",
+                    "child_id": "5",
+                    "menu_name": "Equity Linked Notes",
+                    "page_name": "equity-linked-notes",
+                    "sorting": "34",
+                    "description": "Equity-linked notes (ELNs) are short term investments (typically lasting 1 to 4 months) that give you the opportunity to buy shares of a selected company at a discount to market price.",
+                    "description2": "高息票据（ELN）是专为看好股市未来走势的客户而设计的投资产品",
+                    "menu_id": "45",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "每日杠杆证书",
+                    "child_id": "5",
+                    "menu_name": "DLC",
+                    "page_name": "daily-leverage-certificates",
+                    "sorting": "35",
+                    "description": "Daily Leveraged Certificates (DLCs) are a form of structured financial instrument issued by banks and traded on the securities market",
+                    "description2": "每日杠杆证书（DLC）是一种由银行发行并在证券市场上交易的结构性金融工具",
+                    "menu_id": "20",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "iTrade",
+                    "child_id": "21",
+                    "menu_name": "iTrade",
+                    "page_name": "itrade",
+                    "sorting": "36",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "23",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "Viewpoint",
+                    "child_id": "21",
+                    "menu_name": "Viewpoint",
+                    "page_name": "viewpoint",
+                    "sorting": "37",
+                    "description": "",
+                    "description2": "",
+                    "menu_id": "28",
+                    "submenu_style": "1"
+                },
+                {
+                    "menu_name2": "ProsperUs",
+                    "child_id": "21",
+                    "menu_name": "ProsperUs",
+                    "page_name": "https:\/\/www.prosperus.asia\/",
+                    "sorting": "38",
+                    "description": "",
+                    "description2": "",
+                    "description3": "",
+                    "menu_id": "29",
+                    "submenu_style": "1",
+                    "menu_name3": ""
+                }
+            ],
+            "alertbar": [
+                {
+                    "hyperlink": "",
+                    "message": "<p><strong>Important:<\/strong><br \/>\nAs cases of impersonation, phishing and other financial scams continue to be on the rise, you are advised to exercise extra vigilance in your online activities.<\/p>\n\n<p>Kindly note that CGS International does not offer any unsolicited financial advice through online platforms such as Telegram and WhatsApp. If you encounter any unplanned interaction with anyone claiming to be from CGS International, do take the necessary precautions and verify his\/her credentials; do not provide any sensitive information such as passwords, OTPs etc.<\/p>\n\n<p><strong>If you receive a suspicious email or call purporting to be from CGS International, please contact our customer service immediately.<\/strong> You can reach us at our Client Services Hotline at 1800 538 9889 or email <a href=\"mailto:clientservices.sg@cgsi.com\" style=\"color:#ffffff !important;\">clientservices.sg@cgsi.com<\/a>.<\/p>\n"
+                }
+            ],
+            "status": "SUCCESS"
+        }
+
+        if (response.status === "SUCCESS") {
+            if (response.isactive == 0)
+                location.href = "error.jsp";
+            var html_desktop = "";
+            var homepage_obj;
+            //alertbar start
+            var html = "";
+            if (getCookie("alertbar|" + definecountrycode + "|" + $("html").attr("lang")) != getCurrentDateInTitle()) {
+                for (var i = 0; i < response.alertbar.length; i++) {
+                    if (i == 0) {
+                        html += '<div class="cimb-notification" id="' + i + '">';
+                    } else {
+                        html += '<div class="cimb-notification" id="' + i + '" style="display: none;">';
                     }
-                    //alertbar end
 
-                    //desktop version start
-                    for (var i = 0; i < response.menu.length; i++) {
-                        if (response.menu[i].menu_id == "1")
-                            homepage_obj = response.menu[i];
-                        if (response.menu[i].child_id == "1") {
-                            //html_desktop += html_desktop code'
+                    html += '<span class="closebtn" onclick="alertBarClose(\'' + getCurrentDateInTitle() + '\')">&times;</span>';
+                    html += response.alertbar[i].message;
+                    html += '</div>';
+                }
 
-                            var isFirstTime = false;
-                            var submenuFirstTime = false;
-                            var haveChild = false;
-                            var haveSubSubmenu = false;
-                            var currentmenu_id = response.menu[i].menu_id;
-                            html_desktop += '<li class="nav-item dropdown dropdown-menu-hover dropdown-crow">';
-                            if (response.menu[i].submenu_style == "0") {
-                                //child menu
-                                for (var j = 0; j < response.menu.length; j++) {
-                                    if (response.menu[j].child_id == currentmenu_id) {
-                                        haveChild = true;
-                                        if (isFirstTime == false) {
-                                            html_desktop += '<ul class="dropdown-menu product-and-serivces-dropdown-menu-style" aria-labelledby="navbarDropdownMenuLink">';
-                                            isFirstTime = true;
+                $("#iframe-alertbar").append(html);
+                alertbarSlider = setInterval(function () {
+                    var currentid = $(".cimb-notification:visible").attr("id");
+                    var nextid = parseInt(currentid) + 1;
+                    if ($(".cimb-notification[id=" + nextid + "]").length == 1) {
+                        $(".cimb-notification").hide();
+                        $(".cimb-notification[id=" + nextid + "]").show();
+                    } else if (currentid != 0) {
+                        $(".cimb-notification").hide();
+                        $(".cimb-notification[id=0]").show();
+                    }
+
+                }, 10000);
+            }
+            //alertbar end
+
+            //desktop version start
+            for (var i = 0; i < response.menu.length; i++) {
+                if (response.menu[i].menu_id == "1")
+                    homepage_obj = response.menu[i];
+                if (response.menu[i].child_id == "1") {
+                    //html_desktop += html_desktop code'
+
+                    var isFirstTime = false;
+                    var submenuFirstTime = false;
+                    var haveChild = false;
+                    var haveSubSubmenu = false;
+                    var currentmenu_id = response.menu[i].menu_id;
+                    html_desktop += '<li class="nav-item dropdown dropdown-menu-hover dropdown-crow">';
+                    if (response.menu[i].submenu_style == "0") {
+                        //child menu
+                        for (var j = 0; j < response.menu.length; j++) {
+                            if (response.menu[j].child_id == currentmenu_id) {
+                                haveChild = true;
+                                if (isFirstTime == false) {
+                                    html_desktop += '<ul class="dropdown-menu product-and-serivces-dropdown-menu-style" aria-labelledby="navbarDropdownMenuLink">';
+                                    isFirstTime = true;
+                                }
+
+                                html_desktop += '<li class="dropdown-submenu destop-dropdown-submenu style0" style="cursor: pointer;">';
+                                var submenu_id = response.menu[j].menu_id;
+                                for (var k = 0; k < response.menu.length; k++) {
+                                    if (response.menu[k].child_id == submenu_id) {
+                                        haveSubSubmenu = true;
+                                        if (submenuFirstTime == false) {
+
+                                            html_desktop += '<div class="dropdown-menu"id="style-4" style="width:257px; padding-top: 0px;">';
+                                            html_desktop += '<table width="100%">';
+                                            submenuFirstTime = true;
                                         }
-
-                                        html_desktop += '<li class="dropdown-submenu destop-dropdown-submenu style0" style="cursor: pointer;">';
-                                        var submenu_id = response.menu[j].menu_id;
-                                        for (var k = 0; k < response.menu.length; k++) {
-                                            if (response.menu[k].child_id == submenu_id) {
-                                                haveSubSubmenu = true;
-                                                if (submenuFirstTime == false) {
-
-                                                    html_desktop += '<div class="dropdown-menu"id="style-4" style="width:257px; padding-top: 0px;">';
-                                                    html_desktop += '<table width="100%">';
-                                                    submenuFirstTime = true;
-                                                }
-                                                var subsubmenu_link = response.menu[k].page_name;
-                                                if (subsubmenu_link == undefined || subsubmenu_link == "") {
-                                                    html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;"><td>';
-                                                    html_desktop += '<a class="dropdown-item no-bottom-padding-dropdown-item" style="white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
-                                                } else {
-                                                    html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;" ' + getMenuOnClickLocation(subsubmenu_link) + '><td>';
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' class="dropdown-item no-bottom-padding-dropdown-item" style=" color: black; white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
-                                                }
-
-                                                var desc = "";
-                                                if (response.menu[k].description != undefined && response.menu[k].description != "") {
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc" style="margin-top: 10px;">' + response.menu[k].description + '</div></a></td></tr>';
-                                                } else {
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc">' + desc + '</div></a></td></tr>';
-                                                }
-                                            }
-                                        }
-
-                                        if (submenuFirstTime == true) {
-                                            html_desktop += '</table>';
-                                            html_desktop += '</div>';
-                                            submenuFirstTime = false;
-                                        }
-                                        var submenu_link = response.menu[j].page_name;
-                                        if (submenu_link == undefined || submenu_link == "") {
-                                            if (haveSubSubmenu == false) {
-                                                html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space:normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            } else {
-                                                html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space: inherit;">' + response.menu[j].menu_name + '</a>';
-                                            }
+                                        var subsubmenu_link = response.menu[k].page_name;
+                                        if (subsubmenu_link == undefined || subsubmenu_link == "") {
+                                            html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;"><td>';
+                                            html_desktop += '<a class="dropdown-item no-bottom-padding-dropdown-item" style="white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
                                         } else {
-                                            if (haveSubSubmenu == false) {
-                                                html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            } else {
-                                                html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: inherit; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            }
+                                            html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;" ' + getMenuOnClickLocation(subsubmenu_link) + '><td>';
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' class="dropdown-item no-bottom-padding-dropdown-item" style=" color: black; white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
                                         }
 
-                                        html_desktop += '</li>';
+                                        var desc = "";
+                                        if (response.menu[k].description != undefined && response.menu[k].description != "") {
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc" style="margin-top: 10px;">' + response.menu[k].description + '</div></a></td></tr>';
+                                        } else {
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc">' + desc + '</div></a></td></tr>';
+                                        }
                                     }
                                 }
 
-                                if (isFirstTime == true) {
-                                    html_desktop += '</ul>';
-                                }
-                            } else if (response.menu[i].submenu_style == "1") {
-                                //child menu
-                                for (var j = 0; j < response.menu.length; j++) {
-                                    if (response.menu[j].child_id == currentmenu_id) {
-                                        haveChild = true;
-                                        if (isFirstTime == false) {
-                                            html_desktop += '<ul class="dropdown-menu product-and-serivces-dropdown-menu-style" aria-labelledby="navbarDropdownMenuLink">';
-                                            isFirstTime = true;
-                                        }
-                                        html_desktop += '<li class="dropdown-submenu destop-dropdown-submenu" style="cursor: pointer;">';
-                                        var submenu_id = response.menu[j].menu_id;
-                                        for (var k = 0; k < response.menu.length; k++) {
-                                            if (response.menu[k].child_id == submenu_id) {
-                                                haveSubSubmenu = true;
-                                                if (submenuFirstTime == false) {
-
-                                                    html_desktop += '<div class="dropdown-menu"id="style-4" style="width:257px; padding-top: 0px;">';
-                                                    html_desktop += '<table width="100%">';
-                                                    submenuFirstTime = true;
-                                                }
-                                                var subsubmenu_link = response.menu[k].page_name;
-                                                if (subsubmenu_link == undefined || subsubmenu_link == "") {
-                                                    html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;"><td>';
-                                                    html_desktop += '<a class="dropdown-item no-bottom-padding-dropdown-item" style="white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
-                                                } else {
-                                                    html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;" ' + getMenuOnClickLocation(subsubmenu_link) + '><td>';
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' class="dropdown-item no-bottom-padding-dropdown-item" style=" color: black; white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
-                                                }
-
-                                                var desc = "";
-                                                if (response.menu[k].description != undefined && response.menu[k].description != "") {
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc" style="margin-top: 10px;">' + response.menu[k].description + '</div></a></td></tr>';
-                                                } else {
-                                                    html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc">' + desc + '</div></a></td></tr>';
-                                                }
-                                            }
-                                        }
-
-                                        if (submenuFirstTime == true) {
-                                            html_desktop += '</table>';
-                                            html_desktop += '</div>';
-                                            submenuFirstTime = false;
-                                        }
-                                        var submenu_link = response.menu[j].page_name;
-                                        if (submenu_link == undefined || submenu_link == "") {
-                                            if (haveSubSubmenu == false) {
-                                                html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space:normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            } else {
-                                                html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space: inherit; color:#9B9B9B;">' + response.menu[j].menu_name + '</a>';
-                                            }
-                                        } else {
-                                            if (submenu_link == "fundamental-analysis" && definecountrycode == "sg") {
-                                                submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
-                                                +"/fundamental-analysis";
-                                            } else if (submenu_link == "technical-analysis" && definecountrycode == "sg") {
-                                                submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
-                                                +"/technical-analysis";
-                                            } else if (submenu_link == "knowledge-centre" && definecountrycode == "sg") {
-                                                submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
-                                                +"/knowledge-centre";
-                                            } else if (submenu_link == "news-market-commentary" && definecountrycode == "sg") {
-                                                submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
-                                                +"/news-market-commentary";
-                                            } else if (submenu_link == "trading-platforms" && definecountrycode == "sg") {
-                                                submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
-                                                +"/trading-platforms";
-                                            }
-
-                                            if (haveSubSubmenu == false) {
-                                                html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            } else {
-                                                html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: inherit; color:black;">' + response.menu[j].menu_name + '</a>';
-                                            }
-                                        }
-
-                                        html_desktop += '</li>';
-                                    }
-                                }
-
-                                if (isFirstTime == true) {
-                                    html_desktop += '</ul>';
-                                }
-                            } else {
-                                //large drop down menu
-                                var submenuNum = 0;
-                                for (var j = 0; j < response.menu.length; j++) {
-                                    if (response.menu[j].child_id == currentmenu_id && submenuNum < 2) {
-                                        submenuNum++;
-                                        haveChild = true;
-                                        if (isFirstTime == false) {
-                                            html_desktop += '<ul class="dropdown-menu dropdown-crow dropdown-menu-large"  aria-labelledby="navbarDropdownMenuLink" style="padding:0rem;">';
-                                            html_desktop += '<div>';
-                                            html_desktop += '<table><tr>';
-                                            isFirstTime = true;
-                                        }
-                                        var submenu_id = response.menu[j].menu_id;
-                                        html_desktop += '<td class="dropdown-menu-large-item" style=" vertical-align: text-top;">';
-                                        var large_menu_link = response.menu[j].page_name;
-                                        if (large_menu_link == undefined || large_menu_link == "") {
-                                            html_desktop += '<a class="dropdown-item" style="white-space: inherit; padding-left:0px; color:#0B318F; width: 180px; font-weight: 900; background: #F8F8F8;">' + response.menu[j].menu_name + '</a>';
-                                        } else {
-                                            html_desktop += '<a class="dropdown-item" ' + getMenuHref(large_menu_link) + ' style="white-space: inherit; padding-left:0px; color:#9B9B9B;  width: 180px;">' + response.menu[j].menu_name + '</a>';
-                                        }
-
-                                        for (var k = 0; k < response.menu.length; k++) {
-                                            if (response.menu[k].child_id == submenu_id) {
-                                                var large_submenu_link = response.menu[k].page_name;
-                                                if (large_submenu_link == undefined || large_submenu_link == "") {
-                                                    html_desktop += '<a class="dropdown-item dropdown-item-large" style="width: 180px;">' + response.menu[k].menu_name + '</a>';
-                                                } else {
-                                                    html_desktop += '<a class="dropdown-item dropdown-item-large" style="width: 180px;" ' + getMenuHref(large_submenu_link) + '>' + response.menu[k].menu_name + '</a>';
-                                                }
-                                            }
-                                        }
-                                        html_desktop += '</td>';
-                                    } else if (response.menu[j].child_id == currentmenu_id && submenuNum >= 2) {
-                                        submenuNum++;
-                                        html_desktop += '</tr>';
-                                        html_desktop += '<tr>';
-                                        html_desktop += '<td colspan="2" class="dropdown-menu-large-item" style="padding-top: 4px; padding-bottom: 17px; background-color: #F7F7F7; vertical-align: text-top;">';
-                                        var large_menu_link = response.menu[j].page_name;
-                                        if (large_menu_link == undefined || large_menu_link == "") {
-                                            html_desktop += '<a class="dropdown-item dropdown-item-large">' + response.menu[j].menu_name + '</a>';
-                                        } else {
-                                            html_desktop += '<a class="dropdown-item dropdown-item-large" ' + getMenuHref(large_menu_link) + '>' + response.menu[j].menu_name + '</a>';
-                                        }
-
-                                        html_desktop += '</td>';
-                                    }
-                                }
-                                if (isFirstTime == true) {
-                                    html_desktop += '</tr>';
+                                if (submenuFirstTime == true) {
                                     html_desktop += '</table>';
                                     html_desktop += '</div>';
-                                    html_desktop += '</ul>';
+                                    submenuFirstTime = false;
                                 }
-                            }
-                            var link = response.menu[i].page_name;
-                            if (link == undefined || link == "") {
-                                if (haveChild == false) {
-                                    html_desktop += '<a class="nav-link nav-bottom-bar" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
+                                var submenu_link = response.menu[j].page_name;
+                                if (submenu_link == undefined || submenu_link == "") {
+                                    if (haveSubSubmenu == false) {
+                                        html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space:normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    } else {
+                                        html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space: inherit;">' + response.menu[j].menu_name + '</a>';
+                                    }
                                 } else {
-                                    html_desktop += '<a class="nav-link" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
+                                    if (haveSubSubmenu == false) {
+                                        html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    } else {
+                                        html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: inherit; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    }
                                 }
-                            } else {
-                                if (haveChild == false) {
-                                    html_desktop += '<a class="nav-link nav-bottom-bar" href ="' + link + '" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink"><b>' + response.menu[i].menu_name + '</b></a>';
-                                } else {
-                                    html_desktop += '<a class="nav-link" href ="' + link + '" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
-                                }
-                            }
-                            //for no child menu
 
-                            html_desktop += '</li>';
+                                html_desktop += '</li>';
+                            }
                         }
-                    }
 
-                    $(".navbar.navbar-expand-sm.navbar-light.navbar-padding.nav-border-bottom-gray.muli-font-family.navbar-white-font .navbar-nav.mr-auto").append(html_desktop);
-                    //desktop version end
+                        if (isFirstTime == true) {
+                            html_desktop += '</ul>';
+                        }
+                    } else if (response.menu[i].submenu_style == "1") {
+                        //child menu
+                        for (var j = 0; j < response.menu.length; j++) {
+                            if (response.menu[j].child_id == currentmenu_id) {
+                                haveChild = true;
+                                if (isFirstTime == false) {
+                                    html_desktop += '<ul class="dropdown-menu product-and-serivces-dropdown-menu-style" aria-labelledby="navbarDropdownMenuLink">';
+                                    isFirstTime = true;
+                                }
+                                html_desktop += '<li class="dropdown-submenu destop-dropdown-submenu" style="cursor: pointer;">';
+                                var submenu_id = response.menu[j].menu_id;
+                                for (var k = 0; k < response.menu.length; k++) {
+                                    if (response.menu[k].child_id == submenu_id) {
+                                        haveSubSubmenu = true;
+                                        if (submenuFirstTime == false) {
 
-                    //mobile version start
-                    var html_mobile = "";
-                    html_mobile += '<table width="100%" style="padding: 0px 30px;">';
-                    html_mobile += '<tr>';
-                    html_mobile += '<td width="100%">';
-                    html_mobile += '<a class="navbar-brand mobile-navbar-brand" href="#">';
-                    html_mobile += '<img src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" class="phone-logo" width="65%">';
-                    html_mobile += '</a>';
-                    html_mobile += '</td>';
-                    html_mobile += '<td>';
-                    html_mobile += '<img onclick="javascript: $(\'.searchModal-search-keyword-box\').val(\'\'); $(\'#searchModal\').modal();" src="https://www.cgsi.com/cgsiresources/system/destop_search_left.png" class="phone-share-icon">';
-                    html_mobile += '</td>';
-                    html_mobile += '<td>';
-                    html_mobile += '<button class="navbar-toggler phone-btn-nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">';
-                    html_mobile += '<span class="navbar-toggler-icon"></span>';
-                    html_mobile += '</button>';
-                    html_mobile += '</td>';
-                    html_mobile += '</tr>';
-                    html_mobile += '</table>';
-                    html_mobile += '<div style="height: 10px;">&nbsp;</div>';
-                    html_mobile += '<div class="collapse navbar-collapse" id="navbarTogglerDemo02">';
-                    html_mobile += '<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-top: 0px !important">';
-                    html_mobile += '<li class="nav-item item-style phone-nav-item phone-nav-item-margin">';
-                    html_mobile += '<a class="nav-link phone-nav-link link-w item-padding" href="#" style="font-weight: 900;" data-i18n="[html]header.label_forindividual"></a>';
-                    html_mobile += '</li>';
-                    html_mobile += '<li class="nav-item phone-nav-item ">';
-                    html_mobile += '<a class="btn_back nav-link phone-nav-link phone-back-btn" href="#" style="padding-bottom: 20px;" data-i18n="[html]header.label_backtomainmenu"></a>';
-                    html_mobile += '</li>';
-                    for (var i = 0; i < response.menu.length; i++) {
-                        //menu
-                        if (response.menu[i].child_id == "1") {
-                            var submenucount = 1;
-                            var currentmenu_num = i;
-                            var currentmenu_id = response.menu[i].menu_id;
-                            ;
-                            var currentmenu_name = response.menu[i].menu_name;
-                            var submenuFirstTimeLoad = false;
-                            for (var j = 0; j < response.menu.length; j++) {
-                                //sub menu
-                                if (response.menu[j].child_id == currentmenu_id) {
-                                    var currentsubmenu_id = response.menu[j].menu_id;
-                                    //subsub menu
-                                    for (var k = 0; k < response.menu.length; k++) {
-                                        if (response.menu[k].child_id == currentsubmenu_id) {
-                                            if (submenuFirstTimeLoad == false) {
-                                                html_mobile += '<li class="nav-item phone-nav-item ">';
-                                                html_mobile += '<a class="btn_back nav-link phone-nav-link menu' + currentmenu_num + '-item-subitem-phone-back-btn" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" href="#" style="padding-bottom: 20px;"><img src="https://www.cgsi.com/cgsiresources/system/arrow_down_left.png" >&nbsp;&nbsp; Back to ' + currentmenu_name + ' <span class="sr-only">(current)</span></a>';
-                                                html_mobile += '</li>';
-                                                submenuFirstTimeLoad = true;
-                                            }
+                                            html_desktop += '<div class="dropdown-menu"id="style-4" style="width:257px; padding-top: 0px;">';
+                                            html_desktop += '<table width="100%">';
+                                            submenuFirstTime = true;
+                                        }
+                                        var subsubmenu_link = response.menu[k].page_name;
+                                        if (subsubmenu_link == undefined || subsubmenu_link == "") {
+                                            html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;"><td>';
+                                            html_desktop += '<a class="dropdown-item no-bottom-padding-dropdown-item" style="white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
+                                        } else {
+                                            html_desktop += '<tr class="sub-menu-border-bottom" style="cursor: pointer;" ' + getMenuOnClickLocation(subsubmenu_link) + '><td>';
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' class="dropdown-item no-bottom-padding-dropdown-item" style=" color: black; white-space:inherit !important; max-width:250px;">' + response.menu[k].menu_name + '</a>';
+                                        }
+
+                                        var desc = "";
+                                        if (response.menu[k].description != undefined && response.menu[k].description != "") {
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc" style="margin-top: 10px;">' + response.menu[k].description + '</div></a></td></tr>';
+                                        } else {
+                                            html_desktop += '<a ' + getMenuHref(subsubmenu_link) + ' style="font-weight: normal !important"><div class="dropdown-item-desc">' + desc + '</div></a></td></tr>';
                                         }
                                     }
-                                    submenucount++;
+                                }
+
+                                if (submenuFirstTime == true) {
+                                    html_desktop += '</table>';
+                                    html_desktop += '</div>';
+                                    submenuFirstTime = false;
+                                }
+                                var submenu_link = response.menu[j].page_name;
+                                if (submenu_link == undefined || submenu_link == "") {
+                                    if (haveSubSubmenu == false) {
+                                        html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space:normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    } else {
+                                        html_desktop += '<a class="dropdown-item sub_menu_arrow_right" style="white-space: inherit; color:#9B9B9B;">' + response.menu[j].menu_name + '</a>';
+                                    }
+                                } else {
+                                    if (submenu_link == "fundamental-analysis" && definecountrycode == "sg") {
+                                        submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
+                                        +"/fundamental-analysis";
+                                    } else if (submenu_link == "technical-analysis" && definecountrycode == "sg") {
+                                        submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
+                                        +"/technical-analysis";
+                                    } else if (submenu_link == "knowledge-centre" && definecountrycode == "sg") {
+                                        submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
+                                        +"/knowledge-centre";
+                                    } else if (submenu_link == "news-market-commentary" && definecountrycode == "sg") {
+                                        submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
+                                        +"/news-market-commentary";
+                                    } else if (submenu_link == "trading-platforms" && definecountrycode == "sg") {
+                                        submenu_link = "https://www.cgsi.com/" + $("html").attr("lang");
+                                        +"/trading-platforms";
+                                    }
+
+                                    if (haveSubSubmenu == false) {
+                                        html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: normal !important; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    } else {
+                                        html_desktop += '<a class="dropdown-item" ' + getMenuHref(submenu_link) + ' style="white-space: inherit; color:black;">' + response.menu[j].menu_name + '</a>';
+                                    }
+                                }
+
+                                html_desktop += '</li>';
+                            }
+                        }
+
+                        if (isFirstTime == true) {
+                            html_desktop += '</ul>';
+                        }
+                    } else {
+                        //large drop down menu
+                        var submenuNum = 0;
+                        for (var j = 0; j < response.menu.length; j++) {
+                            if (response.menu[j].child_id == currentmenu_id && submenuNum < 2) {
+                                submenuNum++;
+                                haveChild = true;
+                                if (isFirstTime == false) {
+                                    html_desktop += '<ul class="dropdown-menu dropdown-crow dropdown-menu-large"  aria-labelledby="navbarDropdownMenuLink" style="padding:0rem;">';
+                                    html_desktop += '<div>';
+                                    html_desktop += '<table><tr>';
+                                    isFirstTime = true;
+                                }
+                                var submenu_id = response.menu[j].menu_id;
+                                html_desktop += '<td class="dropdown-menu-large-item" style=" vertical-align: text-top;">';
+                                var large_menu_link = response.menu[j].page_name;
+                                if (large_menu_link == undefined || large_menu_link == "") {
+                                    html_desktop += '<a class="dropdown-item" style="white-space: inherit; padding-left:0px; color:#0B318F; width: 180px; font-weight: 900; background: #F8F8F8;">' + response.menu[j].menu_name + '</a>';
+                                } else {
+                                    html_desktop += '<a class="dropdown-item" ' + getMenuHref(large_menu_link) + ' style="white-space: inherit; padding-left:0px; color:#9B9B9B;  width: 180px;">' + response.menu[j].menu_name + '</a>';
+                                }
+
+                                for (var k = 0; k < response.menu.length; k++) {
+                                    if (response.menu[k].child_id == submenu_id) {
+                                        var large_submenu_link = response.menu[k].page_name;
+                                        if (large_submenu_link == undefined || large_submenu_link == "") {
+                                            html_desktop += '<a class="dropdown-item dropdown-item-large" style="width: 180px;">' + response.menu[k].menu_name + '</a>';
+                                        } else {
+                                            html_desktop += '<a class="dropdown-item dropdown-item-large" style="width: 180px;" ' + getMenuHref(large_submenu_link) + '>' + response.menu[k].menu_name + '</a>';
+                                        }
+                                    }
+                                }
+                                html_desktop += '</td>';
+                            } else if (response.menu[j].child_id == currentmenu_id && submenuNum >= 2) {
+                                submenuNum++;
+                                html_desktop += '</tr>';
+                                html_desktop += '<tr>';
+                                html_desktop += '<td colspan="2" class="dropdown-menu-large-item" style="padding-top: 4px; padding-bottom: 17px; background-color: #F7F7F7; vertical-align: text-top;">';
+                                var large_menu_link = response.menu[j].page_name;
+                                if (large_menu_link == undefined || large_menu_link == "") {
+                                    html_desktop += '<a class="dropdown-item dropdown-item-large">' + response.menu[j].menu_name + '</a>';
+                                } else {
+                                    html_desktop += '<a class="dropdown-item dropdown-item-large" ' + getMenuHref(large_menu_link) + '>' + response.menu[j].menu_name + '</a>';
+                                }
+
+                                html_desktop += '</td>';
+                            }
+                        }
+                        if (isFirstTime == true) {
+                            html_desktop += '</tr>';
+                            html_desktop += '</table>';
+                            html_desktop += '</div>';
+                            html_desktop += '</ul>';
+                        }
+                    }
+                    var link = response.menu[i].page_name;
+                    if (link == undefined || link == "") {
+                        if (haveChild == false) {
+                            html_desktop += '<a class="nav-link nav-bottom-bar" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
+                        } else {
+                            html_desktop += '<a class="nav-link" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
+                        }
+                    } else {
+                        if (haveChild == false) {
+                            html_desktop += '<a class="nav-link nav-bottom-bar" href ="' + link + '" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink"><b>' + response.menu[i].menu_name + '</b></a>';
+                        } else {
+                            html_desktop += '<a class="nav-link" href ="' + link + '" menuid = "' + response.menu[i].menu_id + '" id="navbarDropdownMenuLink" ><b>' + response.menu[i].menu_name + '</b></a>';
+                        }
+                    }
+                    //for no child menu
+
+                    html_desktop += '</li>';
+                }
+            }
+
+            $(".navbar.navbar-expand-sm.navbar-light.navbar-padding.nav-border-bottom-gray.muli-font-family.navbar-white-font .navbar-nav.mr-auto").append(html_desktop);
+            //desktop version end
+
+            //mobile version start
+            var html_mobile = "";
+            html_mobile += '<table width="100%" style="padding: 0px 30px;">';
+            html_mobile += '<tr>';
+            html_mobile += '<td width="100%">';
+            html_mobile += '<a class="navbar-brand mobile-navbar-brand" href="#">';
+            html_mobile += '<img src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" class="phone-logo" width="65%">';
+            html_mobile += '</a>';
+            html_mobile += '</td>';
+            html_mobile += '<td>';
+            html_mobile += '<img onclick="javascript: $(\'.searchModal-search-keyword-box\').val(\'\'); $(\'#searchModal\').modal();" src="https://www.cgsi.com/cgsiresources/system/destop_search_left.png" class="phone-share-icon">';
+            html_mobile += '</td>';
+            html_mobile += '<td>';
+            html_mobile += '<button class="navbar-toggler phone-btn-nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">';
+            html_mobile += '<span class="navbar-toggler-icon"></span>';
+            html_mobile += '</button>';
+            html_mobile += '</td>';
+            html_mobile += '</tr>';
+            html_mobile += '</table>';
+            html_mobile += '<div style="height: 10px;">&nbsp;</div>';
+            html_mobile += '<div class="collapse navbar-collapse" id="navbarTogglerDemo02">';
+            html_mobile += '<ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-top: 0px !important">';
+            html_mobile += '<li class="nav-item item-style phone-nav-item phone-nav-item-margin">';
+            html_mobile += '<a class="nav-link phone-nav-link link-w item-padding" href="#" style="font-weight: 900;" data-i18n="[html]header.label_forindividual"></a>';
+            html_mobile += '</li>';
+            html_mobile += '<li class="nav-item phone-nav-item ">';
+            html_mobile += '<a class="btn_back nav-link phone-nav-link phone-back-btn" href="#" style="padding-bottom: 20px;" data-i18n="[html]header.label_backtomainmenu"></a>';
+            html_mobile += '</li>';
+            for (var i = 0; i < response.menu.length; i++) {
+                //menu
+                if (response.menu[i].child_id == "1") {
+                    var submenucount = 1;
+                    var currentmenu_num = i;
+                    var currentmenu_id = response.menu[i].menu_id;
+                    ;
+                    var currentmenu_name = response.menu[i].menu_name;
+                    var submenuFirstTimeLoad = false;
+                    for (var j = 0; j < response.menu.length; j++) {
+                        //sub menu
+                        if (response.menu[j].child_id == currentmenu_id) {
+                            var currentsubmenu_id = response.menu[j].menu_id;
+                            //subsub menu
+                            for (var k = 0; k < response.menu.length; k++) {
+                                if (response.menu[k].child_id == currentsubmenu_id) {
+                                    if (submenuFirstTimeLoad == false) {
+                                        html_mobile += '<li class="nav-item phone-nav-item ">';
+                                        html_mobile += '<a class="btn_back nav-link phone-nav-link menu' + currentmenu_num + '-item-subitem-phone-back-btn" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" href="#" style="padding-bottom: 20px;"><img src="https://www.cgsi.com/cgsiresources/system/arrow_down_left.png" >&nbsp;&nbsp; Back to ' + currentmenu_name + ' <span class="sr-only">(current)</span></a>';
+                                        html_mobile += '</li>';
+                                        submenuFirstTimeLoad = true;
+                                    }
                                 }
                             }
+                            submenucount++;
+                        }
+                    }
+                }
+            }
+
+            //kelvin
+            for (var i = 0; i < response.menu.length; i++) {
+                //menu
+                if (response.menu[i].child_id == "1") {
+                    var currentmenu_num = i;
+                    var currentmenu_id = response.menu[i].menu_id;
+                    var currentmenu_name = response.menu[i].menu_name;
+                    var firstTimeLoad = false;
+                    var menuFirstTimeLoad = false;
+                    var submenucount = 1;
+                    var hyperlinkHtml = response.menu[i].page_name;
+                    if (hyperlinkHtml == undefined || hyperlinkHtml == "") {
+                        hyperlinkHtml = '';
+                    } else {
+                        hyperlinkHtml = getMenuHref(hyperlinkHtml);
+                    }
+
+                    html_mobile += '<li class="nav-item phone-nav-item">';
+                    for (var j = 0; j < response.menu.length; j++) {
+                        if (response.menu[j].child_id == currentmenu_id) {
+                            firstTimeLoad = true;
                         }
                     }
 
-                    //kelvin
-                    for (var i = 0; i < response.menu.length; i++) {
-                        //menu
-                        if (response.menu[i].child_id == "1") {
-                            var currentmenu_num = i;
-                            var currentmenu_id = response.menu[i].menu_id;
-                            var currentmenu_name = response.menu[i].menu_name;
-                            var firstTimeLoad = false;
-                            var menuFirstTimeLoad = false;
-                            var submenucount = 1;
-                            var hyperlinkHtml = response.menu[i].page_name;
+                    if (firstTimeLoad == false) {
+                        html_mobile += '<a as="sad" class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '" ' + hyperlinkHtml + '>' + response.menu[i].menu_name + ' <span class="sr-only">(current)</span></a>';
+                    } else {
+                        html_mobile += '<a class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '">' + response.menu[i].menu_name + ' <img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
+                    }
+
+                    html_mobile += '</li>';
+                    for (var j = 0; j < response.menu.length; j++) {
+                        //sub menu
+                        if (response.menu[j].child_id == currentmenu_id) {
+                            if (menuFirstTimeLoad == false) {
+                                html_mobile += '<li class="nav-item item-style phone-nav-item">';
+                                html_mobile += '<a class="submenu nav-link phone-nav-link link-w menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" style="font-weight: 900;">' + currentmenu_name + '</a>';
+                                html_mobile += '</li>';
+                                menuFirstTimeLoad = true;
+                            }
+
+                            var currentsubmenu_id = response.menu[j].menu_id;
+                            var currentsubmenu_name = response.menu[j].menu_name;
+                            3
+                            var firstTimeSubMenuLoad = false;
+                            var submenuFirstTimeLoad = false;
+                            var subsubmenucount = 1;
+                            html_mobile += '<li class="nav-item phone-nav-item">';
+                            for (var k = 0; k < response.menu.length; k++) {
+                                if (response.menu[k].child_id == currentsubmenu_id) {
+                                    firstTimeSubMenuLoad = true;
+                                }
+                            }
+
+                            var hyperlinkHtml = response.menu[j].page_name;
                             if (hyperlinkHtml == undefined || hyperlinkHtml == "") {
                                 hyperlinkHtml = '';
                             } else {
                                 hyperlinkHtml = getMenuHref(hyperlinkHtml);
                             }
 
-                            html_mobile += '<li class="nav-item phone-nav-item">';
-                            for (var j = 0; j < response.menu.length; j++) {
-                                if (response.menu[j].child_id == currentmenu_id) {
-                                    firstTimeLoad = true;
-                                }
-                            }
-
-                            if (firstTimeLoad == false) {
-                                html_mobile += '<a as="sad" class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '" ' + hyperlinkHtml + '>' + response.menu[i].menu_name + ' <span class="sr-only">(current)</span></a>';
-                            } else {
-                                html_mobile += '<a class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '">' + response.menu[i].menu_name + ' <img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
-                            }
-
+                            if (firstTimeSubMenuLoad == false)
+                                html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '</a>';
+                            else
+                                html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '<img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
                             html_mobile += '</li>';
-                            for (var j = 0; j < response.menu.length; j++) {
-                                //sub menu
-                                if (response.menu[j].child_id == currentmenu_id) {
-                                    if (menuFirstTimeLoad == false) {
+                            //subsub menu
+                            for (var k = 0; k < response.menu.length; k++) {
+                                if (response.menu[k].child_id == currentsubmenu_id) {
+                                    if (submenuFirstTimeLoad == false) {
                                         html_mobile += '<li class="nav-item item-style phone-nav-item">';
-                                        html_mobile += '<a class="submenu nav-link phone-nav-link link-w menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" style="font-weight: 900;">' + currentmenu_name + '</a>';
+                                        html_mobile += '<a class="subsubmenu nav-link phone-nav-link link-w menu' + currentmenu_num + '-subsubmenu subsubmenu' + submenucount + '" style="font-weight: 900;">' + currentsubmenu_name + '</a>';
                                         html_mobile += '</li>';
-                                        menuFirstTimeLoad = true;
+                                        submenuFirstTimeLoad = true;
                                     }
 
-                                    var currentsubmenu_id = response.menu[j].menu_id;
-                                    var currentsubmenu_name = response.menu[j].menu_name;
-                                    3
-                                    var firstTimeSubMenuLoad = false;
-                                    var submenuFirstTimeLoad = false;
-                                    var subsubmenucount = 1;
-                                    html_mobile += '<li class="nav-item phone-nav-item">';
-                                    for (var k = 0; k < response.menu.length; k++) {
-                                        if (response.menu[k].child_id == currentsubmenu_id) {
-                                            firstTimeSubMenuLoad = true;
-                                        }
-                                    }
-
-                                    var hyperlinkHtml = response.menu[j].page_name;
+                                    var hyperlinkHtml = response.menu[k].page_name;
                                     if (hyperlinkHtml == undefined || hyperlinkHtml == "") {
                                         hyperlinkHtml = '';
                                     } else {
                                         hyperlinkHtml = getMenuHref(hyperlinkHtml);
                                     }
 
-                                    if (firstTimeSubMenuLoad == false)
-                                        html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '</a>';
-                                    else
-                                        html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '<img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
+                                    html_mobile += '<li class="nav-item phone-nav-item">';
+                                    html_mobile += '<a class="subsubmenu nav-link phone-nav-link menu' + currentmenu_num + '-subsubmenu subsubmenu' + submenucount + '" ' + hyperlinkHtml + '>' + response.menu[k].menu_name + '</a>';
                                     html_mobile += '</li>';
-                                    //subsub menu
-                                    for (var k = 0; k < response.menu.length; k++) {
-                                        if (response.menu[k].child_id == currentsubmenu_id) {
-                                            if (submenuFirstTimeLoad == false) {
-                                                html_mobile += '<li class="nav-item item-style phone-nav-item">';
-                                                html_mobile += '<a class="subsubmenu nav-link phone-nav-link link-w menu' + currentmenu_num + '-subsubmenu subsubmenu' + submenucount + '" style="font-weight: 900;">' + currentsubmenu_name + '</a>';
-                                                html_mobile += '</li>';
-                                                submenuFirstTimeLoad = true;
-                                            }
-
-                                            var hyperlinkHtml = response.menu[k].page_name;
-                                            if (hyperlinkHtml == undefined || hyperlinkHtml == "") {
-                                                hyperlinkHtml = '';
-                                            } else {
-                                                hyperlinkHtml = getMenuHref(hyperlinkHtml);
-                                            }
-
-                                            html_mobile += '<li class="nav-item phone-nav-item">';
-                                            html_mobile += '<a class="subsubmenu nav-link phone-nav-link menu' + currentmenu_num + '-subsubmenu subsubmenu' + submenucount + '" ' + hyperlinkHtml + '>' + response.menu[k].menu_name + '</a>';
-                                            html_mobile += '</li>';
-                                            subsubmenucount++;
-                                        }
-                                    }
-
-                                    submenucount++;
+                                    subsubmenucount++;
                                 }
                             }
+
+                            submenucount++;
                         }
                     }
+                }
+            }
 
-                    html_mobile += '<div class="mobile-menu-footer">';
-                    html_mobile += '<div class="dropdown-divider phone"></div>';
-                    html_mobile += '<li class="nav-item phone-nav-item">';
-                    html_mobile += '<a class="nav-link phone-nav-link" href="about-us"><b data-i18n="[html]header.label_aboutcgscimb"></b></a>';
-                    html_mobile += '</li>';
-                    html_mobile += '<div class="dropdown-divider phone"></div>';
-                    html_mobile += '<div class="menu-select-style">';
-                    html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width menu-select-padding">';
-                    html_mobile += '<select class="form-control phone-menu-select-place" style="font-weight: bold;">';
-                    html_mobile += '<option class="countryin-item"></option>';
-                    html_mobile += '<option class="countrymy-item"></option>';
-                    html_mobile += '<option class="countryid-item"></option>';
-                    html_mobile += '<option class="countrysg-item"></option>';
-                    html_mobile += '<option class="countryth-item"></option>';
-                    html_mobile += '<option class="countryindia-item" href="https://www.cgsi.com/en/india">India</option>';
-                    html_mobile += '<option class="countryuk-item" href="https://www.cgsi.com/en/united-kingdom">United Kingdom</option>';
-                    html_mobile += '</select>';
-                    html_mobile += '</div>';
-                    html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width menu-select-padding">';
-                    html_mobile += '<select class="form-control phone-menu-select-language" style="font-weight: bold;">';
-                    html_mobile += '<option class="langa-item"></option>';
-                    html_mobile += '<option class="langb-item"></option>';
-                    html_mobile += '<option class="langc-item"></option>';
-                    html_mobile += '</select>';
-                    html_mobile += '</div>';
-                    html_mobile += '</div>';
-                    html_mobile += '</div>';
-                    if (definecountrycode == "international" || definecountrycode == "sg") {
-                        html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        //create account
-                        html_mobile += '<div class="phone-createaccount-menu" style="display: none;">';
-                        html_mobile += '<div class="createaccount">';
-                        html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
-                        html_mobile += '<button type="button" class="phone-createaccount-menu close" data-dismiss="alert" aria-label="Close">';
-                        html_mobile += '<span aria-hidden="true">&times;</span>';
-                        html_mobile += '</button>';
-                        html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_createaccount"></b></a>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="createaccount menu-select-style"> ';
-                        html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://www.cgs-cimb.com.sg/en/openanaccount\'" class="btn btn-danger btn-lg btn-block">iCash, Margin and Cash Trading</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://application.cgsi.com/cfd\'" class="btn btn-danger btn-lg btn-block">Contracts for Difference (CFD)</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        //create account
+            html_mobile += '<div class="mobile-menu-footer">';
+            html_mobile += '<div class="dropdown-divider phone"></div>';
+            html_mobile += '<li class="nav-item phone-nav-item">';
+            html_mobile += '<a class="nav-link phone-nav-link" href="about-us"><b data-i18n="[html]header.label_aboutcgscimb"></b></a>';
+            html_mobile += '</li>';
+            html_mobile += '<div class="dropdown-divider phone"></div>';
+            html_mobile += '<div class="menu-select-style">';
+            html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width menu-select-padding">';
+            html_mobile += '<select class="form-control phone-menu-select-place" style="font-weight: bold;">';
+            html_mobile += '<option class="countryin-item"></option>';
+            html_mobile += '<option class="countrymy-item"></option>';
+            html_mobile += '<option class="countryid-item"></option>';
+            html_mobile += '<option class="countrysg-item"></option>';
+            html_mobile += '<option class="countryth-item"></option>';
+            html_mobile += '<option class="countryindia-item" href="https://www.cgsi.com/en/india">India</option>';
+            html_mobile += '<option class="countryuk-item" href="https://www.cgsi.com/en/united-kingdom">United Kingdom</option>';
+            html_mobile += '</select>';
+            html_mobile += '</div>';
+            html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width menu-select-padding">';
+            html_mobile += '<select class="form-control phone-menu-select-language" style="font-weight: bold;">';
+            html_mobile += '<option class="langa-item"></option>';
+            html_mobile += '<option class="langb-item"></option>';
+            html_mobile += '<option class="langc-item"></option>';
+            html_mobile += '</select>';
+            html_mobile += '</div>';
+            html_mobile += '</div>';
+            html_mobile += '</div>';
+            if (definecountrycode == "international" || definecountrycode == "sg") {
+                html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                //create account
+                html_mobile += '<div class="phone-createaccount-menu" style="display: none;">';
+                html_mobile += '<div class="createaccount">';
+                html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
+                html_mobile += '<button type="button" class="phone-createaccount-menu close" data-dismiss="alert" aria-label="Close">';
+                html_mobile += '<span aria-hidden="true">&times;</span>';
+                html_mobile += '</button>';
+                html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_createaccount"></b></a>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="createaccount menu-select-style"> ';
+                html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://www.cgs-cimb.com.sg/en/openanaccount\'" class="btn btn-danger btn-lg btn-block">iCash, Margin and Cash Trading</button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://application.cgsi.com/cfd\'" class="btn btn-danger btn-lg btn-block">Contracts for Difference (CFD)</button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                //create account
 
-                        html_mobile += '<div class="phone-login-menu">';
-                        html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
-                        html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
-                        html_mobile += '<span aria-hidden="true">&times;</span>';
-                        html_mobile += '</button>';
-                        html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu menu-select-style"> ';
-                        html_mobile += '<div class="phone-select2 phone-login-menu form-group dropdown-OpenNewAc-menu-Width2 menu-select-padding login-select">';
-                        html_mobile += '<select class="phone-select2-menu">';
-                        html_mobile += '<option value="0" data-i18n="[html]header.option_selectproduct"></option>';
-                        html_mobile += '</select>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-select3 phone-login-menu form-group dropdown-OpenNewAc-menu-Width3 menu-select-padding login-select">';
-                        html_mobile += '<select class="phone-select3-menu">';
-                        html_mobile += '<option value="0" data-i18n="[html]header.option_selectplatform"></option>';
-                        html_mobile += '</select>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
-                        html_mobile += '<button type="button" disabled="disabled" class="btn btn-danger btn-lg btn-block phone-btn-block phone-login-btn" data-i18n="[html]header.btn_proceed"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu strike">';
-                        html_mobile += '<span>or</span>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
-                        html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</ul>';
-                        html_mobile += '</div>';
-                    } else if (definecountrycode == "my") {
-                        html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        //create account
-                        html_mobile += '<div class="phone-createaccount-menu" style="display: none;">';
-                        html_mobile += '<div class="createaccount">';
-                        html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
-                        html_mobile += '<button type="button" class="phone-createaccount-menu close" data-dismiss="alert" aria-label="Close">';
-                        html_mobile += '<span aria-hidden="true">&times;</span>';
-                        html_mobile += '</button>';
-                        html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_createaccount"></b></a>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="createaccount menu-select-style"> ';
-                        html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://www.cgsi.com.my/en/applyonlinenow.jsp\'" class="btn btn-danger btn-lg btn-block">Individual</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://secure8.itradecimb.com.my/gcCIMBPlus/cliAcctRegEO.jsp?type=C\'" class="btn btn-danger btn-lg btn-block">Corporate</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        //create account
+                html_mobile += '<div class="phone-login-menu">';
+                html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
+                html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
+                html_mobile += '<span aria-hidden="true">&times;</span>';
+                html_mobile += '</button>';
+                html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu menu-select-style"> ';
+                html_mobile += '<div class="phone-select2 phone-login-menu form-group dropdown-OpenNewAc-menu-Width2 menu-select-padding login-select">';
+                html_mobile += '<select class="phone-select2-menu">';
+                html_mobile += '<option value="0" data-i18n="[html]header.option_selectproduct"></option>';
+                html_mobile += '</select>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-select3 phone-login-menu form-group dropdown-OpenNewAc-menu-Width3 menu-select-padding login-select">';
+                html_mobile += '<select class="phone-select3-menu">';
+                html_mobile += '<option value="0" data-i18n="[html]header.option_selectplatform"></option>';
+                html_mobile += '</select>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
+                html_mobile += '<button type="button" disabled="disabled" class="btn btn-danger btn-lg btn-block phone-btn-block phone-login-btn" data-i18n="[html]header.btn_proceed"></button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu strike">';
+                html_mobile += '<span>or</span>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
+                html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</ul>';
+                html_mobile += '</div>';
+            } else if (definecountrycode == "my") {
+                html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                //create account
+                html_mobile += '<div class="phone-createaccount-menu" style="display: none;">';
+                html_mobile += '<div class="createaccount">';
+                html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
+                html_mobile += '<button type="button" class="phone-createaccount-menu close" data-dismiss="alert" aria-label="Close">';
+                html_mobile += '<span aria-hidden="true">&times;</span>';
+                html_mobile += '</button>';
+                html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_createaccount"></b></a>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="createaccount menu-select-style"> ';
+                html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://www.cgsi.com.my/en/applyonlinenow.jsp\'" class="btn btn-danger btn-lg btn-block">Individual</button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://secure8.itradecimb.com.my/gcCIMBPlus/cliAcctRegEO.jsp?type=C\'" class="btn btn-danger btn-lg btn-block">Corporate</button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                //create account
 
-                        html_mobile += '<div class="phone-login-menu">';
-                        html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
-                        html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
-                        html_mobile += '<span aria-hidden="true">&times;</span>';
-                        html_mobile += '</button>';
-                        html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu menu-select-style"> ';
-                        html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://secure8.itradecimb.com.my\'" class="btn btn-danger btn-lg btn-block">CGS International iTrade</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://www.eipocimb.com/\'" class="btn btn-danger btn-lg btn-block">eIPO</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
-                        html_mobile += '<button type="button" onclick="location.href=\'https://login.iress.com.sg/Logon/CGSCIMBCFDMY\'" class="btn btn-danger btn-lg btn-block">IRESS</button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu strike">';
-                        html_mobile += '<span>or</span>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
-                        html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</ul>';
-                        html_mobile += '</div>';
-                    } else {
-                        html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
-                        html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu">';
-                        html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
-                        html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
-                        html_mobile += '<span aria-hidden="true">&times;</span>';
-                        html_mobile += '</button>';
-                        html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu menu-select-style"> ';
-                        html_mobile += '<div class="phone-select2 phone-login-menu form-group dropdown-OpenNewAc-menu-Width2 menu-select-padding login-select">';
-                        html_mobile += '<select class="phone-select2-menu">';
-                        html_mobile += '<option value="0" data-i18n="[html]header.option_selectproduct"></option>';
-                        html_mobile += '</select>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-select3 phone-login-menu form-group dropdown-OpenNewAc-menu-Width3 menu-select-padding login-select">';
-                        html_mobile += '<select class="phone-select3-menu">';
-                        html_mobile += '<option value="0" data-i18n="[html]header.option_selectplatform"></option>';
-                        html_mobile += '</select>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
-                        html_mobile += '<button type="button" disabled="disabled" class="btn btn-danger btn-lg btn-block phone-btn-block phone-login-btn" data-i18n="[html]header.btn_proceed"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu strike">';
-                        html_mobile += '<span>or</span>';
-                        html_mobile += '</div>';
-                        html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
-                        html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</div>';
-                        html_mobile += '</ul>';
-                        html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu">';
+                html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
+                html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
+                html_mobile += '<span aria-hidden="true">&times;</span>';
+                html_mobile += '</button>';
+                html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu menu-select-style"> ';
+                html_mobile += '<div class="dev-needed" style="padding: 30px;"">';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://secure8.itradecimb.com.my\'" class="btn btn-danger btn-lg btn-block">CGS International iTrade</button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://www.eipocimb.com/\'" class="btn btn-danger btn-lg btn-block">eIPO</button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="form-group dropdown-OpenNewAc-menu-Width2 login-select" style="margin-top: 17px;">';
+                html_mobile += '<button type="button" onclick="location.href=\'https://login.iress.com.sg/Logon/CGSCIMBCFDMY\'" class="btn btn-danger btn-lg btn-block">IRESS</button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu strike">';
+                html_mobile += '<span>or</span>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
+                html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block phone-menu-btn-CreateAc" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</ul>';
+                html_mobile += '</div>';
+            } else {
+                html_mobile += '<div class="btn-group phone-menu-btn-group-height" role="group" aria-label="Basic example">';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-Login" data-i18n="[html]header.label_loginuppercase"></button>';
+                html_mobile += '<button type="button" class="btn phone-menu-btn-CreateAc" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu">';
+                html_mobile += '<div style="padding: 0px 30px 9px 30px; ">';
+                html_mobile += '<button type="button" class="phone-login-menu close" data-dismiss="alert" aria-label="Close">';
+                html_mobile += '<span aria-hidden="true">&times;</span>';
+                html_mobile += '</button>';
+                html_mobile += '<a style="font-size: 22px;font-weight: 900;"><b data-i18n="[html]header.label_memberlogin"></b></a>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu menu-select-style"> ';
+                html_mobile += '<div class="phone-select2 phone-login-menu form-group dropdown-OpenNewAc-menu-Width2 menu-select-padding login-select">';
+                html_mobile += '<select class="phone-select2-menu">';
+                html_mobile += '<option value="0" data-i18n="[html]header.option_selectproduct"></option>';
+                html_mobile += '</select>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-select3 phone-login-menu form-group dropdown-OpenNewAc-menu-Width3 menu-select-padding login-select">';
+                html_mobile += '<select class="phone-select3-menu">';
+                html_mobile += '<option value="0" data-i18n="[html]header.option_selectplatform"></option>';
+                html_mobile += '</select>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
+                html_mobile += '<button type="button" disabled="disabled" class="btn btn-danger btn-lg btn-block phone-btn-block phone-login-btn" data-i18n="[html]header.btn_proceed"></button>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu strike">';
+                html_mobile += '<span>or</span>';
+                html_mobile += '</div>';
+                html_mobile += '<div class="phone-login-menu" style="padding:30px;">';
+                html_mobile += '<button type="button" class="btn btn-outline-danger btn-lg btn-block phone-btn-block" onclick="javascript: location.href=\'openanaccount\'" data-i18n="[html]header.label_createaccountuppercase"></button>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</div>';
+                html_mobile += '</ul>';
+                html_mobile += '</div>';
+            }
+
+            $(".navbar.navbar-expand-md.navbar-light.bg-white.no-padding.muli-font-family").html(html_mobile);
+            mobileMenuHandler(response);
+            $(".login-select>.select-selected").remove();
+            $(".login-select>.select-items").remove();
+            // selector();
+            //mobile version end
+
+            //language selector start
+            setMenuHeader();
+            //language selector end
+
+            $(".navbar-brand.destop-navbar-brand").attr("href", homepage_obj.page_name);
+            $(".navbar-brand.mobile-navbar-brand").attr("href", homepage_obj.page_name);
+            $(".nav.collapse.navbar-collapse>li>a").eq(0).attr("href", homepage_obj.page_name);
+            //active menu start
+            var currentPageWithParm = window.location.href.split("/")[window.location.href.split("/").length - 1];
+            var currentPage = currentPageWithParm.split(".jsp")[0];
+            var selectedChildid;
+            var page_name_active = "";
+            for (var i = 0; i < response.menu.length; i++) {
+                if (response.menu[i].page_name.indexOf(currentPage) > -1) {
+                    var targetPageWithParm = response.menu[i].page_name;
+                    var targetPageWithJsp = targetPageWithParm.split(".jsp")[0];
+                    if (targetPageWithJsp == currentPage) {
+                        selectedChildid = response.menu[i].child_id;
+                        page_name_active = response.menu[i].menu_id;
                     }
+                }
+            }
 
-                    $(".navbar.navbar-expand-md.navbar-light.bg-white.no-padding.muli-font-family").html(html_mobile);
-                    mobileMenuHandler(response);
-                    $(".login-select>.select-selected").remove();
-                    $(".login-select>.select-items").remove();
-                    // selector();
-                    //mobile version end
-
-                    //language selector start
-                    setMenuHeader();
-                    //language selector end
-
-                    $(".navbar-brand.destop-navbar-brand").attr("href", homepage_obj.page_name);
-                    $(".navbar-brand.mobile-navbar-brand").attr("href", homepage_obj.page_name);
-                    $(".nav.collapse.navbar-collapse>li>a").eq(0).attr("href", homepage_obj.page_name);
-                    //active menu start
-                    var currentPageWithParm = window.location.href.split("/")[window.location.href.split("/").length - 1];
-                    var currentPage = currentPageWithParm.split(".jsp")[0];
-                    var selectedChildid;
-                    var page_name_active = "";
+            if (page_name_active != "" && page_name_active != "1") {
+                while (selectedChildid != "1") {
                     for (var i = 0; i < response.menu.length; i++) {
-                        if (response.menu[i].page_name.indexOf(currentPage) > -1) {
-                            var targetPageWithParm = response.menu[i].page_name;
-                            var targetPageWithJsp = targetPageWithParm.split(".jsp")[0];
-                            if (targetPageWithJsp == currentPage) {
-                                selectedChildid = response.menu[i].child_id;
-                                page_name_active = response.menu[i].menu_id;
-                            }
+                        if (response.menu[i].menu_id == selectedChildid) {
+                            selectedChildid = response.menu[i].child_id;
+                            page_name_active = response.menu[i].menu_id;
                         }
                     }
-
-                    if (page_name_active != "" && page_name_active != "1") {
-                        while (selectedChildid != "1") {
-                            for (var i = 0; i < response.menu.length; i++) {
-                                if (response.menu[i].menu_id == selectedChildid) {
-                                    selectedChildid = response.menu[i].child_id;
-                                    page_name_active = response.menu[i].menu_id;
-                                }
-                            }
-                        }
-
-                        $(".nav-item.dropdown.dropdown-menu-hover.dropdown-crow>a.nav-link[menuid='" + page_name_active + "']").addClass("active");
-                    }
-
-                    if ($(".header_sub[href='" + currentPage + "']").length > 0)
-                        $(".header_sub[href='" + currentPage + "']").addClass("active");
-                    $(".header_sub[href='home']").addClass("active");
-                    //active menu end
-
-                    //outstandspace start
-                    outstandspaceWithOutMenu();
-                    $('button.navbar-toggler.phone-btn-nav').click(function () {
-                        if (!$("#navbarTogglerDemo02").hasClass("show")) {
-                            $("#navbarTogglerDemo02").removeAttr("style");
-                            $("body").append("<mobiletempbody></mobiletempbody>")
-                            $("body>*:not('.sticky-top')").appendTo("mobiletempbody");
-                            $("#iframe-alertbar").hide();
-                            $(".navbar-toggler.phone-btn-nav");
-                            $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").attr("style", "height: 16px; background-image: url('https://www.cgsi.com/cgsiresources/system/menucancel.svg')");
-                        } else {
-                            $("mobiletempbody>*").appendTo("body");
-                            $("mobiletempbody").remove();
-                            $("#iframe-alertbar").show();
-                            $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").removeAttr("style");
-                        }
-                    });
-                    $('#navbarTogglerDemo02').on('shown.bs.collapse', function () {
-                        outstandspaceWithMenu();
-                    });
-                    //outstandspace end
-
-                    //submenu controll start
-                    var submenu = $(".dropdown-submenu.destop-dropdown-submenu");
-                    submenu.on("click", function () {
-                        $("div.dropdown-menu").hide();
-                        $(this).children(".dropdown-menu").show();
-                        $(".dropdown-menu.product-and-serivces-dropdown-menu-style").mouseleave(function () {
-                            $("div.dropdown-menu").hide();
-                        });
-                    });
-                    //submenu controll end
-
-                    memberloginmenu(response);
-                } else {
-                    checkSessionExpired(response.replymsg);
-                    $("#errorModal>div>div>div.modal-body").html(response.replymsg);
-                    $("#errorModal").modal();
                 }
 
-            },
-            error: function (XMLHttpRequest) {
-
-            },
-            complete: function () {
-                // getLanguage();
-                $(".se-pre-con").fadeOut("fast");
+                $(".nav-item.dropdown.dropdown-menu-hover.dropdown-crow>a.nav-link[menuid='" + page_name_active + "']").addClass("active");
             }
-        });
+
+            if ($(".header_sub[href='" + currentPage + "']").length > 0)
+                $(".header_sub[href='" + currentPage + "']").addClass("active");
+            $(".header_sub[href='home']").addClass("active");
+            //active menu end
+
+            //outstandspace start
+            outstandspaceWithOutMenu();
+            $('button.navbar-toggler.phone-btn-nav').click(function () {
+                if (!$("#navbarTogglerDemo02").hasClass("show")) {
+                    $("#navbarTogglerDemo02").removeAttr("style");
+                    $("body").append("<mobiletempbody></mobiletempbody>")
+                    $("body>*:not('.sticky-top')").appendTo("mobiletempbody");
+                    $("#iframe-alertbar").hide();
+                    $(".navbar-toggler.phone-btn-nav");
+                    $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").attr("style", "height: 16px; background-image: url('https://www.cgsi.com/cgsiresources/system/menucancel.svg')");
+                } else {
+                    $("mobiletempbody>*").appendTo("body");
+                    $("mobiletempbody").remove();
+                    $("#iframe-alertbar").show();
+                    $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").removeAttr("style");
+                }
+            });
+            $('#navbarTogglerDemo02').on('shown.bs.collapse', function () {
+                outstandspaceWithMenu();
+            });
+            //outstandspace end
+
+            //submenu controll start
+            var submenu = $(".dropdown-submenu.destop-dropdown-submenu");
+            submenu.on("click", function () {
+                $("div.dropdown-menu").hide();
+                $(this).children(".dropdown-menu").show();
+                $(".dropdown-menu.product-and-serivces-dropdown-menu-style").mouseleave(function () {
+                    $("div.dropdown-menu").hide();
+                });
+            });
+            //submenu controll end
+
+            memberloginmenu(response);
+        } else {
+            checkSessionExpired(response.replymsg);
+            $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+            $("#errorModal").modal();
+        }
+
+        $(".se-pre-con").fadeOut("fast");
     }
 
     function mobileMenuHandler(response) {
@@ -1540,124 +1969,179 @@ gtag('config', 'UA-120227926-1');
     
     function getFooter() {
         var lang = $("html").attr("lang");
-    
-        $.ajax({
-            type: "GET",
-            dataType: 'json',
-            url: "/locales/en/GetFooter.json",
-            headers: { "authorization": "webkey" }, 
-            data: { lang: lang, footerid: "", type: "", platform: "web" },
-            success: function (response) {
-                console.log(response);
-                if(response.status === "SUCCESS") {
-                    var socialhtml = "";
-                    var lowermenuhtml = "";
-                    var mobilelowermenuhtml = "";
-                    var uppermenuhtml = "";
-                    var mobileuppermenuhtml = "";
-                    $(".footer-lower>*").remove();
-                    $(".footer-itemlist-social-frame>*").remove();
-                    $(".footer-itemlist-lowermenu-frame>*").remove();
-                    
-                    //create lowermenutable start
-                    var lowermenutable = "";
-                    var lowermenutablenum = Math.ceil(response.lowermenu.length/3);
-                    
-                    lowermenutable += '<table width="100%">';
-                    for(var i=0; i<lowermenutablenum; i++) {
-                        lowermenutable += '<tr>';
-                        
-                        if(i == 0)
-                            lowermenutable += '<td width="25%" class="footer-itemlist-social-frame" style="vertical-align: top;"></td>';
-                        else
-                            lowermenutable += '<td width="25%" class="footer-itemlist-social-frame" style="vertical-align: top; visibility: hidden;"></td>';
-                        
-                        lowermenutable += '<td width="5%">&nbsp;</td>';
-                        lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
-                        lowermenutable += '<td width="5%">&nbsp;</td>';
-                        lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
-                        lowermenutable += '<td width="5%">&nbsp;</td>';
-                        lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
-                        lowermenutable += '</tr>';
-                    }
-                    lowermenutable += '</table>';
-                    $(".footer-lower").append(lowermenutable);
-                    //create lowermenutable end
-                    
-                    //socialhtml start
-                    for(var i=0; i<response.social.length;i++) {
-                        socialhtml += '<a href="' + response.social[i].hyperlink + '" target="_blank">';
-                        socialhtml += '<img src="' + response.social[i].background + '" class="footer-icon"></a>';
-                    }
-                    $(".footer-itemlist-social-frame").append(socialhtml);
-                    //socialhtml end
-                    
-                    //lowermenuhtml start
-                    for(var i=0; i<response.lowermenu.length;i++) {
-                        lowermenuhtml = '';
-                        lowermenuhtml += '<a href="' + response.lowermenu[i].hyperlink + '" target="_blank" style="color: #ffffff;">';
-                        lowermenuhtml += '<p class="footer-btn">' + response.lowermenu[i].content  + '</p></a>';
-                        $(".lowermenuitem").eq(i).append(lowermenuhtml);
-                    }
-                    //lowermenuhtml end
-                    
-                    //mobilelowermenuhtml start
-                    for(var i=0; i<response.lowermenu.length;i++) {
-                        mobilelowermenuhtml += '<p class="footer-btn" onclick="javascript: window.open(\'' + response.lowermenu[i].hyperlink + '\', \'_blank\');">';
-                        mobilelowermenuhtml += response.lowermenu[i].content;
-                        mobilelowermenuhtml += '</p>';
-                    }
-                    $(".footer-itemlist-lowermenu-frame").append(mobilelowermenuhtml);
-                    //mobilelowermenuhtml end
-                    
-                    //uppermenuhtml start
-                    var item = 0;
-                    var uppermenuitemindex = 0;
-                    var uppermenuitemgroupnum = Math.ceil(response.uppermenu.length/3);
-                    for(var i=0; i<response.uppermenu.length;i++) {
-                        uppermenuhtml += '<a href="' + response.uppermenu[i].hyperlink + '" style="color: #ffffff;">';
-                        uppermenuhtml += '<p class="footer-btn">' + response.uppermenu[i].content  + '</p></a>';
-                        
-                        item ++;
-                        if(item == uppermenuitemgroupnum || i+1 == response.uppermenu.length) {
-                            $(".uppermenuitem").eq(uppermenuitemindex).append(uppermenuhtml);
-                            uppermenuhtml = '';
-                            item = 0;
-                            uppermenuitemindex++;
-                        }
-                    }
-                    //uppermenuhtml end
-                    
-                    //mobileuppermenuhtml start
-                    var mobileitem = 0;
-                    var mobileuppermenuitemindex = 0;
-                    var mobileuppermenuitemgroupnum = Math.ceil(response.uppermenu.length/2);
-                    for(var i=0; i<response.uppermenu.length;i++) {
-                        mobileuppermenuhtml += '<a href="' + response.uppermenu[i].hyperlink + '" style="color: #ffffff;">';
-                        mobileuppermenuhtml += '<p class="footer-btn">' + response.uppermenu[i].content  + '</p></a>';
-                        
-                        mobileitem ++;
-                        if(mobileitem == mobileuppermenuitemgroupnum || i+1 == response.uppermenu.length) {
-                            $(".mobile-uppermenuitem").eq(mobileuppermenuitemindex).append(mobileuppermenuhtml);
-                            mobileuppermenuhtml = '';
-                            mobileitem = 0;
-                            mobileuppermenuitemindex++;
-                        }
-                    }
-                    //mobileuppermenuhtml end
-                } else {
-                    checkSessionExpired(response.replymsg);
-                    $("#errorModal>div>div>div.modal-body").html(response.replymsg);
-                    $("#errorModal").modal();
-                }
-            },
-            error: function(XMLHttpRequest) {
 
-            },
-            complete: function () {
-                // getLanguage();
+        var response = {
+            "replymsg": "",
+            "social": [],
+            "uppermenu": [
+                {
+                    "footerid": "6",
+                    "hyperlink": "about-us",
+                    "background": "",
+                    "content": "About CGS International"
+                },
+                {
+                    "footerid": "9",
+                    "hyperlink": "contact-us",
+                    "content": "Contact Us"
+                },
+                {
+                    "footerid": "12",
+                    "hyperlink": "frequently-asked-questions",
+                    "content": "FAQ"
+                },
+                {
+                    "footerid": "7",
+                    "hyperlink": "newsroom",
+                    "background": "",
+                    "content": "Newsroom"
+                },
+                {
+                    "footerid": "13",
+                    "hyperlink": "sitemap",
+                    "content": "Sitemap"
+                },
+                {
+                    "footerid": "8",
+                    "hyperlink": "disclaimer",
+                    "content": "Disclaimer"
+                },
+                {
+                    "footerid": "11",
+                    "hyperlink": "privacy-policy",
+                    "background": "",
+                    "content": "Privacy Policy"
+                },
+                {
+                    "footerid": "14",
+                    "hyperlink": "terms-of-use",
+                    "content": "Terms of Use"
+                },
+                {
+                    "footerid": "15",
+                    "hyperlink": "important-notice",
+                    "background": "",
+                    "content": "Important Notice"
+                }
+            ],
+            "lowermenu": [
+                {
+                    "footerid": "3",
+                    "hyperlink": "http:\/\/www.chinastock.com.cn\/en\/",
+                    "content": "China Galaxy Securities"
+                },
+                {
+                    "footerid": "5",
+                    "hyperlink": "https:\/\/en.chinastock.com.hk\/",
+                    "background": "",
+                    "content": "CGS International Holdings Limited"
+                }
+            ],
+            "status": "SUCCESS"
+        }
+
+        console.log(response);
+        if(response.status === "SUCCESS") {
+            var socialhtml = "";
+            var lowermenuhtml = "";
+            var mobilelowermenuhtml = "";
+            var uppermenuhtml = "";
+            var mobileuppermenuhtml = "";
+            $(".footer-lower>*").remove();
+            $(".footer-itemlist-social-frame>*").remove();
+            $(".footer-itemlist-lowermenu-frame>*").remove();
+
+            //create lowermenutable start
+            var lowermenutable = "";
+            var lowermenutablenum = Math.ceil(response.lowermenu.length/3);
+
+            lowermenutable += '<table width="100%">';
+            for(var i=0; i<lowermenutablenum; i++) {
+                lowermenutable += '<tr>';
+
+                if(i == 0)
+                    lowermenutable += '<td width="25%" class="footer-itemlist-social-frame" style="vertical-align: top;"></td>';
+                else
+                    lowermenutable += '<td width="25%" class="footer-itemlist-social-frame" style="vertical-align: top; visibility: hidden;"></td>';
+
+                lowermenutable += '<td width="5%">&nbsp;</td>';
+                lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
+                lowermenutable += '<td width="5%">&nbsp;</td>';
+                lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
+                lowermenutable += '<td width="5%">&nbsp;</td>';
+                lowermenutable += '<td width="20%" class="desktop-footer-itemlist-frame lowermenuitem" style="vertical-align: bottom;"></td>';
+                lowermenutable += '</tr>';
             }
-        });
+            lowermenutable += '</table>';
+            $(".footer-lower").append(lowermenutable);
+            //create lowermenutable end
+
+            //socialhtml start
+            for(var i=0; i<response.social.length;i++) {
+                socialhtml += '<a href="' + response.social[i].hyperlink + '" target="_blank">';
+                socialhtml += '<img src="' + response.social[i].background + '" class="footer-icon"></a>';
+            }
+            $(".footer-itemlist-social-frame").append(socialhtml);
+            //socialhtml end
+
+            //lowermenuhtml start
+            for(var i=0; i<response.lowermenu.length;i++) {
+                lowermenuhtml = '';
+                lowermenuhtml += '<a href="' + response.lowermenu[i].hyperlink + '" target="_blank" style="color: #ffffff;">';
+                lowermenuhtml += '<p class="footer-btn">' + response.lowermenu[i].content  + '</p></a>';
+                $(".lowermenuitem").eq(i).append(lowermenuhtml);
+            }
+            //lowermenuhtml end
+
+            //mobilelowermenuhtml start
+            for(var i=0; i<response.lowermenu.length;i++) {
+                mobilelowermenuhtml += '<p class="footer-btn" onclick="javascript: window.open(\'' + response.lowermenu[i].hyperlink + '\', \'_blank\');">';
+                mobilelowermenuhtml += response.lowermenu[i].content;
+                mobilelowermenuhtml += '</p>';
+            }
+            $(".footer-itemlist-lowermenu-frame").append(mobilelowermenuhtml);
+            //mobilelowermenuhtml end
+
+            //uppermenuhtml start
+            var item = 0;
+            var uppermenuitemindex = 0;
+            var uppermenuitemgroupnum = Math.ceil(response.uppermenu.length/3);
+            for(var i=0; i<response.uppermenu.length;i++) {
+                uppermenuhtml += '<a href="' + response.uppermenu[i].hyperlink + '" style="color: #ffffff;">';
+                uppermenuhtml += '<p class="footer-btn">' + response.uppermenu[i].content  + '</p></a>';
+
+                item ++;
+                if(item == uppermenuitemgroupnum || i+1 == response.uppermenu.length) {
+                    $(".uppermenuitem").eq(uppermenuitemindex).append(uppermenuhtml);
+                    uppermenuhtml = '';
+                    item = 0;
+                    uppermenuitemindex++;
+                }
+            }
+            //uppermenuhtml end
+
+            //mobileuppermenuhtml start
+            var mobileitem = 0;
+            var mobileuppermenuitemindex = 0;
+            var mobileuppermenuitemgroupnum = Math.ceil(response.uppermenu.length/2);
+            for(var i=0; i<response.uppermenu.length;i++) {
+                mobileuppermenuhtml += '<a href="' + response.uppermenu[i].hyperlink + '" style="color: #ffffff;">';
+                mobileuppermenuhtml += '<p class="footer-btn">' + response.uppermenu[i].content  + '</p></a>';
+
+                mobileitem ++;
+                if(mobileitem == mobileuppermenuitemgroupnum || i+1 == response.uppermenu.length) {
+                    $(".mobile-uppermenuitem").eq(mobileuppermenuitemindex).append(mobileuppermenuhtml);
+                    mobileuppermenuhtml = '';
+                    mobileitem = 0;
+                    mobileuppermenuitemindex++;
+                }
+            }
+            //mobileuppermenuhtml end
+        } else {
+            checkSessionExpired(response.replymsg);
+            $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+            $("#errorModal").modal();
+        }
     }
 </script>
 
