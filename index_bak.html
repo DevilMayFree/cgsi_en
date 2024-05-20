@@ -1,15 +1,13 @@
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-<title>Why CGS International | CGS International</title>
+<title>Home | CGS International</title>
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="/img/favicon.ico">
-<meta name="keywords" content="why CGSI, financial provider, retail investors, retail traders, traders, investors, research coverage, insights" />
-<meta name="description" content="CGS International remains as the financial service provider of choice for over 2,600 institutional clients and 400,000 retail clients. Clients engage us as we are a trusted and reliable partner, with a long tradition of robust research analysis, and our commitment to quality service." />
+<meta name="keywords" content="CGS International, Singapore brokerage, eWealth, robo advisory, ETF, DLC, Share margin financing, CFD, ELN, Futures, Securities borrowing and lending, Mutual funds, bonds, Stocks, trading, online trading, cgs cimb, cgscimb.com, research reports, market insights, finance, financial institution, ASEAN trade, Investing, Investment, grow your wealth" />
+<meta name="description" content="Wide market access to over 30 global markets. The one-stop solution with comprehensive investment options including Bonds, CFDs, ETFs, Futures, FX, Global Equities, Robo-advisor and Equity Financing Services. Trade with the support of award-winning research now." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="facebook-domain-verification" content="eatcpqn39n99fieyukz373l4gj71ik" />
         <script src="/js/jquery-3.5.1.min.js?v=20240203"></script>
@@ -17,11 +15,13 @@
         <script src="/js/bootstrap.min.js?v=20240203"></script>
         <script src="/js/bootstrap-select.min.js?v=20240203"></script>
         <script src="/js/language/i18next-1.11.2.min.js?v=20240203"></script>
+        <script src="/js/swiper.min.js?v=20240203"></script>
         <script src="/js/cimb.js?v=20240203"></script>
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css?v=20240203">
         <link rel="stylesheet" type="text/css" href="/css/bootstrap-select.min.css?v=20240203">
         <link rel="stylesheet" type="text/css" href="/css/header.css?v=20240203">
         <link rel="stylesheet" type="text/css" href="/css/footer.css?v=20240203">
+        <link rel="stylesheet" type="text/css" href="/css/swiper.min.css?v=20240203">
         <link rel="stylesheet" type="text/css" href="/css/cimb.css?v=20240203">
         <link rel="stylesheet" type="text/css" href="/css/cimb-customer.css?v=20240203">
         <link href='https://fonts.googleapis.com/css?family=Muli|Muli:bold|Poppins|Poppins:bold|Open Sans|Open Sans:boldLato|Lato:bold' rel='stylesheet'>
@@ -46,7 +46,7 @@
         <!-- Global site tag (gtag.js) - Google Ads -->
     </head>
 
-<body page="why-cgs-international">
+<body page="home">
     <body page="">
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K92S82Z"
@@ -1272,146 +1272,881 @@ gtag('config', 'UA-120227926-1');
     });
 </script>
         
-<div id="main_editor" class="main_editor_blank_frame"><div class="why-cgs-cimb-iframe">
-<div class="why-cgs-cimb-upper row row-no-margin">
-<div class="why-cgs-cimb-title-frame col-lg-6 col-md-12 col-sm-12 col-no-padding">
-<h1 class="why-cgs-cimb-title">Why<span class="span-color"> CGS International</span></h1>
+        
+<div id="carousel">
+    <div>
+        <!--<div style="background-color: #0B318F;border-radius: 25px 0 0 0;width: 35%;height: 20px;float: right;"></div>-->
+        <div style="
+            background-color: #E60012;
+            border-radius: 0 0 25px 0;
+            width: 75%;
+            position: absolute;
+            height: 20px;
+            z-index: 999;">
+        </div>
+    </div>
 </div>
 
-<div class="why-cgs-cimb-grey-info-frame col-lg-6 col-md-12 col-sm-12 col-no-padding">
-<p class="blue-underline">&nbsp;</p>
+<script>
+$(document).ready(function() {
+    if(getParm("status") == "preview") {
+        getCarouselByPageName(getParm("page_name"), getParm("modified_datetime"), getParm("lang"));
+    } else if(getParm("status") == "edit") {
+        getCarouselHtml(getParm("carousel_id"), getParm("lang"));
+    } else {
+        //Get Page Name start
+        var pathname = location.pathname;
+        var jspname = pathname.substring(pathname.lastIndexOf('/')+1);
+        var pagename = jspname.substring(0, (jspname.lastIndexOf('.jsp') == -1) ? jspname.length : jspname.lastIndexOf('.jsp'));
+        //Get Page Name end
+        
+        getCarouselByPageName(pagename, "1", $("html").attr("lang"));
+    }
+});
 
-<p class="why-cgs-cimb-grey-info">CGS International remains as the financial service provider of choice, our clients engage us as we are a trusted and reliable partner, with a long tradition of robust research analysis, and our commitment to quality service.</p>
-</div>
+function getCarouselByPageName(page_name, modified_datetime, lang) {
+    var modified_by = "";
+    
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/locales/en/GetPage.json",
+        headers: { "authorization": "webkey" }, 
+        data: { modified_by: modified_by, modified_datetime: modified_datetime, page_code: page_name, lang: lang },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                getCarouselHtml(response.text[0].carousel_id, lang);
+           } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+
+        }
+    });
+}
+
+function getCarouselHtml(carousel_id, lang) {
+    if(carousel_id == "" || carousel_id == undefined) {
+        $("#carousel").hide();
+    } else {
+        $.ajax({
+            type: "GET",
+            dataType: 'json',
+            url: "/locales/en/WSCarousel.json",
+            headers: { "authorization": "webkey" }, 
+            data: { action: "getitem", carousel_id: carousel_id, lang: lang, content: "", image: "", hyperlink: "", rank: "", headlinestatus: "", backgroundstatus: "", modified_by: "", modified_datetime: "" },
+            success: function (response) {
+                if(response.status === "SUCCESS") {
+                    var html = "";
+                    var active = "";
+
+                    if(response.text == undefined || response.isactive == "0") {
+                        $("#carousel").hide();
+                    } else {
+                        html += '<div id="carouselExampleIndicators" class="carousel fade" data-ride="carousel">';
+                        html += '<ol class="carousel-indicators">';
+
+                        for(var i=0; i<response.text.length; i++) {
+                            if(i == 0) 
+                                active = "active"; 
+                            else
+                                active = "";
+
+                            html += '<li data-target="#carouselExampleIndicators" data-slide-to="' + i + '" class="' + active +'"></li>';
+                        }
+
+                        html += '</ol>';
+                        html += '<div class="carousel-inner">';
+
+                        for(var i=0; i<response.text.length; i++) {
+                            if(i == 0) 
+                                active = "active"; 
+                            else
+                                active = "";
+
+                            if(response.text[i].hyperlink == "") {
+                                html += '<div class="carousel-item ' + active + '">';
+                            } else {
+                                html += '<div class="carousel-item ' + active + '" style="cursor: pointer;" onclick="javascript: window.open(\'' + response.text[i].hyperlink + '\', \'_blank\');">';
+                            }
+                            
+//                            if(response.text[i].headlinestatus == "1") {
+//                                html += '<div class="carousel-caption d-none d-md-block" >';
+//                            } else {
+//                                html += '<div class="carousel-caption d-none d-md-block nocontent">';
+//                            }
+//                                
+//                            html += '<table width="100%" height="100%">';
+//                            html += '<tr>';
+//                            html += '<td style="vertical-align: middle;">';
+//                            html += response.text[i].content;
+//                            html += '</td>';
+//                            html += '</tr>';
+//                            html += '</table>';
+//                            html += '</div>';
+
+//                            if(response.text[i].backgroundstatus == "1")
+//                                html += '<img class="d-block w-100" src="' + response.text[i].image + '">';
+//                            else
+//                                html += '<img class="d-block w-100 nobackgroundimage" src="' + response.text[i].image + '">';
+                            
+                            html += '<img class="d-block w-100" src="' + response.text[i].image + '">';
+                            
+                            html += '</div>';
+                        }
+
+                        html += '</div>';
+                        html += '</div>';
+                    }
+
+                    $("#carousel").append(html);
+                    $('#carouselExampleIndicators').carousel({ cycle: true });
+                    
+                    $("#carousel").on("touchstart", function(event){
+                        var xClick = event.originalEvent.touches[0].pageX;
+                        $(this).one("touchmove", function(event){
+                            var xMove = event.originalEvent.touches[0].pageX;
+                            if( Math.floor(xClick - xMove) > 10 ){
+                                $(this).carousel('next');
+                            }
+                            else if( Math.floor(xClick - xMove) < -10 ){
+                                $(this).carousel('prev');
+                            }
+                        });
+                        $("#carousel").on("touchend", function(){
+                                $(this).off("touchmove");
+                        });
+                    });
+                } else {
+                    checkSessionExpired(response.replymsg);
+                    $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                    $("#errorModal").modal();
+                }
+            },
+            error: function(XMLHttpRequest) {
+
+            }
+        });
+    }
+}
+</script>
+        
+<div id="main_editor2" class="main_editor_frame2"><div id="topproductsandservice" style="background: linear-gradient(to top, #13318c 44%, #ffffff 0%); z-index: 2; overflow-x: hidden;">
+    <div class="topproductsandservice-frame">
+        <div class="row topproductsandservicetitle-frame" style="margin-left:0px;margin-right:0px;">
+            <div class="col-12 col-md-12">
+                <div class="explore-more-about-o">EXPLORE MORE ABOUT OUR</div>
+                <h2 class="top-products-servi">Top products &amp; services</h2>
+                <div class="topproductsandservicebutton-frame" style="text-align: right;">
+                    <button class="topproductsandservice-previous swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"></button>
+                    <button class="topproductsandservice-next" style="margin-left: 10px;" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></button>
+                </div>
+            </div>
+        </div>
+        <div class="topproducts topproductsandservice-tableandservice-scroll" style="overflow-x: hidden;">
+            <div class="topproductsandservice-table">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                        
+                        
+                        
+                        
+                        
+                        
+                    <div class="swiper-slide swiper-slide-active" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=EQUITIES">EQUITIES</a></div></div><div class="swiper-slide swiper-slide-next" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=LEVERAGED PRODUCTS">LEVERAGED PRODUCTS</a></div></div><div class="swiper-slide" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=FUTURES">FUTURES</a></div></div><div class="swiper-slide" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=WEALTH MANAGEMENT">WEALTH MANAGEMENT</a></div></div><div class="swiper-slide" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=FINANCING SERVICE">FINANCING SERVICE</a></div></div><div class="swiper-slide" style="border-radius: 7px; width: 163.312px; margin-right: 50px;"><div class="topproductsandservice-grid" style="width: 100%;"><a class="topproductsandservice-border topproductsandservice-text" style="text-align: left;" href="all-products-and-services?category=BONDS">BONDS</a></div></div></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="why-cgs-cimb-image-frame"><img src="https://www.cgsi.com/cgsiresources/system/world_map2.jpg" style="width: 100%;" /></div>
+<script>
+$(document).ready(function () {
+    refreshTopProductsAndServicesItems();
+});
 
-<div class="why-cgs-cimb-upper row row-no-margin">
-<div class="fit-browser-width">
-<div class="why-cgs-cimb-info-frame row row-no-margin">
-<div class="why-cgs-cimb-info-frame-left col-lg-6 col-md-12 col-sm-12 col-no-padding">
-<p class="why-cgs-cimb-info">CGS International remains as the financial service provider of choice, our clients engage us as we are a trusted and reliable partner, with a long tradition of robust research analysis, and our commitment to quality service.</p>
-
-<p class="why-cgs-cimb-info">&nbsp;</p>
-
-<p class="why-cgs-cimb-info">Due to our strong presence in Asia and key markets around the world, investors can take comfort in knowing that the diverse range of products offered by us come packaged with the relevant information and analysis, breaking down complex market data with trusted opinions and research.</p>
-
-<p class="why-cgs-cimb-info">&nbsp;</p>
-</div>
-
-<div class="why-cgs-cimb-info-frame-right col-lg-6 col-md-12 col-sm-12 col-no-padding">
-<p class="why-cgs-cimb-info">Moving ahead, backed by Asia&rsquo;s leading financial powerhouse, we are strategically positioned to connect investors to investment opportunities both within and beyond Asia. Being at the forefront of the industry, we tap on the strength of our shareholders, innovative technology, extensive network and access to otherwise difficult to penetrate markets to create value for our clients.</p>
-
-<p class="why-cgs-cimb-info">&nbsp;</p>
-</div>
-</div>
-</div>
-</div>
-
-<div>
-<div class="row row-no-margin why-cgs-cimb-blue-frame">
-<div class="col-lg-6 col-12 col-no-padding" style="padding: 0px;"><img src="https://www.cgsi.com/cgsiresources/resources/Office photo for website 2.jpg" style="width: 100%" /></div>
-
-<div class="col-lg-6 col-12 col-no-padding" style="padding: 50px 7.2vw 50px 7.2vw;">
-<div class="why-cgs-cimb-blue-title-frame">
-<p class="why-cgs-cimb-blue-title">The Asian Perspective</p>
+function refreshTopProductsAndServicesItems() {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: (Math.floor((window.innerWidth * 0.85)/200) < $(".topproductsandservice-grid").length) ? Math.floor((window.innerWidth * 0.85)/200) : $(".topproductsandservice-grid").length,
+        width: window.innerWidth * 0.85,
+        centerInsufficientSlides: true,
+        spaceBetween: 50,
+        on: {
+            resize: function(){
+            this.params.slidesPerView = (Math.floor((window.innerWidth * 0.85)/200) < $(".topproductsandservice-grid").length) ? Math.floor((window.innerWidth * 0.85)/200) : $(".topproductsandservice-grid").length;
+            this.params.width = window.innerWidth * 0.85;
+            this.update();
+        }
+    },
+        navigation: {
+            nextEl: '.topproductsandservice-next',
+            prevEl: '.topproductsandservice-previous',
+        }
+    });
+}
+</script></div>
+        
+        
+<div id="findtheperfectinvestment">
+    
 </div>
 
-<div class="why-cgs-cimb-blue-info-frame">
-<p class="why-cgs-cimb-blue-info">We take pride in providing one of the most comprehensive research coverage in Asia. With analysts based in eight countries in Asia, we cover over 800 stocks in the region, ranging from small-to-mid-cap companies to your familiar blue-chip stocks. The practical nature of our business depends heavily on key insights. This does not happen solely on a computer screen, but with our actual researchers in the field. The Asian Perspective, from the ground up.</p>
-</div>
-</div>
-</div>
+<script>
+$(document).ready(function () {
+    getProductRecommended();
+});
+
+
+function getProductRecommended(){
+    var lang = $("html").attr("lang");
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/locales/en/GetProductRecommended.json",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, productrecommendedid: "", platform:"web"},
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                var html = "";
+                if(response.text.length > 0){
+                    html += '<div class="findtheperfectinvestment-frame">';
+                    html += '<div class="custom-background"></div>'
+                    html += '<span class="row" style="margin: 0px 1px;">';
+                    html += '<div class="col-md-6 col-lg-4" style="padding:40px 20px;">';
+                    html += '<h1><span class="findtheperfectinvestment-title">' + response.text[0].titleblack + '<font style="color: #E60012;">' + response.text[0].titlered + '</font></span></h1>';
+                    html += '</div>';
+                    html += '<div class="col-md-6 col-lg-4" style="padding:40px 20px 20px 20px;background-color: #E9EDF8;">';
+                    html += '<div class="findtheperfectinvestment-triangle"></div>';
+                    html += '<table>';
+                    html += '<tr>';
+                    html += '';
+                    html += '<td><p class="findtheperfectinvestment-title2">' + response.text[0].subtitle + '</p></td>';
+                    html += '</tr>';
+                    html += '</table>';
+                    html += '<div class="form-group">';
+                    html += '<label class="findtheperfectinvestment-question">' + response.text[0].firstquestion + '</label>';
+                    html += '<div class=" findtheperfectinvestment-select-control login-select">';
+                    html += '<select class="form-control findtherightinvesetment1">';
+                    html += '<option value="0" data-i18n="[html]global.selecthere"></option>';
+                    html += '</select> ';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<div class="form-group">';
+                    html += '<label class="findtheperfectinvestment-question">' + response.text[0].lastquestion + '</label>';
+                    html += '<div class=" findtheperfectinvestment-select-control login-select">';
+                    html += '<select class="form-control findtherightinvesetment2">';
+                    html += '<option value="0" data-i18n="[html]global.selecthere"></option>';
+                    html += '</select>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<button type="submit" onclick="redirectToProductRecommended()" class="btn btn-block btn-danger findtheperfectinvestment-button">' + response.text[0].buttonname + '</button>';
+                    html += '<div>&nbsp;</div>';
+                    html += '</div>';
+                    html += '<div class="col-md-0 col-lg-4">&nbsp;</div>';
+                    html += '</span>';
+                    html += '</div>';
+                } else {
+                    html += '<div class="findtheperfectinvestment-frame">';
+                    html += '<span class="row" style="margin: 0px 1px;">';
+                    html += '<div class="col-md-6 col-lg-4">';
+                    html += '<h1><span class="findtheperfectinvestment-title">Let us help you <font style="color: #E60012;">find the perfect investment!</font></span></h1>';
+                    html += '</div>';
+                    html += '<div class="col-md-6 col-lg-4">';
+                    html += '<div class="findtheperfectinvestment-triangle"></div>';
+                    html += '<table>';
+                    html += '<tr>';
+                    html += '';
+                    html += '<td><p class="findtheperfectinvestment-title2">Hi, I\'m Cheam Tze Shen from CGS International Securities. Please fill out the following questions to find out what investment best suits you:</p></td>';
+                    html += '</tr>';
+                    html += '</table>';
+                    html += '<div class="form-group">';
+                    html += '<label class="findtheperfectinvestment-question">I am a:</label>';
+                    html += '<div class=" findtheperfectinvestment-select-control login-select">';
+                    html += '<select class="form-control findtherightinvesetment1">';
+                    html += '<option value="0" data-i18n="[html]global.selecthere"></option>';
+                    html += '</select> ';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<div class="form-group">';
+                    html += '<label class="findtheperfectinvestment-question">How would you react if the value of your portfolio suddenly dropped by 20%?</label>';
+                    html += '<div class=" findtheperfectinvestment-select-control login-select">';
+                    html += '<select class="form-control findtherightinvesetment2">';
+                    html += '<option value="0" data-i18n="[html]global.selecthere"></option>';
+                    html += '</select>';
+                    html += '</div>';
+                    html += '</div>';
+                    html += '<button type="submit" onclick="redirectToProductRecommended()" class="btn btn-block btn-danger findtheperfectinvestment-button">SEE PRODUCT RECOMMENDATIONS</button>';
+                    html += '<div>&nbsp;</div>';
+                    html += '</div>';
+                    html += '<div class="col-md-0 col-lg-4">&nbsp;</div>';
+                    html += '</span>';
+                    html += '</div>';
+                }
+                
+                $("#findtheperfectinvestment").append(html);
+                $(".custom-background")[0].style.backgroundImage = "url('" + response.text[0].background + "')";
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            $(".se-pre-con").fadeOut("fast");
+            getFindtherightinvestmentQuestionChoice() ;
+        }
+    });
+}
+
+function getFindtherightinvestmentQuestionChoice() {
+    var lang = $("html").attr("lang");
+    
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "GetProductRecommendedChoice.json",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                for(var i=0; i<response.text.length; i++) {
+                    if(response.text[i].position == "1") {
+                        $(".findtherightinvesetment1").append("<option value='" + response.text[i].productrecommendedquestionid + "'>" + response.text[i].choice + "</option>");
+                    } else {
+                        $(".findtherightinvesetment2").append("<option value='" + response.text[i].productrecommendedquestionid + "'>" + response.text[i].choice + "</option>");
+                    }
+                }
+
+                selector();
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
+
+function redirectToProductRecommended() {
+    location.href = 'products-for-you.jsp?q1=' + $(".findtherightinvesetment1").val() + "&q2=" + $(".findtherightinvesetment2").val();
+}
+</script>
+        
+        
+<!--<div id="insights" style="background: linear-gradient(to top, #13318c 30%, #ffffff 0%); z-index: 2;">-->
+<div id="insights">
+    <div class="insights-frame" style=" padding: 0px;">
+        <div class="insights" style="">
+            <div class="pricing-overview-tab">
+                <div class="row row-no-margin product3-tab" style="" >
+                    <div class="col-lg-12 col-md-12 col-no-padding row row-no-margin">
+                        <div>
+                            <h1><span class="insights-title" data-i18n="[html]insights.label_insights"></span></h1>
+                        </div>
+                        <!--<select class="insights-relation-selector relation-selector"></select>-->
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-no-padding insights-tabbar row row-no-margin" style="">
+                        <div class="tab-table">
+                            <table class="insights-tabbartable"></table>
+                        </div>
+                        <a class="insights-component-viewall" href="discover" style="margin-left: auto;" data-i18n="[html]insights.label_viewallinsights"></a>
+                    </div>
+                    <div class="col-12 col-no-padding insights-selector-zone" style="margin-bottom: 10px;display: none;">
+                        <div class="form-group login-select insights-table-selector">
+                            <select class="table-to-selector-wrapper"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- insights all start -->
+        <div id="all-insights" class="insights-component insights-type">
+            <div class="row row-no-margin all-item" style="padding-top: 0px;"></div>
+        </div>
+        <!-- insights all end -->
+
+        <!-- selected insights start -->
+        <div id="selected-insights" class="insights-component insights-type insights-item" style="display: none;">
+            <div class="all-selected row row-no-margin"></div>
+        </div>     
+        <!-- selected insights end -->
+
+        <div class="phone-insights-viewall-btn-frame">
+            <a href="discover"><button class="btn btn-block phone-insights-viewall-btn" data-i18n="[html]insights.label_viewallinsightsuppercase"></button></a>
+        </div>
+    </div>
 </div>
 
-<div class="why-cgs-cimb-lower">
-<div class="why-cgs-cimb-lower-padding for-retail-clients">
-<div class="row row-no-margin ">
-<div class="why-cgs-cimb-subtitle-frame">
-<h2 class="why-cgs-cimb-subtitle"><span class="span-color">Retail clients</span></h2>
-</div>
+<script>
+$(document).ready(function () {
+    getInsightsCategoryList();
+});
 
-<div class="why-cgs-cimb-btn-frame"><a class="btn btn-danger why-cgs-cimb-btn" href="openanaccount" style="margin-left: auto;display: none;">CREATE AN ACCOUNT</a></div>
-</div>
+$("#insights").resize(function(){
+    
+});
 
-<div class="row row-no-margin " style="padding-top:54px;">
-<div class="why-cgs-cimb-item-frame col-lg-3 col-md-12 col-no-padding unset-padding">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/networkicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Wide network and personalised service at your doorstep</p>
-</div>
-</div>
-</div>
+function getInsightsCategoryList() {
+    var lang = $("html").attr("lang");
+    var country = $('.insights-relation-selector:visible :selected').val();
+    
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/locales/en/GetInsightsCategory.json",
+        headers: { "authorization": "webkey" }, 
+        data: { country: country, lang: lang, categoryid: "", platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                var html = "";
+                var hideHtml = "";
+                
+                html += '<tr>';
+                html += '<td>';
+                html += '<button class="product3-tablink" type="all" onclick="tabs(\'all\')" data-i18n="[html]insights.label_alluppercase"></button>';
+                html += '</td>';
+                
+                hideHtml += '<select class="table-to-selector-wrapper">';
+                hideHtml += '<option class="product3-tablink" type="all" onclick="tabs(\'all\')" data-i18n="[html]insights.label_alluppercase"></option>';
+                hideHtml += '<option class="product3-tablink" type="all" onclick="tabs(\'all\')" data-i18n="[html]insights.label_alluppercase"></option>';
+                
+                for(var i=0; i<response.text.length;i++) {
+                    html += '<td>';
+                    html += '<button class="product3-tablink" type="' + response.text[i].categoryid + '" onclick="tabs(\'' + response.text[i].categoryid + '\')">' + response.text[i].fullname + '</button>';
+                    html += '</td>';
+                    
+                    hideHtml += '<option class="product3-tablink" type="' + response.text[i].categoryid + '" onclick="tabs(\'' + response.text[i].categoryid + '\')">' + response.text[i].fullname + '</option>';
+                }
+                
+                html += '</tr>';
+                
+                hideHtml += '</select>';
+                
+                $(".insights-tabbartable>*").remove();
+                $(".form-group.login-select.insights-table-selector>*").remove();
+                $(".insights-tabbartable").append(html);
+                $(".form-group.login-select.insights-table-selector").append(hideHtml);
+                selector();
+                
+                tabs("all");
+                
+                $(".table-to-selector-wrapper").change(function() {
+                    tabs($(".table-to-selector-wrapper").find("option:selected").attr("type"));
+                });
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
 
-<div class="why-cgs-cimb-item-frame col-lg-3 col-md-12 col-no-padding unset-padding">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/marketicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Market insights for individual investors to make informed decisions</p>
-</div>
-</div>
-</div>
+function getAllInsight() {
+    var lang = $("html").attr("lang");
+    var searchkeyword = "";
+    var searchdate = "";
+    var country = $('.insights-relation-selector:visible :selected').val();
 
-<div class="why-cgs-cimb-item-frame col-lg-3 col-md-12 col-no-padding unset-padding">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/platformsicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Training and award-winning trading platforms and tools to help clients to trade like a pro</p>
-</div>
-</div>
-</div>
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "GetInsights.json",
+        headers: { "authorization": "webkey" }, 
+        data: { country: country, lang: lang, itemid: "", type: "", platform: "web", searchdate: searchdate, searchkeyword: searchkeyword, page: "" },
+        success: function (response) {
+            if (response.status === "SUCCESS") {
+                $(".all-item.row>*").remove();
+                var insightGridWidth = $("#all-insights>.row.row-no-margin.all-item").width() - 1220;
 
-<div class="phone-why-cgs-cimb-btn-frame"><a class="btn btn-danger btn-block why-cgs-cimb-btn" href="openanaccount">CREATE AN ACCOUNT</a></div>
-</div>
-</div>
+                var html = "";
+                var firstTime = false;
+                if (firstTime == false) {
+                    html = html + '<table style="border-collapse: separate;"><tr>';
+                    firstTime = true;
+                }
 
-<div class="why-cgs-cimb-lower-padding for-institutional">
-<div class="row row-no-margin ">
-<div class="why-cgs-cimb-subtitle-frame">
-<h2 class="why-cgs-cimb-subtitle"><span class="span-color" style="display: none;">Institutional / Corporate clients</span></h2>
-</div>
+                for (var i = 0; i < response.text.length; i++) {
+                    if (i < 4) {
+                        //all item start
+                        html = html + '<td>';
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                    } else if(insightGridWidth - 305 >= 0) {
+                        //all item start
+                        html = html + '<td>';
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                        
+                        insightGridWidth = insightGridWidth - 305;
+                    } else {
+                        //all item start
+                        html = html + '<td class="d-none">';
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                        
+                        insightGridWidth = insightGridWidth - 305;
+                    }
+                }
 
-<div class="why-cgs-cimb-btn-frame"><button class="btn btn-danger why-cgs-cimb-btn" style="display:none; margin-left: auto;">CONTACT SALES</button></div>
-</div>
+                if (firstTime == true) {
 
-<div class="row row-no-margin">
-<div class="why-cgs-cimb-item-frame2">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/teamicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">High touch service by an award-winning research team and global sales team</p>
-</div>
-</div>
-</div>
+                    html = html + '</tr>';
+                    html = html + '</table>';
+                }
 
-<div class="why-cgs-cimb-item-frame2">
-<div class="why-cgs-cimb-item" style=""><img height="75px" src="https://www.cgsi.com/cgsiresources/system/conferenceicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Exclusive access to conferences through corporate access</p>
-</div>
-</div>
-</div>
+                $(".all-item.row").append(html);
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function (XMLHttpRequest) {
 
-<div class="why-cgs-cimb-item-frame2">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/solutionsicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Bespoke solutions for clients&#39; specific investment and operational needs</p>
-</div>
-</div>
-</div>
+        },
+        complete: function () {
+            getLanguage();
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
 
-<div class="why-cgs-cimb-item-frame2">
-<div class="why-cgs-cimb-item"><img height="75px" src="https://www.cgsi.com/cgsiresources/system/advanceicon.svg" />
-<div class="why-cgs-cimb-item-desc-frame">
-<p class="why-cgs-cimb-item-desc">Advanced electronic execution services</p>
-</div>
-</div>
-</div>
+function getInsight(type) {
+    var lang = $("html").attr("lang");
 
-<div class="phone-why-cgs-cimb-btn-frame"><button class="btn btn-danger btn-block why-cgs-cimb-btn" style="display:none;">CONTACT SALES</button></div>
+    var searchkeyword = "";
+    var searchdate = "";
+    var country = $('.insights-relation-selector:visible :selected').val();
+
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "GetInsights.json",
+        headers: { "authorization": "webkey" }, 
+        data: { country: country, lang: lang, itemid: "", type: type, searchkeyword: searchkeyword, searchdate: searchdate, platform: "web", page: "" },
+        success: function (response) {
+            if (response.status === "SUCCESS") {
+                $(".all-selected.row>*").remove();
+                var insightGridWidth = $("#selected-insights>.all-selected.row.row-no-margin").width() - 1220;
+
+                var html = "";
+                var firstTime = false;
+                if (firstTime == false) {
+                    html = html + '<table style="border-collapse: separate;"><tr>';
+                    firstTime = true;
+                }
+
+                for (var i = 0; i < response.text.length; i++) {
+                    if (i < 4) {
+                        html = html + '<td>'
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                    } else if(insightGridWidth - 300 >= 0) {
+                        //all item start
+                        html = html + '<td>';
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                        
+                        insightGridWidth = insightGridWidth - 300;
+                    } else {
+                        //all item start
+                        html = html + '<td class="d-none">';
+                        html = html + generateInsightsItem(response.text[i].background, response.text[i].page_name,
+                                response.text[i].fullname, response.text[i].title, response.text[i].description,
+                                response.text[i].insights_datetime, response.text[i].flag, response.text[i].displaytype);
+                        html = html + '</td>';
+                        
+                        insightGridWidth = insightGridWidth - 300;
+                    }
+                }
+
+                if (firstTime == true) {
+                    html = html + '</tr>';
+                    html = html + '</table>';
+                }
+
+                $(".all-selected.row").append(html);
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function (XMLHttpRequest) {
+
+        },
+        complete: function () {
+            getLanguage();
+        }
+    });
+}
+
+function generateInsightsItem(background, page_name, fullname, title, description, insights_datetime, flag, displaytype) {
+    var html = "";
+    var hasImage = "";
+
+    if (displaytype != undefined && background != "") {
+        hasImage = true;
+    } else {
+        hasImage = false;
+    }
+
+    html = html + '<a class="item-grid" href="' + page_name + '.jsp" style="padding:0;margin-bottom: 37px;">';
+
+    if(displaytype == "1" || displaytype == "2") {
+        if (hasImage == true) {
+            html = html + '<div>';
+            html = html + '<img class="insights-image-resize" src="' + background + '" width="100%">';
+            html = html + '</div>';
+        } else {
+            html = html + '<div>';
+            html = html + '<img class="insights-image-resize" src="../img/dummyinsights.png" width="100%">';
+            html = html + '</div>';
+        }
+    }
+    html = html + '<div class="grid-discover">';
+    html = html + '<div><div class="grid-categories-frame" style="margin-top: 33px;">';
+    html = html + '<div class="grid-categories">' + fullname.toUpperCase() + '</div>';
+    html = html + '</div></div>';
+    html = html + '<div><div class="grid-date-frame">';
+    html = html + '<div class="grid-date">' + datatimeFormatchangeToCalendar(insights_datetime) + '</div>';
+    html = html + '</div>';
+    html = html + '<div class="grid-title-frame" style="margin-top: 0px;height: 78px;">';
+    html = html + '<div class="grid-title">' + title + '</div>';
+    html = html + '</div></div>';
+//    html = html + '<div class="blue-line"></div>';
+    html = html + '</div>';
+
+    if (displaytype == "0") {
+        html = html + '<div class="grid-desc-frame" style="margin-top: 40px;">';
+        html = html + '<div class="grid-desc">' + description + '</div>';
+        html = html + '</div>';
+    }
+
+//    html = html + '<div class="grid-location-frame" style="margin-top: 30px;margin-bottom: 30px;">';
+//        
+//    if(flag == undefined || flag == "") {
+//        html = html + '<table style="visibility: hidden;">';
+//        html = html + '<tr>';
+//        html = html + '<td valign="middle" style="padding: 0px 5px 0px 0px;"><img src="https://www.cgsi.com/cgsiresources/system/place_outlined.png"></td>';
+//        html = html + '</tr>';
+//        html = html + '</table>';
+//    } else {
+//        var flagArray = flag.split(",");
+//        html = html + '<table>';
+//        html = html + '<tr>';
+//        html = html + '<td valign="middle" style="padding: 0px 5px 0px 0px;"><img src="https://www.cgsi.com/cgsiresources/system/place_outlined.png"></td>';
+//        for(var i=0; i<flagArray.length && i < 6; i++) {
+//            if(i == 5) { html = html + '<td valign="middle" style="padding: 0px 5px;">...</td>'; } else { html = html + '<td valign="middle" style="padding: 0px 5px;"><img src="https://www.cgsi.com/cgsiresources/system/relationflag_' + flagArray[i] + '.svg"></td>'; } 
+//        }
+//        html = html + '</tr>';
+//        html = html + '</table>';
+//    }
+//        
+//    html = html + '</div>';
+    html = html + '<div class="grid-divider"></div>';
+    html = html + '<div class="grid-learnmore-frame">';
+    html = html + '<div class="grid-learnmore" data-i18n="[html]global.learnmore"></div>';
+    html = html + '</div>';
+    html = html + '</a>';
+
+    return html;
+}
+
+function tabs(type) {
+    if($(".insights-tabbartable").find("td>button[type=" + type + "]").length == 0) {
+        $(".product3-tablink").removeClass("active");
+        $(".product3-tablink[type='all']").addClass("active");
+    } else {
+        $(".product3-tablink").removeClass("active");
+        $(".product3-tablink[type='" + type + "']").addClass("active");
+    }
+    
+    $(".insights-table-selector>.table-to-selector-wrapper").val($(".product3-tablink[type='" + type + "']").html());
+    $(".insights-table-selector>.select-selected").html($(".product3-tablink[type='" + type + "']").html());
+
+    $("#all-insights").hide();
+    $("#selected-insights").hide();
+
+    if (type == "all") {
+        $("#all-insights").show();
+        getAllInsight();
+    } else {
+        $("#selected-insights").show();
+        getInsight(type);
+    }
+}
+
+$(".btn-selected").click(function () {
+    getInsight($(".btn-selected").attr("insighttype"));
+});
+
+$(".insights-relation-selector").change(function () {
+    getInsightsCategoryList();
+    tabs("all");
+});
+</script>
+        
+        
+            
+<!-- Announcements Modal -->
+<div class="modal fade" id="announcementsModal" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button style="margin-right: 19px;" type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="announcements-modal-frame">
+                    <div class="announcements-modal-date" style="color: #9B9B9B; font-family: Muli; font-size: 14px; font-weight: bold;	letter-spacing: 2px; line-height: 18px;"></div>
+                    <div class="announcements-modal-title"></div>
+                    <div class="announcements-modal-desc"></div>
+                </div>
+            </div>
+      </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-</div>
+<!-- Announcements Modal -->
+
+<div id="latestannouncements"></div>
+
+<script>
+$(document).ready(function() {
+    getLatestannouncements();
+});
+
+function getLatestannouncements() {
+    var lang = $("html").attr("lang");
+    
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/locales/en/GetAnnouncements.json",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, itemid: "", platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                var html = "";
+                var atleastoneannouncements = false;
+               
+                html += '<div id="latestannouncements">';
+                html += '<div class="latestannouncements-frame">';
+                html += '<table width="100%">';
+                html += '<tr>';
+                html += '<td><h1><span class="latest-announcements-title" data-i18n="[html]lastannouncements.label_lastannouncementsuppercase"></span></h1></td>';
+                html += '<td><a href="latest-announcement.jsp"><div class="latestannouncements-desktop-showall" data-i18n="[html]lastannouncements.label_showall"></div></a></td>';
+                html += '</tr>';
+                html += '</table>';
+//                html += '<hr class="latestannouncements-title-hr">';
+                html += '<span class="row" style="margin: 0px 1px;">';
+
+                var announcementcount = 0;
+                
+                for(var i=0; i<response.text.length; i++) {
+                    if(announcementcount < 4) {
+                        html += '<div class="col-md-3" style="padding: 0px;">';
+                        html += '<div class="latestannouncements one" onclick="popupAnnouncements(' + response.text[i].itemid + ')" style="cursor: pointer;">';
+                        html += '<div><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" /></div>';
+                        html += '<div><div class="latestannouncements-date">' + datatimeFormatchangeToCalendar(response.text[i].announcements_datetime) + '</div>';
+                        html += '<div class="latestannouncements-desc">' + response.text[i].teaser + '</div></div>';
+//                        html += '<div onclick="popupAnnouncements(' + response.text[i].itemid + ')" class="latestannouncements-learnmore" data-i18n="[html]global.learnmore"></div>';
+                        html += '<hr class="latestannouncements-hr">';
+                        html += '</div>';
+                        html += '</div>';
+                        atleastoneannouncements = true;
+                        
+                        announcementcount++;
+                    }
+                }
+
+                html += '<div class="col-md-3 latestannouncements-mobile-showall" style="padding: 0px;">';
+                html += '<a href="latest-announcement.jsp" style="width: 100%"><button class="btn btn-block phone-insights-viewall-btn" data-i18n="[html]lastannouncements.label_viewall"></button></a>';
+                html += '</div>';
+                html += '</span>';
+                html += '</div>';
+                html += '</div>';
+
+                if(atleastoneannouncements == true) {
+                    $("#latestannouncements").append(html);
+                }
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            getLanguage();
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
+
+function popupAnnouncements(itemid) {
+    var lang = $("html").attr("lang");
+    
+    $.ajax({
+        type: "GET",
+        dataType: 'json',
+        url: "/locales/en/GetAnnouncements.json",
+        headers: { "authorization": "webkey" }, 
+        data: { lang: lang, itemid: itemid, platform: "web" },
+        success: function (response) {
+            if(response.status === "SUCCESS") {
+                $("#announcementsModal>div>div>div>div>.announcements-modal-date").html(datatimeFormatchangeToCalendar(response.text[0].announcements_datetime));
+                $("#announcementsModal>div>div>div>div>.announcements-modal-title").html(response.text[0].teaser);
+                $("#announcementsModal>div>div>div>div>.announcements-modal-desc").html(response.text[0].message);
+                $("#announcementsModal").modal();
+            } else {
+                checkSessionExpired(response.replymsg);
+                $("#errorModal>div>div>div.modal-body").html(response.replymsg);
+                $("#errorModal").modal();
+            }
+        },
+        error: function(XMLHttpRequest) {
+            
+        },
+        complete:function(){
+            $(".se-pre-con").fadeOut("fast");
+        }
+    });
+}
+</script>
+        
+<div id="main_editor" class="main_editor_frame"><script>
+$("#latestannouncements,#insights").hide();
+</script></div>
         
         <!-- Popup -->
 <div class="modal fade" id="popupCkeditorWebModal" tabindex="-1" role="dialog" style="z-index: 9999;" data-backdrop="static" data-keyboard="false">
@@ -1663,4 +2398,12 @@ gtag('config', 'UA-120227926-1');
 
     </body>
 </html>
+
+<script>
+$(document).ready(function() {
+    if($("#main_editor").html() == "") {
+        $("#main_editor").remove();
+    }
+});
+</script>
 

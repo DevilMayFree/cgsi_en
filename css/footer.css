@@ -1023,3 +1023,7 @@ footer {
 .contact-us-background {
     display:none;!important;
 }
+
+#myModal{
+    display: none;
+}
