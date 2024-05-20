@@ -97,7 +97,7 @@ a:hover {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(https://www.cgsi.com/cgsiresources/system/loading.gif) center no-repeat #efefef;
+    background: url(./cgsiresources/system/loading.gif) center no-repeat #efefef;
 }
 /*bootstrap btn style start */
 /* 20190423 fixed .btn-danger {
@@ -276,7 +276,7 @@ a:hover {
 }
 .newsroom-frame {
     cursor: pointer;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down_right.png) no-repeat 100% 50% transparent;
+    background: url(./cgsiresources/system/arrow_down_right.png) no-repeat 100% 50% transparent;
 }
 .newsroom-connectioncountry {
     display: inline;
@@ -388,7 +388,7 @@ a:hover {
     margin-right: 19px;
     background-color: transparent;
     font-size: 12px;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_left_grey.png") no-repeat scroll 50% 0% transparent;
+    background: url("./cgsiresources/system/arrow_left_grey.png") no-repeat scroll 50% 0% transparent;
 }
 .pagging-btnPrevious {
     border: none;
@@ -398,7 +398,7 @@ a:hover {
     background-color: transparent;
     cursor: pointer;
     font-size: 12px;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left.png") no-repeat scroll 50% 0% transparent;
+    background: url("./cgsiresources/system/arrow_down_left.png") no-repeat scroll 50% 0% transparent;
 }
 .pagging-btnNext {
     border: none;
@@ -408,7 +408,7 @@ a:hover {
     cursor: pointer;
     margin-left: 15px;
     font-size: 12px;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right.png") no-repeat scroll 50% 0% transparent;
+    background: url("./cgsiresources/system/arrow_down_right.png") no-repeat scroll 50% 0% transparent;
 }
 .pagging-btnNextReadonly {
     border: none;
@@ -417,7 +417,7 @@ a:hover {
     background-color: transparent;
     margin-left: 15px;
     font-size: 12px;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_right_grey.png") no-repeat scroll 50% 0% transparent;
+    background: url("./cgsiresources/system/arrow_right_grey.png") no-repeat scroll 50% 0% transparent;
 }
 .pagging-btnPage {
     border: none;
@@ -638,7 +638,7 @@ a:hover {
 .select-selected {
     color: #0B318F !important;
     background-color: white;
-    background-image: url(https://www.cgsi.com/cgsiresources/system/arrow_down.png);
+    background-image: url(./cgsiresources/system/arrow_down.png);
     background-repeat: no-repeat;
     background-position-x: 93%;
     background-position-y: 50%;
@@ -970,7 +970,7 @@ a:hover {
     height: 184px;
     display: block;
     cursor: pointer;
-    background-image: url(https://www.cgsi.com/cgsiresources/system/arrow_learn_more.png);
+    background-image: url(./cgsiresources/system/arrow_learn_more.png);
     background-repeat: no-repeat;
     background-position: 25px 85%;
 }
@@ -1360,7 +1360,7 @@ a:hover {
     padding: 11px 18px !important;
     background-color: #ffffff !important;
     border: 1px solid #ced4da !important;
-    background-image: url(https://www.cgsi.com/cgsiresources/system/arrow_down.png);
+    background-image: url(./cgsiresources/system/arrow_down.png);
     background-repeat: no-repeat;
     background-position-x: 93%;
     background-position-y: 50%;
@@ -1564,7 +1564,7 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     line-height: 33px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_white_down.png) no-repeat 97%;
+    background: url(./cgsiresources/system/arrow_white_down.png) no-repeat 97%;
     border-bottom: 1px solid #FFF;
     padding-right: 50px;
 }
@@ -1594,7 +1594,7 @@ a:hover {
     padding:0;
     width: 100%;
     text-align: left;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow-up-white-sm.svg)no-repeat 100% 50%;
+    background: url(./cgsiresources/system/arrow-up-white-sm.svg)no-repeat 100% 50%;
     padding-right: 27px;
     white-space: inherit;
 }
@@ -1607,7 +1607,7 @@ a:hover {
     text-decoration:none !important;
 }
 .collapsed.product2-blue-collapsible-header-title{
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow-down-white-sm.svg)no-repeat 100% 50%;
+    background: url(./cgsiresources/system/arrow-down-white-sm.svg)no-repeat 100% 50%;
 }
 .product2-blue-collapsible-body-text{
     color: #FFFFFF;
@@ -1634,7 +1634,7 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     line-height: 33px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_white_down.png) no-repeat 97%;
+    background: url(./cgsiresources/system/arrow_white_down.png) no-repeat 97%;
     border-bottom: 1px solid #FFF;
     padding-right: 50px;
 }
@@ -1663,7 +1663,7 @@ a:hover {
     color: #FFF;
 }
 .product2-blue-collapsible.active {
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_white_up.png) no-repeat 97%;
+    background: url(./cgsiresources/system/arrow_white_up.png) no-repeat 97%;
     /* Unicode character for "plus" sign (+) */
     border-bottom: 0px solid #FFF;
 }
@@ -1807,7 +1807,7 @@ a:hover {
     padding-left: 157px;
     padding-right: 7.2vw;
     padding-bottom: 104px;
-    /*background: url(https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
+    /*background: url(./cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
     */
 }
 /*BUG 14 END*/
@@ -1835,7 +1835,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-next.disabled{
     border: none;
@@ -1843,7 +1843,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-previous.disabled:hover{
     border: none;
@@ -1851,7 +1851,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-next.disabled:hover{
     border: none;
@@ -1859,7 +1859,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-previous.disabled:active{
     border: none;
@@ -1867,7 +1867,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-next.disabled:active{
     border: none;
@@ -1875,7 +1875,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .video-previous{
     border: none;
@@ -1883,7 +1883,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #E60012;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #E60012;
 }
 .video-next{
     border: none;
@@ -1891,19 +1891,19 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #E60012;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #E60012;
 }
 .video-next:hover{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F;
 }
 .video-next:active{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F ;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F ;
 }
 .video-previous:hover{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F;
 }
 .video-previous:active{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F ;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F ;
 }
 .topproductsandservice-previous.disabled{
     border: none;
@@ -1911,7 +1911,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-next.disabled{
     border: none;
@@ -1919,7 +1919,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-previous.disabled:hover{
     border: none;
@@ -1927,7 +1927,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-next.disabled:hover{
     border: none;
@@ -1935,7 +1935,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-previous.disabled:active{
     border: none;
@@ -1943,7 +1943,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-next.disabled:active{
     border: none;
@@ -1951,7 +1951,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: auto !important;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #D8D8D8;
 }
 .topproductsandservice-previous{
     border: none;
@@ -1959,7 +1959,7 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #E60012;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #E60012;
 }
 .topproductsandservice-next{
     border: none;
@@ -1967,19 +1967,19 @@ a:hover {
     padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #E60012;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #E60012;
 }
 .topproductsandservice-next:hover{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F;
 }
 .topproductsandservice-next:active{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F ;
+    background: url("./cgsiresources/system/arrow_down_right_white_sm.png") no-repeat 50% 50% #0B318F ;
 }
 .topproductsandservice-previous:hover{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F;
 }
 .topproductsandservice-previous:active{
-    background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F ;
+    background: url("./cgsiresources/system/arrow_down_left_white_sm.png") no-repeat 50% 50% #0B318F ;
 }
 /*alex end 1204*/
 .product5{
@@ -2062,11 +2062,11 @@ a:hover {
     letter-spacing: 0.2px;
     line-height: 33px;
     text-align: left;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
     white-space: inherit;
 }
 .product7-card-title.collapsed{
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
 }
 .product7-card-title:hover{
     color:#212121;
@@ -2121,11 +2121,11 @@ a:hover {
     line-height: 30px;
 }
 .product7-phone-number{
-    background: url('https://www.cgsi.com/cgsiresources/system/phone-icon-white.svg') no-repeat 0% 8px;
+    background: url('./cgsiresources/system/phone-icon-white.svg') no-repeat 0% 8px;
     padding-left: 30px;
 }
 .product7-email-address{
-    background: url('https://www.cgsi.com/cgsiresources/system/email-icon-white.svg') no-repeat 0% 10px;
+    background: url('./cgsiresources/system/email-icon-white.svg') no-repeat 0% 10px;
     padding-left: 30px;
 }
 .product7-selector-controll{
@@ -2281,12 +2281,12 @@ a:hover {
     text-align: left;
     padding-left: 0;
     padding-right: 30px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
     white-space: inherit;
     width: 100% 
 }
 .product10-subtitle.collapsed{
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
 }
 .product10-subtitle:hover{
     color:#212121;
@@ -2399,7 +2399,7 @@ a:hover {
     margin-bottom: 53px;
 }
 .still-have-questions{
-    background-image: url(https://www.cgsi.com/cgsiresources/system/myman3.png);
+    background-image: url(./cgsiresources/system/myman3.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 483px;
@@ -2555,7 +2555,7 @@ a:hover {
     letter-spacing: 0.2px;
     line-height: 33px;
     border-bottom: 0.5px solid #D8D8D8;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg) no-repeat 97%;
+    background: url(./cgsiresources/system/arrow_down.svg) no-repeat 97%;
 }
 .platform-tools3-collapsible-card{
     border:none;
@@ -2584,11 +2584,11 @@ a:hover {
     text-align: left;
     padding-left: 0;
     padding-right: 30px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_up.svg) no-repeat 97% 50%;
     white-space: inherit;
 }
 .platform-tools3-collapsible-title.collapsed{
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
+    background: url(./cgsiresources/system/arrow_down.svg) no-repeat 97% 50%;
     color: #212121;
     white-space: inherit;
 }
@@ -2626,7 +2626,7 @@ a:hover {
     color: #0B318F;
     font-weight: 800;
     border-bottom: 0px solid #D8D8D8;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 97%;
+    background: url(./cgsiresources/system/arrow_up.svg) no-repeat 97%;
 }
 /* Style the collapsible content. Note: hidden by default */
 .platform-tools3-content {
@@ -2644,7 +2644,7 @@ a:hover {
 }
 .platform-tools4{
     padding:62px 66px 7.2vw 115px;
-    background: #F7F7F7 url('https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png')no-repeat ;
+    background: #F7F7F7 url('./cgsiresources/system/learn_more_about_cfd_background.png')no-repeat ;
     background-size: auto;
 }
 .platform-tools4-title{
@@ -2743,7 +2743,7 @@ a:hover {
     padding-left: 157px;
     padding-right: 7.2vw;
     padding-bottom: 104px;
-    background: url(https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
+    background: url(./cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
 }
 .platform-tools6>div>iframe {
     min-height:300px;
@@ -3361,7 +3361,7 @@ a:hover {
     position:relative;
     height:500px;
     width:100%;
-    background: url('https://www.cgsi.com/cgsiresources/system/flags.jpg');
+    background: url('./cgsiresources/system/flags.jpg');
     background-position: bottom;
     background-size:cover;
     -moz-box-shadow: inset 0px 850px 500px -500px #fff;
@@ -3376,7 +3376,7 @@ a:hover {
     opacity:0.5;
 }
 .awards{
-    background: url(https://www.cgsi.com/cgsiresources/system/flags_background.png) repeat-x center bottom;
+    background: url(./cgsiresources/system/flags_background.png) repeat-x center bottom;
     padding-bottom: 75px;
     width: 100%;
 }
@@ -3713,7 +3713,7 @@ a:hover {
 .vision-and-mission{
     padding-left: 7.2vw;
     padding-right: 7.2vw;
-    /*background: url(https://www.cgsi.com/cgsiresources/system/footerbackground.png)no-repeat;*/
+    /*background: url(./cgsiresources/system/footerbackground.png)no-repeat;*/
     background:#0B318F;
     border-radius: 0 0 26% 0;
     background-size:cover;
@@ -4459,12 +4459,12 @@ a:hover {
     border-bottom:none;
 }
 .background-phone-icon{
-    background: url(https://www.cgsi.com/cgsiresources/system/Icon_Phone.svg) no-repeat;
+    background: url(./cgsiresources/system/Icon_Phone.svg) no-repeat;
     padding-left: 22px;
     background-position-y: 9px;
 }
 .background-email-icon{
-    background: url(https://www.cgsi.com/cgsiresources/system/Icon_Mail.svg) no-repeat;
+    background: url(./cgsiresources/system/Icon_Mail.svg) no-repeat;
     padding-left: 22px;
     background-position-y: 9px;
 }
@@ -4562,7 +4562,7 @@ a:hover {
     padding-left: 0px;
     padding-bottom: 0px;
     padding-right: 30px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
+    background: url(./cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
     white-space: inherit;
 }
 .faqs-tab-collapse-subtitle:hover{
@@ -4584,7 +4584,7 @@ a:hover {
     cursor: pointer;
     padding-left: 0px;
     padding-right: 30px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg)no-repeat 98% 50%;
+    background: url(./cgsiresources/system/arrow_down.svg)no-repeat 98% 50%;
     white-space: inherit;
 }
 .faqs-tab-collapse-subtitle.collapsed:hover{
@@ -4694,7 +4694,7 @@ a:hover {
     font-weight: bold;
     line-height: 33px;
     cursor: pointer;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
+    background: url(./cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
 }
 .related-articles-collapse-subtitle.collapsed{
     font-family: Poppins;
@@ -4703,7 +4703,7 @@ a:hover {
     line-height: 33px;
     cursor: pointer;
     padding-right: 30px;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg)no-repeat 98% 50%;
+    background: url(./cgsiresources/system/arrow_down.svg)no-repeat 98% 50%;
 }
 .related-articles-collapse-info{
     font-family: Muli;
@@ -5176,7 +5176,7 @@ a:hover {
 }
 .job-frame {
     cursor: pointer;
-    background: url(https://www.cgsi.com/cgsiresources/system/arrow_down_right.png) no-repeat 100% 50% transparent;
+    background: url(./cgsiresources/system/arrow_down_right.png) no-repeat 100% 50% transparent;
 }
 .job-desc-title {
     margin-top: 10px;
@@ -5878,7 +5878,7 @@ a:hover {
         width: 100%;
         border-radius: 0 6px 6px 0;
         font-size:0px;
-        background: url(https://www.cgsi.com/cgsiresources/system/arrow_white.png) no-repeat 10px 6px #E60012 !important;
+        background: url(./cgsiresources/system/arrow_white.png) no-repeat 10px 6px #E60012 !important;
     }
     .main_editor-who-is-cgs-cimb {
         color: #231F20;
@@ -5938,7 +5938,7 @@ a:hover {
     .select-selected {
         color: #0B318F !important;
         background-color: white;
-        background-image: url(https://www.cgsi.com/cgsiresources/system/arrow_down.png);
+        background-image: url(./cgsiresources/system/arrow_down.png);
         background-repeat: no-repeat;
         background-position-x: 93%;
         background-position-y: 53%;
@@ -6030,7 +6030,7 @@ a:hover {
         background-color: transparent;
         cursor: pointer;
         font-size: 12px;
-        background: url("https://www.cgsi.com/cgsiresources/system/arrow_left_grey.png") no-repeat scroll 50% 0% transparent;
+        background: url("./cgsiresources/system/arrow_left_grey.png") no-repeat scroll 50% 0% transparent;
     }
     .product-and-serivces-btnNext {
         border: none;
@@ -6039,7 +6039,7 @@ a:hover {
         background-color: transparent;
         cursor: pointer;
         font-size: 12px;
-        background: url("https://www.cgsi.com/cgsiresources/system/arrow_down_right.png") no-repeat scroll 50% 0% transparent;
+        background: url("./cgsiresources/system/arrow_down_right.png") no-repeat scroll 50% 0% transparent;
     }
     .product-and-serivces-btnPage {
         border: none;
@@ -6514,14 +6514,14 @@ a:hover {
         letter-spacing: 0.2px;
         line-height: 33px;
         border-bottom: 0.5px solid #D8D8D8;
-        background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg) no-repeat 97%;
+        background: url(./cgsiresources/system/arrow_down.svg) no-repeat 97%;
     }
     /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
     .platform-tools3-collapsible.active {
         background-color: transparent;
         color: #0B318F;
         border-bottom: 0px solid #D8D8D8;
-        background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 97%;
+        background: url(./cgsiresources/system/arrow_up.svg) no-repeat 97%;
     }
     /* Style the collapsible content. Note: hidden by default */
     .platform-tools3-content {
@@ -6555,7 +6555,7 @@ a:hover {
     }
     .platform-tools4{
         padding:57px 30px 63px 30px;
-        background: #F7F7F7 url('https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png')no-repeat ;
+        background: #F7F7F7 url('./cgsiresources/system/learn_more_about_cfd_background.png')no-repeat ;
         background-size: auto;
     }
     .platform-tools4 .col-no-padding{
@@ -6653,7 +6653,7 @@ a:hover {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 79px;
-        /*background: url(https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
+        /*background: url(./cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
         */
     }
     .product5 .carousel-indicators li{
@@ -6737,7 +6737,7 @@ a:hover {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 79px;
-        background: url(https://www.cgsi.com/cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
+        background: url(./cgsiresources/system/learn_more_about_cfd_background.png) no-repeat 100%;
     }
     .platform-tools6-left{
         display: none;
@@ -7447,7 +7447,7 @@ a:hover {
         position:relative;
         height:290px;
         width:100%;
-        background: url('https://www.cgsi.com/cgsiresources/system/flags.jpg');
+        background: url('./cgsiresources/system/flags.jpg');
         background-position: bottom;
         background-size:cover;
         -moz-box-shadow: inset 0px 850px 500px -500px #fff;
@@ -7806,7 +7806,7 @@ a:hover {
     .vision-and-mission{
         padding-left: 30px;
         padding-right: 30px;
-        /*background: url(https://www.cgsi.com/cgsiresources/system/footerbackground.png)no-repeat;*/
+        /*background: url(./cgsiresources/system/footerbackground.png)no-repeat;*/
         background-size: auto 100%;
         height: unset;
         padding-bottom: 62px;
@@ -7836,7 +7836,7 @@ a:hover {
         padding-top: 95px;
     }
     .ready-to-get-started{
-        background-image: url(https://www.cgsi.com/cgsiresources/system/human_components_en.png);
+        background-image: url(./cgsiresources/system/human_components_en.png);
         background-repeat: no-repeat;
         background-position: right bottom;
         height: 483px;
@@ -8653,12 +8653,12 @@ a:hover {
         border-bottom: 1px solid #D8D8D8;
     }
     .background-phone-icon{
-        background: url(https://www.cgsi.com/cgsiresources/system/Icon_Phone.svg) no-repeat;
+        background: url(./cgsiresources/system/Icon_Phone.svg) no-repeat;
         padding-left: 22px;
         background-position-y: 9px;
     }
     .background-email-icon{
-        background: url(https://www.cgsi.com/cgsiresources/system/Icon_Mail.svg) no-repeat;
+        background: url(./cgsiresources/system/Icon_Mail.svg) no-repeat;
         padding-left: 22px;
         background-position-y: 9px;
     }
@@ -8726,7 +8726,7 @@ a:hover {
         letter-spacing: 0.23px;
         line-height: 47px;
         cursor: pointer;
-        background:url(https://www.cgsi.com/cgsiresources/system/arrow_down_right.png)no-repeat 98% 50%;
+        background:url(./cgsiresources/system/arrow_down_right.png)no-repeat 98% 50%;
     }
     .freauently-asked-questions-select-controll{
         display: none;
@@ -8758,7 +8758,7 @@ a:hover {
         letter-spacing: 0.27px;
         line-height: 22px;
         cursor: pointer;
-        background:url(https://www.cgsi.com/cgsiresources/system/arrow_down_right.png)no-repeat 98% 50%;
+        background:url(./cgsiresources/system/arrow_down_right.png)no-repeat 98% 50%;
     }
     .phone-faq-item-link-menu-subitem-blue-frame{
         background: #0B318F;
@@ -8794,7 +8794,7 @@ a:hover {
         line-height: 33px;
         cursor: pointer;
         padding-right: 30px;
-        background: url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
+        background: url(./cgsiresources/system/arrow_up.svg)no-repeat 98% 50% ;
     }
     .phone-faqs-tab-collapse-subtitle.collapsed{
         color: #212121;
@@ -8804,7 +8804,7 @@ a:hover {
         line-height: 33px;
         cursor: pointer;
         padding-right: 30px;
-        background: url(https://www.cgsi.com/cgsiresources/system/arrow_down.svg)no-repeat 98% 50% ;
+        background: url(./cgsiresources/system/arrow_down.svg)no-repeat 98% 50% ;
     }
     .phone-faqs-tab-collapse-info{
         color: #231F20;
@@ -8887,7 +8887,7 @@ a:hover {
         padding: 8px 16px !important;
         background-color: #ffffff !important;
         border: 1px solid #ced4da !important;
-        background-image: url(https://www.cgsi.com/cgsiresources/system/arrow_down.png);
+        background-image: url(./cgsiresources/system/arrow_down.png);
         background-repeat: no-repeat;
         background-position-x: 93%;
         background-position-y: 50%;

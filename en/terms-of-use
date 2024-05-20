@@ -54,7 +54,7 @@
 <!-- End Google Tag Manager (noscript) -->
 
 
-<img src="https://www.cgsi.com/cgsiresources/system/top-button.png" id="topbutton">
+<img src="./cgsiresources/system/top-button.png" id="topbutton">
 
 <!-- Search Modal -->
 <div class="modal fade" id="searchModal" role="dialog" style="z-index: 9999;">
@@ -111,13 +111,13 @@
             </div>
         </div>
         <div class="nav-item dropdown">
-            <img onclick="javascript: $('.searchModal-search-keyword-box').val(''); $('#searchModal').modal();" class="header-btn-search" src="https://www.cgsi.com/cgsiresources/system/destop_search_left.png" >
+            <img onclick="javascript: $('.searchModal-search-keyword-box').val(''); $('#searchModal').modal();" class="header-btn-search" src="./cgsiresources/system/destop_search_left.png" >
         </div>
     </nav>  
 
     <nav class="navbar navbar-expand-sm navbar-light navbar-padding nav-border-bottom-gray muli-font-family navbar-white-font">
         <a class="navbar-brand destop-navbar-brand" href="#">
-            <img src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" >
+            <img src="./svg/cgsi_logo.png" >
         </a>
         <button class="navbar-toggler navbar-padding" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -656,11 +656,11 @@ gtag('config', 'UA-120227926-1');
                     html_mobile += '<tr>';
                     html_mobile += '<td width="100%">';
                     html_mobile += '<a class="navbar-brand mobile-navbar-brand" href="#">';
-                    html_mobile += '<img src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" class="phone-logo" width="65%">';
+                    html_mobile += '<img src="./svg/cgsi_logo.png" class="phone-logo" width="65%">';
                     html_mobile += '</a>';
                     html_mobile += '</td>';
                     html_mobile += '<td>';
-                    html_mobile += '<img onclick="javascript: $(\'.searchModal-search-keyword-box\').val(\'\'); $(\'#searchModal\').modal();" src="https://www.cgsi.com/cgsiresources/system/destop_search_left.png" class="phone-share-icon">';
+                    html_mobile += '<img onclick="javascript: $(\'.searchModal-search-keyword-box\').val(\'\'); $(\'#searchModal\').modal();" src="./cgsiresources/system/destop_search_left.png" class="phone-share-icon">';
                     html_mobile += '</td>';
                     html_mobile += '<td>';
                     html_mobile += '<button class="navbar-toggler phone-btn-nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">';
@@ -696,7 +696,7 @@ gtag('config', 'UA-120227926-1');
                                         if (response.menu[k].child_id == currentsubmenu_id) {
                                             if (submenuFirstTimeLoad == false) {
                                                 html_mobile += '<li class="nav-item phone-nav-item ">';
-                                                html_mobile += '<a class="btn_back nav-link phone-nav-link menu' + currentmenu_num + '-item-subitem-phone-back-btn" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" href="#" style="padding-bottom: 20px;"><img src="https://www.cgsi.com/cgsiresources/system/arrow_down_left.png" >&nbsp;&nbsp; Back to ' + currentmenu_name + ' <span class="sr-only">(current)</span></a>';
+                                                html_mobile += '<a class="btn_back nav-link phone-nav-link menu' + currentmenu_num + '-item-subitem-phone-back-btn" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" href="#" style="padding-bottom: 20px;"><img src="./cgsiresources/system/arrow_down_left.png" >&nbsp;&nbsp; Back to ' + currentmenu_name + ' <span class="sr-only">(current)</span></a>';
                                                 html_mobile += '</li>';
                                                 submenuFirstTimeLoad = true;
                                             }
@@ -735,7 +735,7 @@ gtag('config', 'UA-120227926-1');
                             if (firstTimeLoad == false) {
                                 html_mobile += '<a as="sad" class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '" ' + hyperlinkHtml + '>' + response.menu[i].menu_name + ' <span class="sr-only">(current)</span></a>';
                             } else {
-                                html_mobile += '<a class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '">' + response.menu[i].menu_name + ' <img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
+                                html_mobile += '<a class="menu nav-link phone-nav-link menu' + i + '" menunumber="' + currentmenu_num + '">' + response.menu[i].menu_name + ' <img src="./cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
                             }
 
                             html_mobile += '</li>';
@@ -772,7 +772,7 @@ gtag('config', 'UA-120227926-1');
                                     if (firstTimeSubMenuLoad == false)
                                         html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '</a>';
                                     else
-                                        html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '<img src="https://www.cgsi.com/cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
+                                        html_mobile += '<a class="submenu nav-link phone-nav-link menu' + currentmenu_num + '-submenu" menunumber="' + currentmenu_num + '" submenunumber="' + submenucount + '" ' + hyperlinkHtml + ' style="padding-top: 20px;">' + response.menu[j].menu_name + '<img src="./cgsiresources/system/arrow_down_right.png" class="nav-link-img-style"></a>';
                                     html_mobile += '</li>';
                                     //subsub menu
                                     for (var k = 0; k < response.menu.length; k++) {
@@ -1042,7 +1042,7 @@ gtag('config', 'UA-120227926-1');
                             $("body>*:not('.sticky-top')").appendTo("mobiletempbody");
                             $("#iframe-alertbar").hide();
                             $(".navbar-toggler.phone-btn-nav");
-                            $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").attr("style", "height: 16px; background-image: url('https://www.cgsi.com/cgsiresources/system/menucancel.svg')");
+                            $("button.navbar-toggler.phone-btn-nav>.navbar-toggler-icon").attr("style", "height: 16px; background-image: url('./cgsiresources/system/menucancel.svg')");
                         } else {
                             $("mobiletempbody>*").appendTo("body");
                             $("mobiletempbody").remove();
@@ -1436,7 +1436,7 @@ In case CGS International is in a category where it is allowed in writing to dis
     <div class="desktop-footer">
         <table width="100%" style="margin-bottom: 22px;">
             <tr>
-                <td width="25%" style="vertical-align: top;"><img src="https://www.cgsi.com/cgsiresources/system/footer_logo_cgsi.png" height="50px"></td>
+                <td width="25%" style="vertical-align: top;"><img src="./svg/footer_logo_cgsi.png" height="50px"></td>
                 <td width="5%">&nbsp;</td>
                 <td width="20%" class="desktop-footer-itemlist-frame uppermenuitem"></td>
                 <td width="5%">&nbsp;</td>
@@ -1450,7 +1450,7 @@ In case CGS International is in a category where it is allowed in writing to dis
     <div class="mobile-footer">
         <table width="100%">
             <tr>
-                <td><img style="height: 40px;" src="https://www.cgsi.com/cgsiresources/system/footer_logo_cgsi.png"></td>
+                <td><img style="height: 40px;" src="./svg/footer_logo_cgsi.png"></td>
             </tr>
             <tr>
                 <td width="50%" class="mobile-footer-itemlist-frame mobile-uppermenuitem"></td>

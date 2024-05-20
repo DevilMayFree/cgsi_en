@@ -47,7 +47,7 @@
         <div class="login-header">
             <nav class="navbar navbar-expand-sm navbar-light navbar-padding nav-border-bottom-gray muli-font-family navbar-white-font">
                 <a class="navbar-brand destop-navbar-brand" href="home">
-                    <img class="cimb-logo" src="https://www.cgsi.com/cgsiresources/system/cgsi_logo.png" alt="" width="80%">
+                    <img class="cimb-logo" src="./svg/cgsi_logo.png" alt="" width="80%">
                 </a>
             </nav>
         </div>

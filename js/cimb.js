@@ -586,7 +586,7 @@ function setMenuHeader() {
 
 
     if (lang == cimbwebsitelanga) {
-        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="https://www.cgsi.com/cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitlea);
+        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="./cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitlea);
         $(".countryin-item").html(inlangtitlea);
         $(".countrymy-item").html(mylangtitlea);
         $(".countryid-item").html(idlangtitlea);
@@ -597,7 +597,7 @@ function setMenuHeader() {
         langtitle = cimbwebsitelangtitlea;
         $(".dropdown-item-padding.langa-item").addClass("dropdown-menu-bg-darkblue-lower-selected");
     } else if (lang == cimbwebsitelangb) {
-        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="https://www.cgsi.com/cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitleb);
+        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="./cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitleb);
         $(".countryin-item").html(inlangtitleb);
         $(".countrymy-item").html(mylangtitleb);
         $(".countryid-item").html(idlangtitleb);
@@ -608,7 +608,7 @@ function setMenuHeader() {
         langtitle = cimbwebsitelangtitleb;
         $(".dropdown-item-padding.langb-item").addClass("dropdown-menu-bg-darkblue-lower-selected");
     } else if (lang == cimbwebsitelangc) {
-        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="https://www.cgsi.com/cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitlec);
+        $(".countrycurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="./cgsiresources/system/destop_language.png">' + cimbwebsitezonelangtitlec);
         $(".countryin-item").html(inlangtitlec);
         $(".countrymy-item").html(mylangtitlec);
         $(".countryid-item").html(idlangtitlec);
@@ -626,7 +626,7 @@ function setMenuHeader() {
     $(".countrysg-item").attr("href", weburlsg);
     $(".countryth-item").attr("href", weburlth);
 
-    $(".langcurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="https://www.cgsi.com/cgsiresources/system/destop_place.png">' + langtitle);
+    $(".langcurrent-item").html('<img style="margin: 0px 9px 0px 0px; height: 15px;" src="./cgsiresources/system/destop_place.png">' + langtitle);
     $(".langa-item").html(cimbwebsitelangtitlea);
     $(".langb-item").html(cimbwebsitelangtitleb);
     $(".langc-item").html(cimbwebsitelangtitlec);
@@ -641,20 +641,20 @@ function setMenuHeader() {
      //dev start
     if (definecountrycode == "international") {
         $(".langc-item").remove();
-        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(https://www.cgsi.com/cgsiresources/system/in_flag.png)");
+        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(./cgsiresources/system/in_flag.png)");
     } else if (definecountrycode == "my") {
         $(".langb-item").remove();
         $(".langc-item").remove();
-        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(https://www.cgsi.com/cgsiresources/system/my_flag.png)");
+        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(./cgsiresources/system/my_flag.png)");
     } else if (definecountrycode == "id") {
         $(".langa-item").remove();
-        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(https://www.cgsi.com/cgsiresources/system/id_flag.png)");
+        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(./cgsiresources/system/id_flag.png)");
     } else if (definecountrycode == "sg") {
         $(".langc-item").remove();
-        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(https://www.cgsi.com/cgsiresources/system/sg_flag.png)");
+        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(./cgsiresources/system/sg_flag.png)");
     } else if (definecountrycode == "th") {
         $(".langc-item").remove();
-        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(https://www.cgsi.com/cgsiresources/system/th_flag.png)");
+        $(".navbar.navbar-expand-sm.bluenav").css("background-image","url(./cgsiresources/system/th_flag.png)");
     }
     //dev end
 

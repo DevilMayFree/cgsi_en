@@ -254,14 +254,14 @@
 }
 
 .menu-input-username {
-    background-image: url(https://www.cgsi.com/cgsiresources/system/username.png);
+    background-image: url(./cgsiresources/system/username.png);
     background-repeat: no-repeat;
     background-position-x: 93%; 
     background-position-y: 53%;
 }
 
 .menu-input-password {
-    background-image: url(https://www.cgsi.com/cgsiresources/system/password.png);
+    background-image: url(./cgsiresources/system/password.png);
     background-repeat: no-repeat;
     background-position-x: 93%; 
     background-position-y: 53%;
@@ -528,7 +528,7 @@ option input:focus{
 }
 
 .sub_menu_arrow_right{
-    background: url('https://www.cgsi.com/cgsiresources/system/arrow_down_right.png') no-repeat 89% 50% transparent;
+    background: url('./cgsiresources/system/arrow_down_right.png') no-repeat 89% 50% transparent;
 }
 .navbar-right-dropdown-menu-left{
     width: 364.7px;
@@ -677,14 +677,14 @@ option input:focus{
 }
 
 .phone-menu-select-language {
-    background-image: url(https://www.cgsi.com/cgsiresources/system/phone_menu_language.png);
+    background-image: url(./cgsiresources/system/phone_menu_language.png);
     background-repeat: no-repeat; 
     background-position: 10px; 
     padding: 0.375rem 1.75rem; 
 }
 
 .phone-menu-select-place {
-    background-image: url(https://www.cgsi.com/cgsiresources/system/phone_menu_place.png);
+    background-image: url(./cgsiresources/system/phone_menu_place.png);
     background-repeat: no-repeat; 
     background-position: 10px; 
     padding: 0.375rem 1.75rem; 

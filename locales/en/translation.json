@@ -1,7 +1,7 @@
 {
   "global": {
-    "learnmore": " Learn More &nbsp; <img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />",
-    "viewmore": "<img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp; View More",
+    "learnmore": " Learn More &nbsp; <img src=\"./cgsiresources/system/icon_arrow.png\" />",
+    "viewmore": "<img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp; View More",
     "selecthere": "Select here",
     "relatedproducts": "Related <span class=\"span-color\">Products</span>",
     "option_international": "International",
@@ -25,7 +25,7 @@
     "label_loginuppercase": "LOG IN",
     "label_getstarted": "Get Started",
     "label_memberlogin": "Member Log In",
-    "label_backtomainmenu": "<img src=\"https://www.cgsi.com/cgsiresources/system/arrow_down_left.png\" >&nbsp;&nbsp; Back to main menu <span class=\"sr-only\">(current)</span>",
+    "label_backtomainmenu": "<img src=\"./cgsiresources/system/arrow_down_left.png\" >&nbsp;&nbsp; Back to main menu <span class=\"sr-only\">(current)</span>",
     "btn_proceed": "PROCEED",
     "option_selectcountry": "Select country",
     "option_selectproduct": "Select product",
@@ -54,12 +54,12 @@
     "tab_ewealth": "ewealth",
     "tab_event": "event",
     "tab_education": "education",
-    "label_viewall": "View All &nbsp; <img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" /></span>",
-    "label_marketinsightsviewall": "MARKET DISCOVER <span class=\"insights-viewall\" onclick=\"tabs('market')\"><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
-    "label_researchviewall": "RESEARCH <span class=\"insights-viewall\" onclick=\"tabs('research')\"><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
-    "label_ewealthviewall": "eWealth <span class=\"insights-viewall\" onclick=\"tabs('ewealth')\"><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
-    "label_eventviewall": "EVENT <span class=\"insights-viewall\" onclick=\"tabs('event')\"><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
-    "label_educationviewall": "EDUCATION <span class=\"insights-viewall\" onclick=\"tabs('education')\"><img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
+    "label_viewall": "View All &nbsp; <img src=\"./cgsiresources/system/icon_arrow.png\" /></span>",
+    "label_marketinsightsviewall": "MARKET DISCOVER <span class=\"insights-viewall\" onclick=\"tabs('market')\"><img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
+    "label_researchviewall": "RESEARCH <span class=\"insights-viewall\" onclick=\"tabs('research')\"><img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
+    "label_ewealthviewall": "eWealth <span class=\"insights-viewall\" onclick=\"tabs('ewealth')\"><img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
+    "label_eventviewall": "EVENT <span class=\"insights-viewall\" onclick=\"tabs('event')\"><img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
+    "label_educationviewall": "EDUCATION <span class=\"insights-viewall\" onclick=\"tabs('education')\"><img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;View All</span>",
     "label_insights": "Discover",
     "label_alluppercase" : "All",
     "label_marketinsightsuppercase" : "MARKET DISCOVER",
@@ -67,7 +67,7 @@
     "label_ewealthuppercase" : "eWealth",
     "label_eventuppercase" : "EVENT",
     "label_educationuppercase" : "EDUCATION",
-    "label_viewallinsights": "<img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp; View All Discover",
+    "label_viewallinsights": "<img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp; View All Discover",
     "label_viewallinsightsuppercase": "VIEW ALL DISCOVER",
     "label_related": "Related ",
     "label_relatededucation": "Related <span class=\"span-color\">EDUCATION </span>",
@@ -96,7 +96,7 @@
     "option3m": "Latest 3 Months",
     "option6m": "Latest 6 Months",
     "option1y": "Latest 1 Year",
-    "redsearch": "<img src='https://www.cgsi.com/cgsiresources/system/red_search.png' style='height: 20px;'>"
+    "redsearch": "<img src='./cgsiresources/system/red_search.png' style='height: 20px;'>"
   },
   "newsroom": {
     "label_newsroom": "Newsroom",
@@ -112,7 +112,7 @@
   "lastannouncements": {
     "label_lastannouncements": "<font color=\"#000000\">Latest</font> Announcement",
     "label_lastannouncementsuppercase": "Latest Announcements",
-    "label_showall": "Show All <img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\"> ",
+    "label_showall": "Show All <img src=\"./cgsiresources/system/icon_arrow.png\"> ",
     "label_viewall": "View All Announcements"
   },
   "awards": {
@@ -200,16 +200,16 @@
     "btn_downloadformuppercase": "DOWNLOAD FORM",
     "address_rafflesplace": "Raffles Place",
     "address_rafflesplaceaddress": "50 Raffles Place #01-01 Singapore Land Tower Singapore 048623",
-    "address_rafflesplacetime": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;8.30 am to 6.00 pm SGT (Mon - Fri)<br><img style=\"visibility: hidden;\" src=\"https://www.cgsi.com/cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;(Closed on weekend & public holidays)</span>",
-    "address_rafflesplaceemail": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Mail.svg\">&nbsp;&nbsp;<a href=\"mailto:clientservices.sg@cgs-cimb.com\">clientservices.sg@cgs-cimb.com</a>",
-    "address_rafflesplacephone": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Phone.svg\">&nbsp;&nbsp;<span class=\"contact-us-phone-number\"><a href=\"tel:1800 538 9889\">1800 538 9889</a> or <a href=\"tel:+65 6538 9889\">+65 6538 9889</a></span>",
-    "address_rafflesplacefax": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Fax.svg\">&nbsp;&nbsp;<span class=\"contact-us-fax-number\"><a href=\"tel:+65 6323 1176\">+65 6323 1176</a></span>",
+    "address_rafflesplacetime": "<img src=\"./cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;8.30 am to 6.00 pm SGT (Mon - Fri)<br><img style=\"visibility: hidden;\" src=\"./cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;(Closed on weekend & public holidays)</span>",
+    "address_rafflesplaceemail": "<img src=\"./cgsiresources/system/Icon_Mail.svg\">&nbsp;&nbsp;<a href=\"mailto:clientservices.sg@cgs-cimb.com\">clientservices.sg@cgs-cimb.com</a>",
+    "address_rafflesplacephone": "<img src=\"./cgsiresources/system/Icon_Phone.svg\">&nbsp;&nbsp;<span class=\"contact-us-phone-number\"><a href=\"tel:1800 538 9889\">1800 538 9889</a> or <a href=\"tel:+65 6538 9889\">+65 6538 9889</a></span>",
+    "address_rafflesplacefax": "<img src=\"./cgsiresources/system/Icon_Fax.svg\">&nbsp;&nbsp;<span class=\"contact-us-fax-number\"><a href=\"tel:+65 6323 1176\">+65 6323 1176</a></span>",
     "address_myvillage": "MyVillage (Indoor L1)",
     "address_myvillageaddress": "1 Maju Avenue Singapore 556679",
-    "address_myvillagetime": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;11.00am to 8.00pm SGT (Open daily)",
-    "address_myvillageemail": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Mail.svg\">&nbsp;&nbsp;<a href=\"mailto:clientservices.sg@cgs-cimb.com\">clientservices.sg@cgs-cimb.com</a>",
-    "address_myvillagephone": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Phone.svg\">&nbsp;&nbsp;<span class=\"contact-us-phone-number\"><a href=\"tel:1800 538 9889\">1800 538 9889</a> or <a href=\"tel:+65 6538 9889\">+65 6538 9889</a></span>",
-    "address_myvillagefax": "<img src=\"https://www.cgsi.com/cgsiresources/system/Icon_Fax.svg\">&nbsp;&nbsp;<span class=\"contact-us-fax-number\"><a href=\"tel:+65 6323 1176\">+65 6323 1176</a></span>"
+    "address_myvillagetime": "<img src=\"./cgsiresources/system/Icon_Clock.svg\">&nbsp;&nbsp;11.00am to 8.00pm SGT (Open daily)",
+    "address_myvillageemail": "<img src=\"./cgsiresources/system/Icon_Mail.svg\">&nbsp;&nbsp;<a href=\"mailto:clientservices.sg@cgs-cimb.com\">clientservices.sg@cgs-cimb.com</a>",
+    "address_myvillagephone": "<img src=\"./cgsiresources/system/Icon_Phone.svg\">&nbsp;&nbsp;<span class=\"contact-us-phone-number\"><a href=\"tel:1800 538 9889\">1800 538 9889</a> or <a href=\"tel:+65 6538 9889\">+65 6538 9889</a></span>",
+    "address_myvillagefax": "<img src=\"./cgsiresources/system/Icon_Fax.svg\">&nbsp;&nbsp;<span class=\"contact-us-fax-number\"><a href=\"tel:+65 6323 1176\">+65 6323 1176</a></span>"
   },
   "platformandtools": {
     "label_categories": "Categories",
@@ -243,7 +243,7 @@
     "label_brochure": "brochure",
     "label_forms": "forms",
     "label_manual": "manual",
-    "btn_openpdffile": "<img src=\"https://www.cgsi.com/cgsiresources/system/icon_arrow.png\" />&nbsp;Open File"
+    "btn_openpdffile": "<img src=\"./cgsiresources/system/icon_arrow.png\" />&nbsp;Open File"
   },
   "sitemap": {
     "label_homepage": "Homepage",
@@ -255,7 +255,7 @@
   },
   "search": {
     "label_search": "<b>Search </b><b style='color:#E60012;'>results</b>",
-    "btn_search": "<img src='https://www.cgsi.com/cgsiresources/system/red_search.png' style='height: 20px;'>",
+    "btn_search": "<img src='./cgsiresources/system/red_search.png' style='height: 20px;'>",
     "placeholder_enterkeywords": "Enter keywords",
     "label_alluppercase": "All",
     "label_productsandservicesuppercase": "PRODUCTS & SERVICES",

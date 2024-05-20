@@ -147,7 +147,7 @@ footer {
     padding-top:38px
 }
 .contact-us-background {
-    background:url(https://www.cgsi.com/cgsiresources/system/contactusbackground.png)no-repeat;
+    background:url(./cgsiresources/system/contactusbackground.png)no-repeat;
     background-size:cover;
     min-height:314px;
     background-position:right
@@ -389,7 +389,7 @@ footer {
     line-height:30px
 }
 .sitemap-background {
-    background:url(https://www.cgsi.com/cgsiresources/system/contactusbackground.png)no-repeat;
+    background:url(./cgsiresources/system/contactusbackground.png)no-repeat;
     background-size:cover;
     height:205px
 }
@@ -454,11 +454,11 @@ footer {
     border-bottom:1px solid #D8D8D8
 }
 .sitemap-collapse {
-    background:url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 98% 50%;
+    background:url(./cgsiresources/system/arrow_up.svg) no-repeat 98% 50%;
     cursor:pointer
 }
 .sitemap-collapse.collapsed {
-    background:url(https://www.cgsi.com/cgsiresources/system/arrow_down.png) no-repeat 98% 50%
+    background:url(./cgsiresources/system/arrow_down.png) no-repeat 98% 50%
 }
 .collapse-iteam-frame {
     border-bottom:1px solid #D8D8D8
@@ -783,7 +783,7 @@ footer {
         line-height:24px
     }
     .sitemap-background {
-        background:url(https://www.cgsi.com/cgsiresources/system/contactusbackground.png)no-repeat;
+        background:url(./cgsiresources/system/contactusbackground.png)no-repeat;
         background-size:cover;
         height:108px
     }
@@ -865,11 +865,11 @@ footer {
         border-bottom:1px solid #D8D8D8
     }
     .sitemap-collapse {
-        background:url(https://www.cgsi.com/cgsiresources/system/arrow_up.svg) no-repeat 98% 50%;
+        background:url(./cgsiresources/system/arrow_up.svg) no-repeat 98% 50%;
         cursor:pointer
     }
     .sitemap-collapse.collapsed {
-        background:url(https://www.cgsi.com/cgsiresources/system/arrow_down.png) no-repeat 98% 50%
+        background:url(./cgsiresources/system/arrow_down.png) no-repeat 98% 50%
     }
     .collapse-iteam-frame {
         border-bottom:1px solid #D8D8D8
@@ -923,7 +923,7 @@ footer {
         right:0
     }
     .contact-us-background {
-        background:url(https://www.cgsi.com/cgsiresources/system/contactusbackground.png)no-repeat;
+        background:url(./cgsiresources/system/contactusbackground.png)no-repeat;
         background-size:cover;
         min-height:314px;
         background-position:right
